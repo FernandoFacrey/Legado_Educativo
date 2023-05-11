@@ -1,0 +1,433 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79766704-20CA-498F-B00C-DAB105128EBE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebClientesPotencialesLEProp</RootNamespace>
+    <AssemblyName>WebClientesPotencialesLEProp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Beneficios.aspx" />
+    <Content Include="ConoceMasArquiHabi.aspx" />
+    <Content Include="ConoceMasArtDis.aspx" />
+    <Content Include="ConoceMasBicult.aspx" />
+    <Content Include="ConoceMasCarreras.aspx" />
+    <Content Include="ConoceMasInter.aspx" />
+    <Content Include="ConoceMasMBA.aspx" />
+    <Content Include="ConoceMasMDOC.aspx" />
+    <Content Include="ConoceMasMedi.aspx" />
+    <Content Include="ConoceMasMulti.aspx" />
+    <Content Include="ConoceMasOtrosPos.aspx" />
+    <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Resources\Bachillerato01.jpg" />
+    <None Include="Resources\Posgrado01.jpg" />
+    <None Include="Resources\Profesional01.jpg" />
+    <Content Include="MasInfoMDO.aspx" />
+    <Content Include="QueEs.aspx" />
+    <Content Include="Resources\2018-admisiones-y-becas-posgrados-hero_0.jpg" />
+    <Content Include="Resources\2018-ciencias-de-la-salud-maestria-en-psicologia-clinica-hero.jpg" />
+    <Content Include="Resources\2018-ciencias-de-la-salud-talleres-y-laboratorios.jpg" />
+    <Content Include="Resources\2018-negocios-programas-maestria-en-desarrollo-organizacional-y-cambio-en-linea-hero_0.jpg" />
+    <Content Include="Resources\2018-prepa-bachillerato-bicultural-hero.jpg" />
+    <Content Include="Resources\2019-Negocios-Maestria-en-Administracion-hero_0.jpg" />
+    <Content Include="Resources\2021-Vicsa_0.png" />
+    <Content Include="Resources\2021_IB_bachillerato.jpg" />
+    <Content Include="Resources\2021_multicultural_bachillerato.jpg" />
+    <Content Include="Resources\Copia de Testimonio Luis Meneses.mp4" />
+    <Content Include="Resources\Copia de Testimonios_1-01.jpg" />
+    <Content Include="Resources\Copia de Testimonios_2-02.jpg" />
+    <Content Include="Resources\Copia de Testimonios_3-03.jpg" />
+    <Content Include="Resources\Copia de Testimonios_4-07.jpg" />
+    <Content Include="Resources\Copia de Testimonios_5-08.jpg" />
+    <Content Include="Resources\Copia de Testimonios_6-10.jpg" />
+    <Content Include="Resources\Copia de Testimonios_7-12.jpg" />
+    <Content Include="Resources\Copia de Testimonios_8-13.jpg" />
+    <Content Include="Resources\CRGS-COVER-1280x800.png" />
+    <Content Include="Resources\Hero-Admisiones.png" />
+    <Content Include="Resources\Imagen-Legado-2prueba.jpg" />
+    <Content Include="Resources\Imagen-Legado-3.jpg" />
+    <Content Include="Resources\Imagen-Legado-4.jpg" />
+    <Content Include="Resources\LegadoEducativo-hero-2022.jpg" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\Naranja4.png" />
+    <Content Include="Resources\perfil.png" />
+    <Content Include="Resources\SoliLE.jpg" />
+    <Content Include="Resources\Vision2ciruclo_0.jpg" />
+    <Content Include="Resources\Visioncirculo1.png" />
+    <Content Include="Resources\Vídeo_LE_Testimonio_abuelo.mp4" />
+    <Content Include="Styles\Master.css" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\WebStyles.css" />
+    <Content Include="Testimonios.aspx" />
+    <Content Include="VisionUDEM.aspx" />
+    <Content Include="Web References\WSConClientePotencial\CsClientePotencial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\WSConClientePotencial\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\WSConClientePotencial\WSConClientePotencial.disco" />
+    <Content Include="Web References\WSConsUsuext\CsConUsuExt.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\WSConsUsuext\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\WSConClientePotencial\WSConClientePotencial.wsdl" />
+    <None Include="Web References\WSConsUsuext\WSConsUsuext.disco" />
+    <Content Include="Web References\WSInsertaClientePotencial\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\WSInsertaClientePotencial\Respuesta.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\WSConsUsuext\WSConsUsuext.wsdl" />
+    <None Include="Web References\WSInsertaClientePotencial\WSInsertaClientePotencial.disco" />
+    <Content Include="Web References\WSInsUsuarioExterno\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\WSInsUsuarioExterno\Respuesta.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\WSInsUsuarioExterno\WSInsUsuarioExterno.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebClientesPotenciales.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beneficios.aspx.cs">
+      <DependentUpon>Beneficios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios.aspx.designer.cs">
+      <DependentUpon>Beneficios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasArquiHabi.aspx.cs">
+      <DependentUpon>ConoceMasArquiHabi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasArquiHabi.aspx.designer.cs">
+      <DependentUpon>ConoceMasArquiHabi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasArtDis.aspx.cs">
+      <DependentUpon>ConoceMasArtDis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasArtDis.aspx.designer.cs">
+      <DependentUpon>ConoceMasArtDis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasBicult.aspx.cs">
+      <DependentUpon>ConoceMasBicult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasBicult.aspx.designer.cs">
+      <DependentUpon>ConoceMasBicult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasCarreras.aspx.cs">
+      <DependentUpon>ConoceMasCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasCarreras.aspx.designer.cs">
+      <DependentUpon>ConoceMasCarreras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasInter.aspx.cs">
+      <DependentUpon>ConoceMasInter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasInter.aspx.designer.cs">
+      <DependentUpon>ConoceMasInter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasMBA.aspx.cs">
+      <DependentUpon>ConoceMasMBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasMBA.aspx.designer.cs">
+      <DependentUpon>ConoceMasMBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasMDOC.aspx.cs">
+      <DependentUpon>ConoceMasMDOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasMDOC.aspx.designer.cs">
+      <DependentUpon>ConoceMasMDOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasMedi.aspx.cs">
+      <DependentUpon>ConoceMasMedi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasMedi.aspx.designer.cs">
+      <DependentUpon>ConoceMasMedi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasMulti.aspx.cs">
+      <DependentUpon>ConoceMasMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasMulti.aspx.designer.cs">
+      <DependentUpon>ConoceMasMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConoceMasOtrosPos.aspx.cs">
+      <DependentUpon>ConoceMasOtrosPos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConoceMasOtrosPos.aspx.designer.cs">
+      <DependentUpon>ConoceMasOtrosPos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasInfoMDO.aspx.cs">
+      <DependentUpon>MasInfoMDO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasInfoMDO.aspx.designer.cs">
+      <DependentUpon>MasInfoMDO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page.Master.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page.Master.designer.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QueEs.aspx.cs">
+      <DependentUpon>QueEs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueEs.aspx.designer.cs">
+      <DependentUpon>QueEs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testimonios.aspx.cs">
+      <DependentUpon>Testimonios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonios.aspx.designer.cs">
+      <DependentUpon>Testimonios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisionUDEM.aspx.cs">
+      <DependentUpon>VisionUDEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisionUDEM.aspx.designer.cs">
+      <DependentUpon>VisionUDEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConClientePotencial\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsUsuext\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSInsertaClientePotencial\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSInsUsuarioExterno\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebClientesPotenciales.aspx.cs">
+      <DependentUpon>WebClientesPotenciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebClientesPotenciales.aspx.designer.cs">
+      <DependentUpon>WebClientesPotenciales.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Page.Master" />
+    <None Include="Web References\WSInsertaClientePotencial\WSInsertaClientePotencial.wsdl" />
+    <None Include="Web References\WSInsUsuarioExterno\WSInsUsuarioExterno.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/DesarrolloUDEM/WSLEClientesPotenciales/WSInsertaClientePotencial.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSInsertaClientePotencial\</RelPath>
+      <UpdateFromURL>http://localhost/DesarrolloUDEM/WSLEClientesPotenciales/WSInsertaClientePotencial.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebClientesPotencialesLEProp_WSInsertaClientePotencial_WSInsertaClientePotencial</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/DesarrolloUDEM/WSUDEM/WSConClientePotencial.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSConClientePotencial\</RelPath>
+      <UpdateFromURL>http://localhost/DesarrolloUDEM/WSUDEM/WSConClientePotencial.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebClientesPotencialesLEProp_WSConClientePotencial_WSConClientePotencial</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/DesarrolloUDEM/WSUDEM/WSConsUsuext.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSConsUsuext\</RelPath>
+      <UpdateFromURL>http://localhost/DesarrolloUDEM/WSUDEM/WSConsUsuext.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebClientesPotencialesLEProp_WSConsUsuext_WSConsUsuext</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/DesarrolloUDEM/WSUDEM/WSInsUsuarioExterno.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSInsUsuarioExterno\</RelPath>
+      <UpdateFromURL>http://localhost/DesarrolloUDEM/WSUDEM/WSInsUsuarioExterno.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebClientesPotencialesLEProp_WSInsUsuarioExterno_WSInsUsuarioExterno</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58774</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58774/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

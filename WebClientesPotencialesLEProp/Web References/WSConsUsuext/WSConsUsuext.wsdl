@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConUsuExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UsEx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConUsuExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConUsuExtResult" type="tns:ArrayOfCsConUsuExt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCsConUsuExt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CsConUsuExt" nillable="true" type="tns:CsConUsuExt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CsConUsuExt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="recr_contraseniahash" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_sal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_contactoid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConUsuExtSoapIn">
+    <wsdl:part name="parameters" element="tns:ConUsuExt" />
+  </wsdl:message>
+  <wsdl:message name="ConUsuExtSoapOut">
+    <wsdl:part name="parameters" element="tns:ConUsuExtResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSConsUsuextSoap">
+    <wsdl:operation name="ConUsuExt">
+      <wsdl:input message="tns:ConUsuExtSoapIn" />
+      <wsdl:output message="tns:ConUsuExtSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSConsUsuextSoap" type="tns:WSConsUsuextSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConUsuExt">
+      <soap:operation soapAction="http://tempuri.org/ConUsuExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSConsUsuextSoap12" type="tns:WSConsUsuextSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConUsuExt">
+      <soap12:operation soapAction="http://tempuri.org/ConUsuExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSConsUsuext">
+    <wsdl:port name="WSConsUsuextSoap" binding="tns:WSConsUsuextSoap">
+      <soap:address location="http://localhost/DesarrolloUDEM/WSUDEM/WSConsUsuext.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSConsUsuextSoap12" binding="tns:WSConsUsuextSoap12">
+      <soap12:address location="http://localhost/DesarrolloUDEM/WSUDEM/WSConsUsuext.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

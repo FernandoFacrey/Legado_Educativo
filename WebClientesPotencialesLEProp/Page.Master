@@ -1,0 +1,214 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="WebClientesPotencialesLEProp.Page" %>
+
+
+<%--Modificado 11:52 el 11/05/2023--%> 
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Legado Educativo - Clientes Potenciales</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/WebStyles.css" rel="stylesheet" />
+    <link href="styles/Master.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="Principal_Container" class="Principal_Container">
+            <div id="Header_Container" class="Header_Container">
+                <div id="General_Container" class="General_Container">
+                    <div id="container_Header" class="container_Header">
+                        <div id="container_Opt_Img" class="container_Opt_Img">
+                            <div id="dv_img_Logo" class="dv_img_Logo">
+                                <a href="WebClientesPotenciales.aspx">
+                                    <img src="Resources/logo.png" class="img_Logo" />
+                                </a>
+                            </div>
+                            <div id="container_Menu_Options" class="container_Menu_Options">
+                                <div id="dv_MenuOpts_Header" class="dv_MenuOpts_Header">
+                                    <div id="dv_Btn_MenuConoce" class="dv_btn_Menu" runat="server">
+                                        <asp:Button ID="Btn_MenuConoce" runat="server" Text="CONOCE" class="Btn_Menu" OnClick="Btn_MenuConoce_Click" />
+                                    </div>
+                                    <div id="dv_Btn_MenuCertificados" class="dv_btn_Menu" runat="server">
+                                        <asp:Button ID="Btn_MenuCertificados" runat="server" Text="CERTIFICADOS" class="Btn_Menu" OnClick="Btn_MenuCertificados_Click" />
+                                    </div>
+                                    <div id="dv_Btn_MenuCotizar" class="dv_btn_Menu" runat="server">
+                                        <asp:Button ID="Btn_MenuCotizar" runat="server" Text="COTIZAR" class="Btn_Menu" OnClick="Btn_MenuCotizar_Click" />
+                                    </div>
+                                    <div id="dv_Btn_MenuIniciarLE" class="dv_btn_Menu" runat="server">
+                                        <asp:Button ID="Btn_MenuIniciarLE" runat="server" Text="INICIAR LEGADO" class="Btn_Menu" OnClick="Btn_MenuIniciarLE_Click" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <asp:Panel ID="Pnl_Header" runat="server">
+                            <div id="dv_Panel_Header" class="dv_Panel_Header">
+                                <div id="dv_Container_Conoce" runat="server" class="dv_Container_Conoce">
+                                    <div id="container_Conoce" class="container_txt">
+                                        <div class="div_txt">
+                                            <a class="text">Sobre legado educativo</a>
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_QueEs" runat="server" Text="¿Qué es?" class="text-sub" OnClick="Btn_QueEs_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Beneficios" runat="server" Text="Beneficios" class="text-sub" OnClick="Btn_Beneficios_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Testimonios" runat="server" Text="Testimonios" class="text-sub" OnClick="Btn_Testimonios_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_VisionUDEM" runat="server" Text="Vision UDEM" class="text-sub" OnClick="Btn_VisionUDEM_Click" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dv_Container_Certificados" runat="server" class="dv_Container_Certificados">
+                                    <div id="container_Prepa" class="container_txt">
+                                        <div class="div_txt">
+                                            <a class="text">Prepa UDEM</a>
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Bicultural" runat="server" Text="Bicultural" class="text-sub" OnClick="Btn_Bicultural_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Multicultural" runat="server" Text="Multicultural" class="text-sub" OnClick="Btn_Multicultural_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Internacional" runat="server" Text="Internacional" class="text-sub" OnClick="Btn_Internacional_Click" />
+                                        </div>
+                                    </div>
+                                    <div id="container_Profesional" class="container_txt">
+                                        <div class="div_txt">
+                                            <a class="text">Profesional</a>
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_CarrerasProf" runat="server" Text="Carreras profesionales" class="text-sub" OnClick="Btn_CarrerasProf_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Medicina" runat="server" Text="Medicina" class="text-sub" OnClick="Btn_Medicina_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_ArteyDiseño" runat="server" Text="Arte y diseño" class="text-sub" OnClick="Btn_ArteyDiseño_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_AquiHabi" runat="server" Text="Arquitectura y Ciencias del Habitat" class="text-sub" OnClick="Btn_AquiHabi_Click" />
+                                        </div>
+                                    </div>
+                                    <div id="container_Posgrado" class="container_txt">
+                                        <div class="div_txt">
+                                            <a class="text">Posgrado</a>
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_MDO" runat="server" Text="Maestría en Desarrollo Organizacional" class="text-sub" OnClick="Btn_MDO_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_MDOC" runat="server" Text="Maestría en Desarrollo Organizacional y Cambio" class="text-sub" OnClick="Btn_MDOC_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_MBA" runat="server" Text="Maestría en Administración" class="text-sub" OnClick="Btn_MBA_Click" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_OtrosPosg" runat="server" Text="Otros posgrados" class="text-sub" OnClick="Btn_OtrosPosg_Click" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </asp:Panel>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content">
+                <asp:ContentPlaceHolder ID="main" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="Footer_Container" class="Footer_Container">
+                <div id="Footer" class="Footer">
+                    <div id="Container_opts">
+                        <div class="Container_opts">
+                            <a>Universidad de Monterrey</a>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-conmutador.svg" />
+                                <a>Conmutador: +52 (81) 8215-1000</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-adminisiones.svg" />
+                                <a>Admisiones: +52 (81) 8215-1010</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-direccion.svg" />
+                                <a>Av. Ignacio Morones Prieto 4500 Pte. 66238</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-mapa.svg" />
+                                <a class="link" href="https://www.udem.edu.mx/es/conoce/ubicacion-y-mapas">Ubicación y mapa</a>
+                            </div>
+                        </div>
+                        <div class="Container_opts">
+                            <a>Exprésate</a>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-contacto.svg" />
+                                <a class="link" href="https://www.udem.edu.mx/es/institucional/udem-te-escucha">UDEM Te Escucha</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-buzon.svg" />
+                                <a class="link" href="https://www.udem.edu.mx/es/institucional/buzon-de-sugerencias">Buzón de sugerencias</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="	https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-contacto.svg" />
+                                <a class="link" href="https://www.udem.edu.mx/es/contactanos">Contáctanos</a>
+                            </div>
+                        </div>
+                        <div class="Container_opts">
+                            <a>Accesos Directos</a>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-contacto.svg" />
+                                <a class="link" href="https://mail.udem.edu.mx/owa/auth/logon.aspx?replaceCurrent=1&url=https%3A//mail.udem.edu.mx/owa/">Correo UDEM</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="	https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-portal.svg" />
+                                <a class="link" href="https://portal.udem.edu/">Portal UDEM</a>
+                            </div>
+                            <div class="Container_Txt_Img">
+                                <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-footer-tienda.svg" />
+                                <a class="link" href="https://e-udem.mx/tienda-udem-c-119/">Tienda UDEM</a>
+                            </div>
+                        </div>
+                        <div class="Container_opts">
+                            <a>Únete a nuestra comunidad</a>
+                            <div class="Container_Txt_Img">
+                                <a id="img_Facebook" href="https://www.facebook.com/universidaddemonterrey/">
+                                    <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-social-facebook-blanco.svg" />
+                                </a>
+                                <a id="img_Twitter" href="https://twitter.com/udem">
+                                    <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-social-twitter-blanco.svg" />
+                                </a>
+                                <a id="img_Instagram" href="https://www.instagram.com/genteudem/">
+                                    <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-social-instagram-blanco.svg" />
+                                </a>
+                                <a id="img_Youtube" href="https://www.youtube.com/genteudem">
+                                    <img src="https://www.udem.edu.mx/themes/custom/udm/svg/icono-social-youtube-blanco.svg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Container_copy">
+                        <a id="derechos">© <%: DateTime.Now.Year %> DERECHOS RESERVADOS UNIVERSIDAD DE MONTERREY
+                        </a>
+                        <a class="link_copy" href="https://www.udem.edu.mx/es/conoce/avisos-de-privacidad">AVISO DE PRIVACIDAD
+                        </a>
+                        <a class="link_copy" href="https://www.udem.edu.mx/sites/default/files/2018-10/politicas-de-privacidad.pdf">POLÍTICAS DE PRIVACIDAD
+                        </a>
+                        <a class="link_copy" href="https://www.udem.edu.mx/sites/default/files/2019-01/terminos-de-uso.pdf">TÉRMINOS DE USO
+                        </a>
+                        <a href="https://www.udem.edu.mx/" id="img_logoUdem_Footer">
+                            <img src="https://www.udem.edu.mx/themes/custom/udm/images/logo-udem.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

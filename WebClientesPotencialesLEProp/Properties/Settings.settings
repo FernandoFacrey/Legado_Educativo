@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebClientesPotencialesLEProp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebClientesPotencialesLEProp_WSInsertaClientePotencial_WSInsertaClientePotencial" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/WSLEClientesPotenciales/WSInsertaClientePotencial.asmx</Value>
+    </Setting>
+    <Setting Name="WebClientesPotencialesLEProp_WSConsUsuext_WSConsUsuext" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/WSUDEM/WSConsUsuext.asmx</Value>
+    </Setting>
+    <Setting Name="WebClientesPotencialesLEProp_WSInsUsuarioExterno_WSInsUsuarioExterno" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/WSUDEM/WSInsUsuarioExterno.asmx</Value>
+    </Setting>
+    <Setting Name="WebClientesPotencialesLEProp_WSConClientePotencial_WSConClientePotencial" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/WSUDEM/WSConClientePotencial.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

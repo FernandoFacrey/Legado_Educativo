@@ -1,0 +1,320 @@
+﻿/*--------------------------------------------------*/
+/*----- Fernando Facio Reyes -- Gya-Contsulting ----*/
+/*--------------------------------------------------*/
+/*-------- Ultima Actualización: 10/04/2023 --------*/
+/*--------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    transition: 0.2s;
+}
+
+.Principal_Container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Header_Container {
+    width: 100%;
+}
+
+.Body_Container {
+    width: 100%;
+}
+
+.Footer_Container {
+    width: 100%;
+}
+
+
+/*----------Header----------*/
+
+.General_Container {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container_Header {
+    height: auto;
+}
+
+.container_Opt_Img {
+    border: none;
+    background-color: #302c26;
+    display: flex;
+}
+
+.dv_Panel_Header {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    background-color: #5c5953;
+    display: flex;
+    justify-content: center;
+    padding: 1.25%;
+}
+
+.dv_Container_Certificados {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dv_Container_Conoce {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container_txt {
+    margin: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#dv-container_Conoce {
+    border-right: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Conoce {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Profesional {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Prepa {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Posgrado {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+
+.dv_img_Logo {
+    width: 316px;
+    display: block;
+    max-width: 25%;
+    min-width: 16.66666666666667%;
+}
+
+.img_Logo {
+    width: 100%;
+    height: 100%;
+}
+
+.container_Menu_Options {
+    width: 100%;
+}
+
+.dv_MenuOpts_Header {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#dv_MenuOpts_Header > h1 {
+    font-size: 1.75vw;
+    color: #ffffff;
+    font-family: "Helvetica";
+}
+
+.dv_btn_Menu {
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: .5%;
+}
+
+.dv_btn_Menu_selected {
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: .5%;
+    border-bottom: .2vw solid #FFF500;
+}
+
+.Btn_Menu {
+    cursor: pointer;
+    align-self: flex-end;
+    border: none;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-size: calc(.75vw + 0.1rem);
+    font-style: normal;
+    font-weight: 600;
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+    .Btn_Menu:hover {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+.div_txt {
+    padding-bottom: 1rem;
+}
+
+.div_txt-sub {
+    margin-bottom: 7%;
+}
+
+.text {
+    color: white;
+    font-size: calc(min(1.10rem, 2.5vw));
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.text-sub {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: calc(min(1rem, 1.5vw));
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    transition: 0.5s;
+}
+
+    .text-sub:hover {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+/*----------Footer----------*/
+.Footer {
+    background-color: #403b33;
+    /* arriba y abajo | izquierda y derecha */
+    padding: 2% 20% 0% 20%;
+    font-size: 0.9vw;
+}
+
+#Container_opts {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Container_opts {
+    width: 23%;
+}
+
+    .Container_opts > a {
+        font-weight: 600;
+        color: #fff500;
+    }
+
+.Container_Txt_Img {
+    display: flex;
+    margin-top: 3%;
+    width: 100%;
+}
+
+    .Container_Txt_Img > img {
+        width: 4.25%;
+        margin-right: 5%;
+    }
+
+    .Container_Txt_Img > a {
+        color: white;
+        font-size: 0.7vw;
+    }
+
+.link {
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+    .link:hover {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+#img_Facebook {
+    width: 4.25%;
+    padding-right: 5%;
+}
+
+#img_Twitter {
+    width: 8%;
+    padding-right: 5%;
+}
+
+#img_Instagram {
+    width: 7%;
+    padding-right: 5%;
+}
+
+#img_Youtube {
+    width: 10%;
+    padding-right: 5%;
+}
+
+#img_Facebook > img {
+    width: 100%;
+}
+
+#img_Twitter > img {
+    width: 100%;
+}
+
+#img_Instagram > img {
+    width: 100%;
+}
+
+#img_Youtube > img {
+    width: 100%;
+}
+
+#Container_copy {
+    margin-top: 2%;
+    font-size: 0.7vw;
+    color: white;
+    border-top: 0.1vw solid rgba(241, 241, 241, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#derechos {
+    padding-right: 2%;
+    border-right: 0.1vw solid rgba(241, 241, 241, 0.16);
+}
+
+.link_copy {
+    padding: 0.5%;
+    cursor: pointer;
+    color: rgba(240, 240, 240, 0.4);
+    transition: 0.5s;
+}
+
+    .link_copy:hover {
+        color: white;
+    }
+
+#img_logoUdem_Footer {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+}
+
+    #img_logoUdem_Footer > img {
+        width: 90%;
+    }
