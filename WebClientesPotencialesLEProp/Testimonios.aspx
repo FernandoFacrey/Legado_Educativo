@@ -14,7 +14,7 @@
             <div id="Container_Slider_Testimonios">
                 <div id="Slider_Testimonios">
                     <div class="Container_Btn_Testimonios">
-                        <asp:Button ID="Btn_AnteriorTesti" runat="server" Text="<"  CssClass="Btn_Testimonios"/>
+                        <asp:Button ID="Btn_AnteriorTesti" runat="server" Text="<"  CssClass="Btn_Testimonios" OnClick="Btn_AnteriorTesti_Click"/>
                     </div>
                     <div id="Container_card_Testimonios">
                         <div id="card_Testimonios">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="Container_Btn_Testimonios">
-                        <asp:Button ID="Btn_SiguienteTesti" runat="server" Text=">" CssClass="Btn_Testimonios"/>
+                        <asp:Button ID="Btn_SiguienteTesti" runat="server" Text=">" CssClass="Btn_Testimonios" OnClick="Btn_SiguienteTesti_Click"/>
                     </div>
                 </div>
             </div>

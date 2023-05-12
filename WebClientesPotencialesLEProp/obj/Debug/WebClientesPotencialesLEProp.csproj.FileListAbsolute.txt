@@ -569,7 +569,6 @@ C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebCl
 C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.csprojAssemblyReference.cache
 C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.Properties.Resources.resources
 C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.csproj.GenerateResource.cache
 C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.csproj.CoreCompileInputs.cache
@@ -634,3 +633,4 @@ C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEdu
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.dll
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.pdb
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.csprojAssemblyReference.cache
+C:\Users\ffaci\Documents\Legado_Educativo\Web\WebClientesPotencialesLEProp\WebClientesPotencialesLEProp\obj\Debug\WebClientesPotencialesLEProp.csprojAssemblyReference.cache

@@ -41,12 +41,15 @@
                                         <asp:Button ID="Btn_MenuIniciarLE" runat="server" Text="INICIAR LEGADO" class="Btn_Menu" OnClick="Btn_MenuIniciarLE_Click" />
                                     </div>
                                     <div id="dv_Btn_MenuContactanos" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuContactanos" runat="server" Text="CONTACTANOS" class="Btn_Menu"/>
+                                        <asp:Button ID="Btn_MenuContactanos" runat="server" Text="CONTACTANOS" class="Btn_Menu" />
                                     </div>
                                     <div id="dv_Btn_MenuEventos" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuEventos" runat="server" Text="EVENTOS" class="Btn_Menu"/>
+                                        <asp:Button ID="Btn_MenuEventos" runat="server" Text="EVENTOS" class="Btn_Menu" />
                                     </div>
                                 </div>
+                            </div>
+                            <div id="Container_BtnSolicitaInformacion">
+                                <asp:Button ID="Btn_SolicitaInformacion" runat="server" Text="Solicita información" CssClass="BtnSolicitaInformacion" />
                             </div>
                         </div>
                         <asp:Panel ID="Pnl_Header" runat="server">

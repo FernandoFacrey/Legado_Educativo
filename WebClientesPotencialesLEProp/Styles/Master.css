@@ -40,6 +40,36 @@ output, ruby, section, summary, time, mark, audio, video {
     width: 100%;
 }
 
+/*----------Inicio_Btn_Solicita_Informacion----------*/
+#Container_BtnSolicitaInformacion {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: auto;
+}
+
+    #Container_BtnSolicitaInformacion > .BtnSolicitaInformacion {
+        cursor: pointer;
+        border: none;
+        border-radius: 2vw;
+        width: 53%;
+        height: 35%;
+        padding: 2%;
+        font-size: .9vw;
+        font-weight: 600;
+        background-color: #fff500;
+        color: #000000;
+        transition: 0.6s;
+    }
+
+        #Container_BtnSolicitaInformacion > .BtnSolicitaInformacion:hover {
+            color: #ffffff;
+            background-color: #000000;
+        }
+/*----------Fin_Btn_Solicita_Informacion----------*/
+
+
 
 /*----------Header----------*/
 
@@ -109,19 +139,19 @@ output, ruby, section, summary, time, mark, audio, video {
 
 
 .dv_img_Logo {
-    width: 316px;
-    display: block;
-    max-width: 25%;
-    min-width: 16.66666666666667%;
-}
+    width: 25.5%;
+    min-width: 15%;
+    max-width: 30%;
+} 
 
 .img_Logo {
     width: 100%;
-    height: 100%;
+    display: block;
 }
 
 .container_Menu_Options {
-    width: 100%;
+    width: 85%;
+    position: relative;
 }
 
 .dv_MenuOpts_Header {
@@ -138,24 +168,26 @@ output, ruby, section, summary, time, mark, audio, video {
 }
 
 .dv_btn_Menu {
+    justify-content: center;
     display: flex;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: .5%;
-    border-bottom: 0.2vw solid transparent;
+    align-items: flex-end;
+    width: initial;
+    padding-bottom: 0.6%;
+    border-bottom: .2vw solid transparent;
 }
 
 .dv_btn_Menu_selected {
+    justify-content: center;
     display: flex;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: .5%;
+    align-items: flex-end;
+    width: initial;
+    padding-bottom: 0.6%;
     border-bottom: .2vw solid #FFF500;
 }
 
 .Btn_Menu {
+    padding: 0 1.10vw;
     cursor: pointer;
-    align-self: flex-end;
     border: none;
     font-size: calc(.75vw + 0.1rem);
     font-style: normal;
