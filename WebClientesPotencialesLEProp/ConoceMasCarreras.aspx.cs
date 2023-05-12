@@ -16,7 +16,9 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_ConoceMasCarreras_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://www.udem.edu.mx/es/admisiones-y-becas/profesional");
+            string script = "window.open('https://www.udem.edu.mx/es/admisiones-y-becas/profesional', '_blank');";
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewTab", script, true);
+            //Response.Redirect("https://www.udem.edu.mx/es/admisiones-y-becas/profesional");
         }
     }
 }

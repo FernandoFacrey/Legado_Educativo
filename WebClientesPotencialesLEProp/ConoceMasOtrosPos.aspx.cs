@@ -16,7 +16,9 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_ConoceMasPosgrado_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://www.udem.edu.mx/es/admisiones-y-becas/posgrados");
+            string script = "window.open('https://www.udem.edu.mx/es/admisiones-y-becas/posgrados', '_blank');";
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewTab", script, true);
+            //Response.Redirect("https://www.udem.edu.mx/es/admisiones-y-becas/posgrados");
         }
     }
 }

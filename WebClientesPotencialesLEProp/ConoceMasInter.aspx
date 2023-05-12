@@ -13,7 +13,7 @@
                             Con un enfoque multicultural y de alta exigencia académica, te ofrecemos un programa que combina las ciencias y las humanidades, y te
 								abre las puertas para ingresar a las mejores universidades del mundo.
                         </p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasInter" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasInter_Click" />
                         </div>
                     </div>

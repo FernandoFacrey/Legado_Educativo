@@ -171,6 +171,7 @@
     <Compile Include="Beneficios.aspx.designer.cs">
       <DependentUpon>Beneficios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clases\InteraccionMenu.cs" />
     <Compile Include="ConoceMasArquiHabi.aspx.cs">
       <DependentUpon>ConoceMasArquiHabi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

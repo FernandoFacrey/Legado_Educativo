@@ -16,7 +16,9 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_ConoceMasMDOC_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://www.udem.edu.mx/es/negocios/programas/maestria-en-desarrollo-organizacional-y-cambio-en-linea");
+            string script = "window.open('https://www.udem.edu.mx/es/negocios/programas/maestria-en-desarrollo-organizacional-y-cambio-en-linea', '_blank');";
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewTab", script, true);
+            //Response.Redirect("https://www.udem.edu.mx/es/negocios/programas/maestria-en-desarrollo-organizacional-y-cambio-en-linea");
         }
     }
 }

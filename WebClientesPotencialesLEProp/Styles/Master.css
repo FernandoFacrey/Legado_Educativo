@@ -2,13 +2,19 @@
 /*----- Fernando Facio Reyes -- Gya-Contsulting ----*/
 /*--------------------------------------------------*/
 
-* {
+tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, ad.jsdress, big, cite, codep del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: none;
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     font-style: normal;
     transition: 0.2s;
+    transition: opacity 1s ease-in-out;
     /*border:.1vw solid red;*/
 }
 
@@ -164,7 +170,7 @@
     }
 
 .div_txt {
-    display:flex;
+    display: flex;
     padding-bottom: 6%;
     white-space: nowrap;
 }

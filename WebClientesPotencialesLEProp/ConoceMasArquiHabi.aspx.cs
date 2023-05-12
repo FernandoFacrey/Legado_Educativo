@@ -16,7 +16,9 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_ConoceMasArquiHabi_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://crgs.udem.edu.mx/arte-arquitectura-y-diseno");
+            string script = "window.open('https://crgs.udem.edu.mx/arte-arquitectura-y-diseno', '_blank');";
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewTab", script, true);
+            //Response.Redirect("https://crgs.udem.edu.mx/arte-arquitectura-y-diseno");
         }
     }
 }

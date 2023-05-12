@@ -11,7 +11,7 @@
                     <div class="txt_ConoceMas">
                         <h1>Medicina</h1>
                         <p>Ciencias de la Salud</p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasMedicina" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMedicina_Click"/>
                         </div>
                     </div>

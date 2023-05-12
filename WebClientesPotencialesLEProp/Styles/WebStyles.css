@@ -1,14 +1,41 @@
 ﻿/*--------------------------------------------------*/
 /*----- Fernando Facio Reyes -- Gya-Contsulting ----*/
 /*--------------------------------------------------*/
-/*-------- Ultima Actualización: 10/04/2023 --------*/
-/*--------------------------------------------------*/
 
 
 /*----------Inicio_Home----------*/
 .container_Home {
     position: relative;
+    height: 90vh;
+    overflow: hidden;
 }
+
+/*__Boton__*/
+#Container_BtnBlancoIniciarLE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0%;
+}
+
+    #Container_BtnBlancoIniciarLE > .BtnBlanco {
+        cursor: pointer;
+        border: 0.1vw solid #ffffff;
+        border-radius: 2vw;
+        width: 20%;
+        padding: 1.5%;
+        font-size: .9vw;
+        font-weight: 600;
+        background-color: transparent;
+        color: #ffffff;
+        transition: 0.6s;
+    }
+
+        #Container_BtnBlancoIniciarLE > .BtnBlanco:hover {
+            border: .1vw solid #ffffff;
+            background-color: #ffffff;
+            color: #000000;
+        }
 
 /*__Imagen__*/
 .container_img_HomeFondo {
@@ -18,7 +45,6 @@
 .img_HomeFondo {
     display: block;
     width: 100%;
-    filter: brightness(.70);
 }
 
 /*__Texto__*/
@@ -34,8 +60,6 @@
 }
 
 .txt_Home {
-    width: 80%;
-    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     color: white;
     font-size: 0.9vw;
     margin-bottom: 1.2%;
@@ -44,6 +68,7 @@
 }
 
     .txt_Home > div > h1 {
+        text-align: center;
         font-weight: 600;
         font-size: 2.5vw;
         line-height: 3.6vw;
@@ -204,6 +229,7 @@
     position: relative;
     display: flex;
 }
+
 #testimoniosLE > .title_Testimonios {
     display: flex;
     justify-content: center;
@@ -216,6 +242,7 @@
     width: 100%;
     display: flex;
 }
+
     #container_VideoTesti > .video {
         box-shadow: 0px 0px 1.5vw 0px rgba(0, 0, 0, 0.5);
         -webkit-box-shadow: 0px 0px 1.5vw 0px rgba(0, 0, 0, 0.5);
@@ -223,6 +250,7 @@
         width: 50%;
         margin: 0% 5%;
     }
+
         #container_VideoTesti > .video > video {
             display: block;
             width: 100%;
@@ -235,6 +263,7 @@
         width: 50%;
         margin: 0% 5%;
     }
+
 #card_Testimonios {
     position: relative;
     display: flex;
@@ -431,6 +460,7 @@
     position: relative;
     height: 99vh;
 }
+
 #ConoceMasLE {
     height: 100%;
 }
@@ -445,17 +475,20 @@
     justify-content: center;
     align-items: center;
 }
+
 .txt_ConoceMas {
     z-index: 2;
     margin: 10%;
-    width:100%;
+    width: 100%;
 }
+
     .txt_ConoceMas h1 {
         border-bottom: 0.5vw solid white;
         margin: 5% 0%;
         padding: 2.5% 0%;
         font-size: 2.5vw;
     }
+
 #Container_txt_ConoceMasLE .txt_ConoceMas p {
     margin: 5% 0%;
     padding-right: 10%;
@@ -473,6 +506,7 @@
     background-size: cover;
     background-position: center;
 }
+
 #Container_txt_ConoceMasLE .Left {
     position: relative;
     width: 50%;
@@ -485,20 +519,20 @@
     background-position: center;
 }
 /*__Boton__*/
-#Container_BtnBlanco_ConoceMas > .BtnBlanco {
+#Container_BtnBlanco > .BtnBlanco {
     cursor: pointer;
-    border: .1vw solid #ffffff;
+    border: 0.1vw solid #ffffff;
     border-radius: 2vw;
-    width: 50%;
-    padding: 1%;
-    font-size: 1.5vw;
+    width: 35%;
+    padding: 2%;
+    font-size: 1.10vw;
     font-weight: 600;
     background-color: transparent;
     color: #ffffff;
     transition: 0.6s;
 }
-    #Container_BtnBlanco_ConoceMas > .BtnBlanco:hover {
-        width: 60%;
+
+    #Container_BtnBlanco > .BtnBlanco:hover {
         border: .1vw solid #ffffff;
         background-color: #ffffff;
         color: #000000;

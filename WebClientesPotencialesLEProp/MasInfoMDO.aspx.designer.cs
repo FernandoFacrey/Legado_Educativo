@@ -13,12 +13,12 @@ namespace WebClientesPotencialesLEProp {
     public partial class MasInfoMDO {
         
         /// <summary>
-        /// Btn_ConoceMasMDO control.
+        /// Container_BtnBlanco control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_ConoceMasMDO;
+        protected global::System.Web.UI.WebControls.Button Container_BtnBlanco;
     }
 }

@@ -12,7 +12,7 @@
                         <h1>Maestría en Desarrollo Organizacional</h1>
                         <p>Analiza y diagnostica los diferentes procesos humanos y organizacionales para proponer e implementar mejoras en estos.</p>
                         <div id="Container_BtnBlanco_ConoceMas">
-                            <asp:Button ID="Btn_ConoceMasMDO" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMDO_Click" />
+                            <asp:Button ID="Container_BtnBlanco" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMDO_Click" />
                         </div>
                     </div>
                 </div>

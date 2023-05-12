@@ -10,7 +10,7 @@
                     <div class="txt_ConoceMas">
                         <h1>Carreras Profesionales</h1>
                         <p>Conoce el proceso de admisión para ingresar a la Universidad de Monterrey</p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasCarreras" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasCarreras_Click" />
                         </div>
                     </div>

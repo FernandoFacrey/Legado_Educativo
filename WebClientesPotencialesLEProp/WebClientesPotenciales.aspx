@@ -7,21 +7,21 @@
 
     <div class="container_Home">
         <div class="container_img_HomeFondo">
+            <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);"></div>
             <img src="Resources/LegadoEducativo-hero-2022.jpg" class="img_HomeFondo">
         </div>
         <div class="container_txt_Home">
-            <div class="txt_Home">
-                <a href="https://www.udem.edu.mx/es" class="link">UDEM</a>
-                / 
-                <a href="https://www.udem.edu.mx/es/comunidad/comunidad" class="link">Comunidad UDEM</a>
-                /
-                <a href="https://www.udem.edu.mx/es/comunidad/exaudem" class="link">ExaUDEM</a>
-                / 
-                <div>
-                    <h1>Legado Educativo UDEM</h1>
-                    <p>
-                        En la Universidad de Monterrey sabemos que la mejor inversión que puedes realizar es la educación de tus hijos.
-                    </p>
+            <div>
+                <div class="txt_Home">
+                    <div>
+                        <h1>Legado Educativo UDEM</h1>
+                        <p>
+                            En la Universidad de Monterrey sabemos que la mejor inversión que puedes realizar es la educación de tus hijos.
+                        </p>
+                    </div>
+                </div>
+                <div id="Container_BtnBlancoIniciarLE">
+                    <asp:Button ID="Btn_IniciarLegadoHome" runat="server" Text="INICIAR LEGADO" CssClass="BtnBlanco" />
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
                     <div class="txt_ConoceMas">
                         <h1>Bachillerato Bicultural</h1>
                         <p>Profundiza el conocimiento y vivencia de tu propia cultura e identidad con un enfoque en la mentalidad internacional.</p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasBachiBicult" runat="server" Text="Conoce más aqui" CssClass="BtnBlanco" OnClick="Btn_ConoceMasBachiBicult_Click"/>
                         </div>
                     </div>

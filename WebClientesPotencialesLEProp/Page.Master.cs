@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebClientesPotencialesLEProp.Clases;
 
 namespace WebClientesPotencialesLEProp
 {
@@ -14,25 +15,59 @@ namespace WebClientesPotencialesLEProp
             if (!IsPostBack)
             {
                 Pnl_Header.Visible = false;
+                InteraccionMenu.MenuActivo = false;
+                InteraccionMenu.SeccionConoce = false;
+                InteraccionMenu.SeccionCertificados = false;
             }
         }
 
         protected void Btn_MenuConoce_Click(object sender, EventArgs e)
         {
-            cambioClaseBtnsMenu();
-            dv_Btn_MenuConoce.Attributes["class"] = "dv_btn_Menu_selected";
-            dv_Container_Certificados.Visible = false;
-            dv_Container_Conoce.Visible = true;
-            Pnl_Header.Visible = true;
+            if (InteraccionMenu.MenuActivo.Equals(true) && InteraccionMenu.SeccionConoce.Equals(true))
+            {
+                cambioClaseBtnsMenu();
+                Pnl_Header.Visible = false;
+                InteraccionMenu.MenuActivo = false;
+                InteraccionMenu.SeccionConoce = false;
+                InteraccionMenu.SeccionCertificados = false;
+            }
+            else
+            {
+                InteraccionMenu.MenuActivo = true;
+                InteraccionMenu.SeccionConoce = true;
+                InteraccionMenu.SeccionCertificados = false;
+                cambioClaseBtnsMenu();
+                dv_Btn_MenuConoce.Attributes["class"] = "dv_btn_Menu_selected";
+                dv_Container_Certificados.Visible = false;
+                dv_Container_Conoce.Visible = true;
+                Pnl_Header.Visible = true;
+            }
         }
 
         protected void Btn_MenuCertificados_Click(object sender, EventArgs e)
         {
-            cambioClaseBtnsMenu();
-            dv_Btn_MenuCertificados.Attributes["class"] = "dv_btn_Menu_selected";
-            dv_Container_Certificados.Visible = true;
-            dv_Container_Conoce.Visible = false;
-            Pnl_Header.Visible = true;
+
+            if (InteraccionMenu.MenuActivo.Equals(true) && InteraccionMenu.SeccionCertificados.Equals(true))
+            {
+                cambioClaseBtnsMenu();
+                Pnl_Header.Visible = false;
+                InteraccionMenu.MenuActivo = false;
+                InteraccionMenu.SeccionConoce = false;
+                InteraccionMenu.SeccionCertificados = false;
+            }
+            else
+            {
+                InteraccionMenu.MenuActivo = true;
+                InteraccionMenu.SeccionConoce = false;
+                InteraccionMenu.SeccionCertificados = true;
+
+                cambioClaseBtnsMenu();
+                dv_Btn_MenuCertificados.Attributes["class"] = "dv_btn_Menu_selected";
+                dv_Container_Certificados.Visible = true;
+                dv_Container_Conoce.Visible = false;
+                Pnl_Header.Visible = true;
+            }
+
         }
 
         protected void Btn_MenuCotizar_Click(object sender, EventArgs e)

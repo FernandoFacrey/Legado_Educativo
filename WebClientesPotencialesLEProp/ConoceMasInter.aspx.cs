@@ -16,7 +16,9 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_ConoceMasInter_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://prepa.udem.edu.mx/es/bachillerato-internacional");
+            string script = "window.open('https://prepa.udem.edu.mx/es/bachillerato-internacional', '_blank');";
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewTab", script, true);
+            //Response.Redirect("https://prepa.udem.edu.mx/es/bachillerato-internacional");
         }
     }
 }

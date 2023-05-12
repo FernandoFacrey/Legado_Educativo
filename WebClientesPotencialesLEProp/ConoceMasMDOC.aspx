@@ -15,7 +15,7 @@
                         <h1>Maestría en Desarrollo Organizacional y Cambio<br />
                             (en línea)</h1>
                         <p>Contribuye a mejorar el clima laboral, la cultura, los procesos humanos, administrativos y estructurales de las organizaciones.</p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasMDOC" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMDOC_Click" />
                         </div>
                     </div>

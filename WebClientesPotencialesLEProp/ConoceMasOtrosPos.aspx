@@ -11,7 +11,7 @@
                     <div class="txt_ConoceMas">
                         <h1>Admisiones y becas de Posgrado</h1>
                         <p>Conoce el proceso de admisión para ingresar a la Universidad de Monterrey.</p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasPosgrado" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasPosgrado_Click" />
                         </div>
                     </div>

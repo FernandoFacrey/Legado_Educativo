@@ -16,7 +16,10 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_ConoceMasMBA_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://www.udem.edu.mx/es/negocios/programas/maestria-en-administracion");
+
+            string script = "window.open('https://www.udem.edu.mx/es/negocios/programas/maestria-en-administracion', '_blank');";
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewTab", script, true);
+            //Response.Redirect("https://www.udem.edu.mx/es/negocios/programas/maestria-en-administracion");
         }
     }
 }
