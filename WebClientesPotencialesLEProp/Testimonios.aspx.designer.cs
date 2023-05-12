@@ -11,5 +11,23 @@ namespace WebClientesPotencialesLEProp {
     
     
     public partial class Testimonios {
+        
+        /// <summary>
+        /// Btn_AnteriorTesti control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_AnteriorTesti;
+        
+        /// <summary>
+        /// Btn_SiguienteTesti control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_SiguienteTesti;
     }
 }

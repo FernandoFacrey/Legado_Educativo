@@ -121,6 +121,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="Styles\Testimonios_Styles.css" />
     <Content Include="Styles\WebStyles.css" />
     <Content Include="Testimonios.aspx" />
     <Content Include="VisionUDEM.aspx" />
