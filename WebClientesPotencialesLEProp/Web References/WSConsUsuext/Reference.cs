@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace WebClientesPotencialesLEProp.WSConsUsuext {
+namespace WebLegadoEducativo01.WSConsUsuext {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -35,7 +35,7 @@ namespace WebClientesPotencialesLEProp.WSConsUsuext {
         
         /// <remarks/>
         public WSConsUsuext() {
-            this.Url = global::WebClientesPotencialesLEProp.Properties.Settings.Default.WebClientesPotencialesLEProp_WSConsUsuext_WSConsUsuext;
+            this.Url = global::WebLegadoEducativo01.Properties.Settings.Default.WebClientesPotencialesLEProp_WSConsUsuext_WSConsUsuext;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

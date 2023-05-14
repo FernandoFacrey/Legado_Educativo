@@ -9,17 +9,28 @@
 
     .Container_Btn_Testimonios .Btn_Testimonios {
         width: 100%;
-        border: 0.1vw solid black;
+        border: 0.15vw solid black;
         border-radius: 50%;
         color: #000;
         cursor: pointer;
         font-size: 1.5vw;
         background-color: transparent;
     }
-
         .Container_Btn_Testimonios .Btn_Testimonios:hover {
             background-color: rgba(0, 0, 0, 0.15);
         }
+
+
+    .Container_Btn_Testimonios .Btn_Testimonios_Disable {
+        width: 100%;
+        border: 0.15vw solid darkgrey;
+        border-radius: 50%;
+        color: darkgrey;
+        cursor: pointer;
+        font-size: 1.5vw;
+        background-color: transparent;
+    }
+
 
 #Container_Slider_Testimonios {
     position: relative;
@@ -45,7 +56,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 40%;
+    width: 50vw;
 }
 
 #card_Testimonios {

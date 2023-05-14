@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebClientesPotencialesLEProp.Properties {
+namespace WebLegadoEducativo01.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

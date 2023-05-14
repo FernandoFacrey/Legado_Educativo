@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace WebClientesPotencialesLEProp.WSInsUsuarioExterno {
+namespace WebLegadoEducativo01.WSInsUsuarioExterno {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -35,7 +35,7 @@ namespace WebClientesPotencialesLEProp.WSInsUsuarioExterno {
         
         /// <remarks/>
         public WSInsUsuarioExterno() {
-            this.Url = global::WebClientesPotencialesLEProp.Properties.Settings.Default.WebClientesPotencialesLEProp_WSInsUsuarioExterno_WSInsUsuarioExterno;
+            this.Url = global::WebLegadoEducativo01.Properties.Settings.Default.WebClientesPotencialesLEProp_WSInsUsuarioExterno_WSInsUsuarioExterno;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
