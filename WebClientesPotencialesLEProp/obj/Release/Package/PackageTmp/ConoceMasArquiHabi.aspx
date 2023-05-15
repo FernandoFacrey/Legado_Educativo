@@ -10,7 +10,7 @@
                     <div class="txt_ConoceMas">
                         <h1>Arquitectura y Ciencias del Hábitat</h1>
                         <p></p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasArquiHabi" runat="server" Text="Conoce más aqui"  class="BtnBlanco" OnClick="Btn_ConoceMasArquiHabi_Click"/>
                         </div>
                     </div>

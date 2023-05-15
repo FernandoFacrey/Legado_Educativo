@@ -1,5 +1,6 @@
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\WebLegadoEducativo01.dll.config
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\WebLegadoEducativo01.dll
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\WebLegadoEducativo01.XmlSerializers.dll
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\WebLegadoEducativo01.pdb
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\roslyn\csc.exe
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\roslyn\csc.exe.config
@@ -49,10 +50,11 @@ C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEdu
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.Properties.Resources.resources
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.csproj.GenerateResource.cache
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.csproj.CoreCompileInputs.cache
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.csproj.CopyComplete
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.dll
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.pdb
-C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Debug\WebLegadoEducativo01.csprojAssemblyReference.cache
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.csprojAssemblyReference.cache
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.Properties.Resources.resources
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.csproj.GenerateResource.cache
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.csproj.CoreCompileInputs.cache
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.csproj.CopyComplete
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.dll
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.pdb
+C:\Users\ffaci\Documents\Legado_Educativo_Clon\Legado_Educativo\Web\WebLegadoEducativo01\WebClientesPotencialesLEProp\obj\Release\WebLegadoEducativo01.XmlSerializers.dll

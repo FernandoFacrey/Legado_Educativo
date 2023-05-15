@@ -13,5 +13,10 @@ namespace WebClientesPotencialesLEProp
         protected void Page_Load(object sender, EventArgs e)
         {
         }
+
+        protected void Btn_IniciarLegadoHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/CrearCuenta.aspx");
+        }
     }
 }

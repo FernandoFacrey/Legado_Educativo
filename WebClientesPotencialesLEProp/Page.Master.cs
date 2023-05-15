@@ -25,7 +25,7 @@ namespace WebClientesPotencialesLEProp
         {
             if (InteraccionMenu.MenuActivo.Equals(true) && InteraccionMenu.SeccionConoce.Equals(true))
             {
-                cambioClaseBtnsMenu();
+                CambioClaseBtnsMenu();
                 Pnl_Header.Visible = false;
                 InteraccionMenu.MenuActivo = false;
                 InteraccionMenu.SeccionConoce = false;
@@ -36,7 +36,7 @@ namespace WebClientesPotencialesLEProp
                 InteraccionMenu.MenuActivo = true;
                 InteraccionMenu.SeccionConoce = true;
                 InteraccionMenu.SeccionCertificados = false;
-                cambioClaseBtnsMenu();
+                CambioClaseBtnsMenu();
                 dv_Btn_MenuConoce.Attributes["class"] = "dv_btn_Menu_selected";
                 dv_Container_Certificados.Visible = false;
                 dv_Container_Conoce.Visible = true;
@@ -46,10 +46,9 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_MenuCertificados_Click(object sender, EventArgs e)
         {
-
             if (InteraccionMenu.MenuActivo.Equals(true) && InteraccionMenu.SeccionCertificados.Equals(true))
             {
-                cambioClaseBtnsMenu();
+                CambioClaseBtnsMenu();
                 Pnl_Header.Visible = false;
                 InteraccionMenu.MenuActivo = false;
                 InteraccionMenu.SeccionConoce = false;
@@ -61,18 +60,17 @@ namespace WebClientesPotencialesLEProp
                 InteraccionMenu.SeccionConoce = false;
                 InteraccionMenu.SeccionCertificados = true;
 
-                cambioClaseBtnsMenu();
+                CambioClaseBtnsMenu();
                 dv_Btn_MenuCertificados.Attributes["class"] = "dv_btn_Menu_selected";
                 dv_Container_Certificados.Visible = true;
                 dv_Container_Conoce.Visible = false;
                 Pnl_Header.Visible = true;
             }
-
         }
 
         protected void Btn_MenuCotizar_Click(object sender, EventArgs e)
         {
-            cambioClaseBtnsMenu();
+            CambioClaseBtnsMenu();
             dv_Btn_MenuCotizar.Attributes["class"] = "dv_btn_Menu_selected";
             Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/PreCotizar.aspx");
 
@@ -80,19 +78,24 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_MenuIniciarLE_Click(object sender, EventArgs e)
         {
-            cambioClaseBtnsMenu();
+            CambioClaseBtnsMenu();
             dv_Btn_MenuIniciarLE.Attributes["class"] = "dv_btn_Menu_selected";
             Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/WebLE02InicioCreaCuenta.aspx");
-
+        }
+        protected void Btn_MenuContactanos_Click(object sender, EventArgs e)
+        {
+            CambioClaseBtnsMenu();
+            dv_Btn_MenuContactanos.Attributes["class"] = "dv_btn_Menu_selected";
+            Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/Contactanos.aspx");
         }
 
-        protected void cambioClaseBtnsMenu()
+        protected void CambioClaseBtnsMenu()
         {
             dv_Btn_MenuConoce.Attributes["class"] = "dv_btn_Menu";
             dv_Btn_MenuCertificados.Attributes["class"] = "dv_btn_Menu";
             dv_Btn_MenuCotizar.Attributes["class"] = "dv_btn_Menu";
             dv_Btn_MenuIniciarLE.Attributes["class"] = "dv_btn_Menu";
-
+            dv_Btn_MenuContactanos.Attributes["class"] = "dv_btn_Menu";
         }
 
         protected void Btn_QueEs_Click(object sender, EventArgs e)
@@ -168,6 +171,11 @@ namespace WebClientesPotencialesLEProp
         protected void Btn_OtrosPosg_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/ConoceMasOtrosPos.aspx");
+        }
+
+        protected void Btn_SolicitaInformacion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/Contactanos.aspx");
         }
     }
 }

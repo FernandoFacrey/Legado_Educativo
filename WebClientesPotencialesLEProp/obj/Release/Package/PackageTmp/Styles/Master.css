@@ -1,16 +1,21 @@
 ﻿/*--------------------------------------------------*/
 /*----- Fernando Facio Reyes -- Gya-Contsulting ----*/
 /*--------------------------------------------------*/
-/*-------- Ultima Actualización: 10/04/2023 --------*/
-/*--------------------------------------------------*/
 
-* {
+tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, ad.jsdress, big, cite, codep del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: none;
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     font-style: normal;
     transition: 0.2s;
+    transition: opacity 1s ease-in-out;
+    /*border:.1vw solid red;*/
 }
 
 .Principal_Container {
@@ -35,6 +40,36 @@
     width: 100%;
 }
 
+/*----------Inicio_Btn_Solicita_Informacion----------*/
+#Container_BtnSolicitaInformacion {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: auto;
+}
+
+    #Container_BtnSolicitaInformacion > .BtnSolicitaInformacion {
+        cursor: pointer;
+        border: none;
+        border-radius: 2vw;
+        width: 53%;
+        height: 35%;
+        padding: 2%;
+        font-size: .9vw;
+        font-weight: 600;
+        background-color: #fff500;
+        color: #000000;
+        transition: 0.6s;
+    }
+
+        #Container_BtnSolicitaInformacion > .BtnSolicitaInformacion:hover {
+            color: #ffffff;
+            background-color: #000000;
+        }
+/*----------Fin_Btn_Solicita_Informacion----------*/
+
+
 
 /*----------Header----------*/
 
@@ -55,7 +90,7 @@
 }
 
 .dv_Panel_Header {
-    width: 100%;
+    width: -webkit-fill-available;
     z-index: 10;
     position: absolute;
     background-color: #5c5953;
@@ -65,21 +100,21 @@
 }
 
 .dv_Container_Certificados {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .dv_Container_Conoce {
-    width: 60%;
     display: flex;
     justify-content: flex-start;
+    width: 66%;
 }
 
 .container_txt {
     margin: 0;
     padding-left: 2%;
-    padding-right: 2%;
+    width: 25%;
 }
 
 #dv-container_Conoce {
@@ -104,19 +139,19 @@
 
 
 .dv_img_Logo {
-    width: 316px;
-    display: block;
-    max-width: 25%;
-    min-width: 16.66666666666667%;
-}
+    width: 25.5%;
+    min-width: 15%;
+    max-width: 30%;
+} 
 
 .img_Logo {
     width: 100%;
-    height: 100%;
+    display: block;
 }
 
 .container_Menu_Options {
-    width: 100%;
+    width: 85%;
+    position: relative;
 }
 
 .dv_MenuOpts_Header {
@@ -133,25 +168,27 @@
 }
 
 .dv_btn_Menu {
+    justify-content: center;
     display: flex;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: .5%;
+    align-items: flex-end;
+    width: initial;
+    padding-bottom: 0.6%;
+    border-bottom: .2vw solid transparent;
 }
 
 .dv_btn_Menu_selected {
+    justify-content: center;
     display: flex;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: .5%;
+    align-items: flex-end;
+    width: initial;
+    padding-bottom: 0.6%;
     border-bottom: .2vw solid #FFF500;
 }
 
 .Btn_Menu {
+    padding: 0 1.10vw;
     cursor: pointer;
-    align-self: flex-end;
     border: none;
-    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     font-size: calc(.75vw + 0.1rem);
     font-style: normal;
     font-weight: 600;
@@ -165,7 +202,9 @@
     }
 
 .div_txt {
-    padding-bottom: 1rem;
+    display: flex;
+    padding-bottom: 6%;
+    white-space: nowrap;
 }
 
 .div_txt-sub {
@@ -174,8 +213,7 @@
 
 .text {
     color: white;
-    font-size: calc(min(1.10rem, 2.5vw));
-    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-size: calc(.75vw + 0.25rem);
     font-style: normal;
     font-weight: 600;
 }
@@ -185,10 +223,12 @@
     border: none;
     background-color: transparent;
     color: #ffffff;
-    font-size: calc(min(1rem, 1.5vw));
-    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     font-style: normal;
     transition: 0.5s;
+    white-space: initial;
+    text-align: initial;
+    font-size: calc(.70vw + 0.1rem);
+    display: block;
 }
 
     .text-sub:hover {

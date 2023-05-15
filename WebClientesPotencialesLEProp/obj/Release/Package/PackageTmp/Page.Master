@@ -37,7 +37,16 @@
                                     <div id="dv_Btn_MenuIniciarLE" class="dv_btn_Menu" runat="server">
                                         <asp:Button ID="Btn_MenuIniciarLE" runat="server" Text="INICIAR LEGADO" class="Btn_Menu" OnClick="Btn_MenuIniciarLE_Click" />
                                     </div>
+                                    <div id="dv_Btn_MenuContactanos" class="dv_btn_Menu" runat="server">
+                                        <asp:Button ID="Btn_MenuContactanos" runat="server" Text="CONTACTANOS" class="Btn_Menu" OnClick="Btn_MenuContactanos_Click" />
+                                    </div>
+                                    <div id="dv_Btn_MenuEventos" class="dv_btn_Menu" runat="server">
+                                        <asp:Button ID="Btn_MenuEventos" runat="server" Text="EVENTOS" class="Btn_Menu" />
+                                    </div>
                                 </div>
+                            </div>
+                            <div id="Container_BtnSolicitaInformacion">
+                                <asp:Button ID="Btn_SolicitaInformacion" runat="server" Text="Solicita información" CssClass="BtnSolicitaInformacion" OnClick="Btn_SolicitaInformacion_Click" />
                             </div>
                         </div>
                         <asp:Panel ID="Pnl_Header" runat="server">
@@ -45,13 +54,13 @@
                                 <div id="dv_Container_Conoce" runat="server" class="dv_Container_Conoce">
                                     <div id="container_Conoce" class="container_txt">
                                         <div class="div_txt">
-                                            <a class="text">Sobre legado educativo</a>
+                                            <a class="text">Sobre Legado Educativo</a>
                                         </div>
                                         <div class="div_txt-sub">
                                             <asp:Button ID="Btn_QueEs" runat="server" Text="¿Qué es?" class="text-sub" OnClick="Btn_QueEs_Click" />
                                         </div>
                                         <div class="div_txt-sub">
-                                            <asp:Button ID="Btn_Beneficios" runat="server" Text="Beneficios" class="text-sub" OnClick="Btn_Beneficios_Click" Style="height: 22px" />
+                                            <asp:Button ID="Btn_Beneficios" runat="server" Text="Beneficios" class="text-sub" OnClick="Btn_Beneficios_Click" />
                                         </div>
                                         <div class="div_txt-sub">
                                             <asp:Button ID="Btn_Testimonios" runat="server" Text="Testimonios" class="text-sub" OnClick="Btn_Testimonios_Click" />
@@ -70,10 +79,10 @@
                                             <asp:Button ID="Btn_Bicultural" runat="server" Text="Bicultural" class="text-sub" OnClick="Btn_Bicultural_Click" />
                                         </div>
                                         <div class="div_txt-sub">
-                                            <asp:Button ID="Btn_Internacional" runat="server" Text="Internacional" class="text-sub" OnClick="Btn_Internacional_Click" />
+                                            <asp:Button ID="Btn_Multicultural" runat="server" Text="Multicultural" class="text-sub" OnClick="Btn_Multicultural_Click" />
                                         </div>
                                         <div class="div_txt-sub">
-                                            <asp:Button ID="Btn_Multicultural" runat="server" Text="Multicultural" class="text-sub" OnClick="Btn_Multicultural_Click" />
+                                            <asp:Button ID="Btn_Internacional" runat="server" Text="Internacional" class="text-sub" OnClick="Btn_Internacional_Click" />
                                         </div>
                                     </div>
                                     <div id="container_Profesional" class="container_txt">

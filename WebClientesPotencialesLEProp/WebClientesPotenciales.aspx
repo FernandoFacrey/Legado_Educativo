@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div id="Container_BtnBlancoIniciarLE">
-                    <asp:Button ID="Btn_IniciarLegadoHome" runat="server" Text="INICIAR LEGADO" CssClass="BtnBlanco" />
+                    <asp:Button ID="Btn_IniciarLegadoHome" runat="server" Text="INICIAR LEGADO" CssClass="BtnBlanco" OnClick="Btn_IniciarLegadoHome_Click" />
                 </div>
             </div>
         </div>

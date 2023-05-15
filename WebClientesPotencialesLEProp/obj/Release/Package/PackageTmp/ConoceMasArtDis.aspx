@@ -11,7 +11,7 @@
                     <div class="txt_ConoceMas">
                         <h1>Arte y Diseño</h1>
                         <p></p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasArtDis" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasArtDis_Click" />
                         </div>
                     </div>

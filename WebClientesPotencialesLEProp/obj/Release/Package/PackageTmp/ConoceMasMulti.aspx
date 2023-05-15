@@ -14,7 +14,7 @@
                             Amplía tus conocimientos de otras culturas y desarrolla tu capacidad de ver el mundo desde diferentes perspectivas, al tiempo que
 								perfeccionas tu manejo del inglés y aprendes un tercer idioma, si así lo deseas.
                         </p>
-                        <div id="Container_BtnBlanco_ConoceMas">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasMulti" runat="server" Text="Conoce más aqui"  class="BtnBlanco" OnClick="Btn_ConoceMasMulti_Click"/>
                         </div>
                     </div>
