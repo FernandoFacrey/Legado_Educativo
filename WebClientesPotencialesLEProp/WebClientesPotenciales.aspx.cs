@@ -10,13 +10,25 @@ namespace WebClientesPotencialesLEProp
 {
     public partial class WebClientesPotenciales : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            btn_IniciarLegado.Style["display"] = "block";
         }
 
-        protected void Btn_IniciarLegadoHome_Click(object sender, EventArgs e)
+        protected void Btn_BeneficiosHome_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/CrearCuenta.aspx");
+            Response.Redirect("Beneficios.aspx");
+        }
+
+        protected void Btn_QueEsLEHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("QueEs.aspx");
+        }
+
+        protected void Btn_IniciarLegado_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WebLegadoEducativo02/WebLE02InicioCreaCuenta.aspx");
         }
     }
 }

@@ -9,11 +9,14 @@
 					<div class="txt_y_Btn">
 						<h2 class="degradado">Visión</h2>
 						<p class="txt_VisionUdem">
-							En la UDEM, creemos que la visión debe ser un sueño compartido que motive a ser sus embajadores y nos anime a realizarlo como comunidad.
+							En la UDEM, pensamos que la mejor inversión que puedes hacer es en el futuro y la educación de tu familia.<br /><br />
 						</p>
 						<div>
 							<asp:button id="Btn_VisionUDEM" runat="server" Text="Conoce nuestra visión" class="btn_Degradado" OnClick="Btn_VisionUDEM_Click"/>
-						</div>
+						</div><br />
+						<p class="txt_VisionUdem">
+							Ser un programa que brinde tranquilidad a las familias, al asegurar una educación de excelencia para sus hijos o nietos anticipadamente, a través de los Certificados de Educación.<br /><br />
+						</p>
 					</div>
 				</div>
 				<div id="container_ImgVision">

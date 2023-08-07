@@ -163,13 +163,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2023 22:12:08</publishTime>
     </File>
     <File Include="bin/WebLegadoEducativo01.dll">
-      <publishTime>05/14/2023 18:07:41</publishTime>
+      <publishTime>08/07/2023 00:53:00</publishTime>
     </File>
     <File Include="bin/WebLegadoEducativo01.pdb">
-      <publishTime>05/14/2023 18:07:41</publishTime>
+      <publishTime>08/07/2023 00:53:00</publishTime>
     </File>
     <File Include="bin/WebLegadoEducativo01.XmlSerializers.dll">
-      <publishTime>05/14/2023 18:07:42</publishTime>
+      <publishTime>08/07/2023 00:53:00</publishTime>
     </File>
     <File Include="ConoceMasArquiHabi.aspx">
       <publishTime>05/11/2023 17:36:58</publishTime>
@@ -187,7 +187,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/11/2023 17:38:58</publishTime>
     </File>
     <File Include="ConoceMasMBA.aspx">
-      <publishTime>05/11/2023 17:36:50</publishTime>
+      <publishTime>05/26/2023 08:24:50</publishTime>
     </File>
     <File Include="ConoceMasMDOC.aspx">
       <publishTime>05/11/2023 17:38:58</publishTime>
@@ -217,13 +217,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/11/2023 17:38:58</publishTime>
     </File>
     <File Include="Page.Master">
-      <publishTime>05/14/2023 17:16:20</publishTime>
+      <publishTime>08/07/2023 00:52:57</publishTime>
     </File>
     <File Include="PreCotizar.aspx">
       <publishTime>01/30/2023 03:44:48</publishTime>
     </File>
     <File Include="QueEs.aspx">
-      <publishTime>05/11/2023 12:17:57</publishTime>
+      <publishTime>08/07/2023 00:38:27</publishTime>
     </File>
     <File Include="Resources/2018-admisiones-y-becas-posgrados-hero_0.jpg">
       <publishTime>05/11/2023 12:17:57</publishTime>
@@ -254,6 +254,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Resources/Bachillerato01.jpg">
       <publishTime>11/02/2022 15:13:25</publishTime>
+    </File>
+    <File Include="Resources/BeneficiosLegadoEducativo.jpg">
+      <publishTime>08/07/2023 00:12:03</publishTime>
     </File>
     <File Include="Resources/Copia de Testimonio Luis Meneses.mp4">
       <publishTime>05/11/2023 12:17:57</publishTime>
@@ -315,6 +318,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Resources/Profesional01.jpg">
       <publishTime>11/02/2022 15:13:25</publishTime>
     </File>
+    <File Include="Resources/QueEsLegado.jpg">
+      <publishTime>08/07/2023 00:10:14</publishTime>
+    </File>
+    <File Include="Resources/Sesion Legado 2019-202.jpg">
+      <publishTime>08/07/2023 00:27:50</publishTime>
+    </File>
+    <File Include="Resources/Sesion Legado Educativo 2022-239 %283%29.jpg">
+      <publishTime>08/07/2023 00:06:54</publishTime>
+    </File>
+    <File Include="Resources/Sesion Legado Educativo 2022-423.jpg">
+      <publishTime>08/07/2023 00:44:37</publishTime>
+    </File>
+    <File Include="Resources/Sesion Legado Educativo 2022-6.jpg">
+      <publishTime>08/07/2023 00:27:50</publishTime>
+    </File>
     <File Include="Resources/SoliLE.jpg">
       <publishTime>05/11/2023 12:17:58</publishTime>
     </File>
@@ -327,6 +345,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Resources/Vídeo_LE_Testimonio_abuelo.mp4">
       <publishTime>05/11/2023 12:17:58</publishTime>
     </File>
+    <File Include="Scripts/JScriptHome.js">
+      <publishTime>08/07/2023 00:02:28</publishTime>
+    </File>
+    <File Include="Scripts/JScriptOcultaMenu.js">
+      <publishTime>06/01/2023 12:04:32</publishTime>
+    </File>
     <File Include="SolicitudCompraLE.aspx">
       <publishTime>12/14/2022 21:12:33</publishTime>
     </File>
@@ -336,11 +360,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Styles/HomePerfilStyles.css">
       <publishTime>12/14/2022 20:55:31</publishTime>
     </File>
+    <File Include="Styles/Home_Styles.css">
+      <publishTime>06/12/2023 22:24:39</publishTime>
+    </File>
     <File Include="Styles/InicioCreaStyles.css">
       <publishTime>11/25/2022 10:18:33</publishTime>
     </File>
     <File Include="Styles/Master.css">
-      <publishTime>05/12/2023 14:52:18</publishTime>
+      <publishTime>06/16/2023 09:49:18</publishTime>
     </File>
     <File Include="Styles/MasterStyles.css">
       <publishTime>03/20/2023 19:21:33</publishTime>
@@ -352,13 +379,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/12/2023 21:28:15</publishTime>
     </File>
     <File Include="Styles/WebStyles.css">
-      <publishTime>05/11/2023 22:31:47</publishTime>
+      <publishTime>08/07/2023 00:49:45</publishTime>
     </File>
     <File Include="Testimonios.aspx">
       <publishTime>05/13/2023 14:14:52</publishTime>
     </File>
     <File Include="VisionUDEM.aspx">
-      <publishTime>05/11/2023 12:17:58</publishTime>
+      <publishTime>08/07/2023 00:50:04</publishTime>
     </File>
     <File Include="Web References/WSConClientePotencial/CsClientePotencial.datasource">
       <publishTime>12/13/2022 15:08:14</publishTime>
@@ -400,7 +427,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/14/2023 15:20:32</publishTime>
     </File>
     <File Include="WebClientesPotenciales.aspx">
-      <publishTime>05/14/2023 18:07:10</publishTime>
+      <publishTime>08/07/2023 00:12:08</publishTime>
     </File>
   </ItemGroup>
 </Project>

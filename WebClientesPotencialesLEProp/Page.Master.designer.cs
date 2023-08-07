@@ -31,6 +31,24 @@ namespace WebClientesPotencialesLEProp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Btn_ChatBot control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_ChatBot;
+        
+        /// <summary>
+        /// Pnl_Menu_Options control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Pnl_Menu_Options;
+        
+        /// <summary>
         /// dv_Btn_MenuConoce control.
         /// </summary>
         /// <remarks>
@@ -200,6 +218,51 @@ namespace WebClientesPotencialesLEProp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Btn_VisionUDEM;
+        
+        /// <summary>
+        /// Btn_ConoceMas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_ConoceMas;
+        
+        /// <summary>
+        /// Btn_PasosComprar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_PasosComprar;
+        
+        /// <summary>
+        /// Btn_PasosUsar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_PasosUsar;
+        
+        /// <summary>
+        /// Btn_Politicas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_Politicas;
+        
+        /// <summary>
+        /// Btn_Preguntas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_Preguntas;
         
         /// <summary>
         /// dv_Container_Certificados control.

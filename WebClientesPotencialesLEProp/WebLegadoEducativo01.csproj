@@ -94,6 +94,7 @@
     <Content Include="Resources\2021-Vicsa_0.png" />
     <Content Include="Resources\2021_IB_bachillerato.jpg" />
     <Content Include="Resources\2021_multicultural_bachillerato.jpg" />
+    <Content Include="Resources\BeneficiosLegadoEducativo.jpg" />
     <Content Include="Resources\Copia de Testimonio Luis Meneses.mp4" />
     <Content Include="Resources\Copia de Testimonios_1-01.jpg" />
     <Content Include="Resources\Copia de Testimonios_2-02.jpg" />
@@ -112,10 +113,18 @@
     <Content Include="Resources\logo.png" />
     <Content Include="Resources\Naranja4.png" />
     <Content Include="Resources\perfil.png" />
+    <Content Include="Resources\QueEsLegado.jpg" />
+    <Content Include="Resources\Sesion Legado 2019-202.jpg" />
+    <Content Include="Resources\Sesion Legado Educativo 2022-423.jpg" />
+    <Content Include="Resources\Sesion Legado Educativo 2022-6.jpg" />
     <Content Include="Resources\SoliLE.jpg" />
     <Content Include="Resources\Vision2ciruclo_0.jpg" />
     <Content Include="Resources\Visioncirculo1.png" />
     <Content Include="Resources\Vídeo_LE_Testimonio_abuelo.mp4" />
+    <Content Include="Scripts\JScriptHome.js" />
+    <Content Include="Scripts\JScriptOcultaMenu.js" />
+    <Content Include="Resources\Sesion Legado Educativo 2022-239 %283%29.jpg" />
+    <Content Include="Styles\Home_Styles.css" />
     <Content Include="Styles\Master.css" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

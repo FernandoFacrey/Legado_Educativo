@@ -15,7 +15,6 @@ namespace WebClientesPotencialesLEProp
             if (!IsPostBack)
             {
                 Pnl_Header.Visible = false;
-                InteraccionMenu.MenuActivo = false;
                 InteraccionMenu.SeccionConoce = false;
                 InteraccionMenu.SeccionCertificados = false;
             }
@@ -23,17 +22,15 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_MenuConoce_Click(object sender, EventArgs e)
         {
-            if (InteraccionMenu.MenuActivo.Equals(true) && InteraccionMenu.SeccionConoce.Equals(true))
+            if (Pnl_Header.Style.Equals("display: block;") && InteraccionMenu.SeccionConoce.Equals(true))
             {
                 CambioClaseBtnsMenu();
                 Pnl_Header.Visible = false;
-                InteraccionMenu.MenuActivo = false;
                 InteraccionMenu.SeccionConoce = false;
                 InteraccionMenu.SeccionCertificados = false;
             }
             else
             {
-                InteraccionMenu.MenuActivo = true;
                 InteraccionMenu.SeccionConoce = true;
                 InteraccionMenu.SeccionCertificados = false;
                 CambioClaseBtnsMenu();
@@ -46,17 +43,15 @@ namespace WebClientesPotencialesLEProp
 
         protected void Btn_MenuCertificados_Click(object sender, EventArgs e)
         {
-            if (InteraccionMenu.MenuActivo.Equals(true) && InteraccionMenu.SeccionCertificados.Equals(true))
+            if (Pnl_Header.Style.Equals("display: block;") && InteraccionMenu.SeccionCertificados.Equals(true))
             {
                 CambioClaseBtnsMenu();
                 Pnl_Header.Visible = false;
-                InteraccionMenu.MenuActivo = false;
                 InteraccionMenu.SeccionConoce = false;
                 InteraccionMenu.SeccionCertificados = false;
             }
             else
             {
-                InteraccionMenu.MenuActivo = true;
                 InteraccionMenu.SeccionConoce = false;
                 InteraccionMenu.SeccionCertificados = true;
 

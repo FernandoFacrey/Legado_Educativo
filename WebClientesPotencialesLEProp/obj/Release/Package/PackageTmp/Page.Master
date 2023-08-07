@@ -9,11 +9,13 @@
     </asp:ContentPlaceHolder>
     <link href="styles/WebStyles.css" rel="stylesheet" />
     <link href="styles/Master.css" rel="stylesheet" />
+    <script src="Scripts/JScriptOcultaMenu.js"></script>
 </head>
 
 <body>
     <form id="form1" runat="server">
         <div id="Principal_Container" class="Principal_Container">
+            <asp:Button ID="Btn_ChatBot" runat="server" Text="Chat" class="buttonChatBot" />
             <div id="Header_Container" class="Header_Container">
                 <div id="General_Container" class="General_Container">
                     <div id="container_Header" class="container_Header">
@@ -24,35 +26,37 @@
                                 </a>
                             </div>
                             <div id="container_Menu_Options" class="container_Menu_Options">
-                                <div id="dv_MenuOpts_Header" class="dv_MenuOpts_Header">
-                                    <div id="dv_Btn_MenuConoce" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuConoce" runat="server" Text="CONOCE" class="Btn_Menu" OnClick="Btn_MenuConoce_Click" />
+                                <asp:Panel ID="Pnl_Menu_Options" runat="server" class="dv_MenuOpts_Header">
+                                    <div id="dv_MenuOpts_Header" class="dv_MenuOpts_Header">
+                                        <div id="dv_Btn_MenuConoce" class="dv_btn_Menu" runat="server">
+                                            <asp:Button ID="Btn_MenuConoce" runat="server" Text="CONOCE" class="Btn_Menu" OnClick="Btn_MenuConoce_Click" />
+                                        </div>
+                                        <div id="dv_Btn_MenuCertificados" class="dv_btn_Menu" runat="server">
+                                            <asp:Button ID="Btn_MenuCertificados" runat="server" Text="CERTIFICADOS" class="Btn_Menu" OnClick="Btn_MenuCertificados_Click" />
+                                        </div>
+                                        <div id="dv_Btn_MenuCotizar" class="dv_btn_Menu" runat="server">
+                                            <asp:Button ID="Btn_MenuCotizar" runat="server" Text="COTIZAR" class="Btn_Menu" OnClick="Btn_MenuCotizar_Click" />
+                                        </div>
+                                        <div id="dv_Btn_MenuIniciarLE" class="dv_btn_Menu" runat="server">
+                                            <asp:Button ID="Btn_MenuIniciarLE" runat="server" Text="INICIAR LEGADO" class="Btn_Menu" OnClick="Btn_MenuIniciarLE_Click" />
+                                        </div>
+                                        <div id="dv_Btn_MenuContactanos" class="dv_btn_Menu" runat="server">
+                                            <asp:Button ID="Btn_MenuContactanos" runat="server" Text="CONTÁCTANOS" class="Btn_Menu" OnClick="Btn_MenuContactanos_Click" />
+                                        </div>
+                                        <div id="dv_Btn_MenuEventos" class="dv_btn_Menu" runat="server">
+                                            <asp:Button ID="Btn_MenuEventos" runat="server" Text="EVENTOS" class="Btn_Menu" />
+                                        </div>
                                     </div>
-                                    <div id="dv_Btn_MenuCertificados" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuCertificados" runat="server" Text="CERTIFICADOS" class="Btn_Menu" OnClick="Btn_MenuCertificados_Click" />
-                                    </div>
-                                    <div id="dv_Btn_MenuCotizar" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuCotizar" runat="server" Text="COTIZAR" class="Btn_Menu" OnClick="Btn_MenuCotizar_Click" />
-                                    </div>
-                                    <div id="dv_Btn_MenuIniciarLE" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuIniciarLE" runat="server" Text="INICIAR LEGADO" class="Btn_Menu" OnClick="Btn_MenuIniciarLE_Click" />
-                                    </div>
-                                    <div id="dv_Btn_MenuContactanos" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuContactanos" runat="server" Text="CONTACTANOS" class="Btn_Menu" OnClick="Btn_MenuContactanos_Click" />
-                                    </div>
-                                    <div id="dv_Btn_MenuEventos" class="dv_btn_Menu" runat="server">
-                                        <asp:Button ID="Btn_MenuEventos" runat="server" Text="EVENTOS" class="Btn_Menu" />
-                                    </div>
-                                </div>
+                                </asp:Panel>
                             </div>
                             <div id="Container_BtnSolicitaInformacion">
                                 <asp:Button ID="Btn_SolicitaInformacion" runat="server" Text="Solicita información" CssClass="BtnSolicitaInformacion" OnClick="Btn_SolicitaInformacion_Click" />
                             </div>
                         </div>
-                        <asp:Panel ID="Pnl_Header" runat="server">
+                        <asp:Panel ID="Pnl_Header" runat="server" Style="display: block;">
                             <div id="dv_Panel_Header" class="dv_Panel_Header">
                                 <div id="dv_Container_Conoce" runat="server" class="dv_Container_Conoce">
-                                    <div id="container_Conoce" class="container_txt">
+                                    <div id="Container_SobreLE" class="container_txt">
                                         <div class="div_txt">
                                             <a class="text">Sobre Legado Educativo</a>
                                         </div>
@@ -66,7 +70,27 @@
                                             <asp:Button ID="Btn_Testimonios" runat="server" Text="Testimonios" class="text-sub" OnClick="Btn_Testimonios_Click" />
                                         </div>
                                         <div class="div_txt-sub">
-                                            <asp:Button ID="Btn_VisionUDEM" runat="server" Text="Vision UDEM" class="text-sub" OnClick="Btn_VisionUDEM_Click" />
+                                            <asp:Button ID="Btn_VisionUDEM" runat="server" Text="Visión UDEM" class="text-sub" OnClick="Btn_VisionUDEM_Click" />
+                                        </div>
+                                    </div>
+                                    <div id="Container_MasSobreLE" class="container_txt">
+                                        <div class="div_txt">
+                                            <a class="text">Más sobre Legado Educativo</a>
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_ConoceMas" runat="server" Text="Conoce más" class="text-sub" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_PasosComprar" runat="server" Text="Cómo adquirir tus Certificados de Educación" class="text-sub" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_PasosUsar" runat="server" Text="Cómo usar tu Legado Educativo UDEM" class="text-sub" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Politicas" runat="server" Text="Políticas" class="text-sub" />
+                                        </div>
+                                        <div class="div_txt-sub">
+                                            <asp:Button ID="Btn_Preguntas" runat="server" Text="Preguntas frecuentes" class="text-sub" />
                                         </div>
                                     </div>
                                 </div>
@@ -96,7 +120,7 @@
                                             <asp:Button ID="Btn_Medicina" runat="server" Text="Medicina" class="text-sub" OnClick="Btn_Medicina_Click" />
                                         </div>
                                         <div class="div_txt-sub">
-                                            <asp:Button ID="Btn_ArteyDiseño" runat="server" Text="Arte y diseño" class="text-sub" OnClick="Btn_ArteyDiseño_Click" />
+                                            <asp:Button ID="Btn_ArteyDiseño" runat="server" Text="Arte y Diseño" class="text-sub" OnClick="Btn_ArteyDiseño_Click" />
                                         </div>
                                         <div class="div_txt-sub">
                                             <asp:Button ID="Btn_AquiHabi" runat="server" Text="Arquitectura y Ciencias del Habitat" class="text-sub" OnClick="Btn_AquiHabi_Click" />
@@ -125,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="body-content">
+            <div id="Body_Container" class="Body_Container">
                 <asp:ContentPlaceHolder ID="main" runat="server">
                 </asp:ContentPlaceHolder>
             </div>

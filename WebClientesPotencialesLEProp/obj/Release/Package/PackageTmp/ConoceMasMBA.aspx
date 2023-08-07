@@ -13,7 +13,7 @@
                             Desarrolla competencias y habilidades para la dirección y administración de empresas con una perspectiva global, competitiva y
 								transformadora.
                         </p>
-                        <div id="Container_BtnBlanco">
+                        <div class="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasMBA" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMBA_Click" />
                         </div>
                     </div>

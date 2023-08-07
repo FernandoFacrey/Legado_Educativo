@@ -22,12 +22,30 @@ namespace WebClientesPotencialesLEProp {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// Btn_IniciarLegadoHome control.
+        /// btn_IniciarLegado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_IniciarLegadoHome;
+        protected global::System.Web.UI.WebControls.Button btn_IniciarLegado;
+        
+        /// <summary>
+        /// btn_QueEs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_QueEs;
+        
+        /// <summary>
+        /// btn_Beneficios control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Beneficios;
     }
 }

@@ -3,81 +3,6 @@
 /*--------------------------------------------------*/
 
 
-/*----------Inicio_Home----------*/
-.container_Home {
-    position: relative;
-    height: 90vh;
-    overflow: hidden;
-}
-
-/*__Boton__*/
-#Container_BtnBlancoIniciarLE {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 0%;
-}
-
-    #Container_BtnBlancoIniciarLE > .BtnBlanco {
-        cursor: pointer;
-        border: 0.1vw solid #ffffff;
-        border-radius: 2vw;
-        width: 20%;
-        padding: 1.5%;
-        font-size: .9vw;
-        font-weight: 600;
-        background-color: transparent;
-        color: #ffffff;
-        transition: 0.6s;
-    }
-
-        #Container_BtnBlancoIniciarLE > .BtnBlanco:hover {
-            border: .1vw solid #ffffff;
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-/*__Imagen__*/
-.container_img_HomeFondo {
-    width: 100%;
-}
-
-.img_HomeFondo {
-    display: block;
-    width: 100%;
-}
-
-/*__Texto__*/
-.container_txt_Home {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.txt_Home {
-    color: white;
-    font-size: 0.9vw;
-    margin-bottom: 1.2%;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-    .txt_Home > div > h1 {
-        text-align: center;
-        font-weight: 600;
-        font-size: 2.5vw;
-        line-height: 3.6vw;
-        padding: 0 0 0.3em;
-    }
-/*----------Fin_Home----------*/
-
-
-
 /*----------Inicio_Que_Es----------*/
 #QueEsLegado {
     position: relative;
@@ -106,6 +31,7 @@
 .img_Legado2prueba {
     margin-top: 2.5%;
     height: 75%;
+    width: 65%;
     border-radius: 100%;
 }
 
@@ -114,6 +40,7 @@
     bottom: 0;
     right: 15%;
     height: 40%;
+    width: 40%;
     border-radius: 100%;
 }
 
@@ -206,7 +133,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Resources/Imagen-Legado-4.jpg);
+    background-image: url('../Resources/Sesion Legado Educativo 2022-423.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -261,7 +188,7 @@
 }
 
 .txt_VisionUdem {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
 }
 
 /*__Boton__*/
