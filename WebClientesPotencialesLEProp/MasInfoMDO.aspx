@@ -6,13 +6,13 @@
     <div id="Container_ConoceMasLE">
         <div id="ConoceMasLE">
             <div id="Container_txt_ConoceMasLE">
-                <div class="Right" style="background-image: url(Resources/2018-ciencias-de-la-salud-maestria-en-psicologia-clinica-hero.jpg)"></div>
+                <div class="Right" style="background-image: url(Resources/51389823635_f8a30160f3_k.jpg)"></div>
                 <div class="Left">
                     <div class="txt_ConoceMas">
                         <h1>Maestría en Desarrollo Organizacional</h1>
                         <p>Analiza y diagnostica los diferentes procesos humanos y organizacionales para proponer e implementar mejoras en estos.</p>
-                        <div id="Container_BtnBlanco_ConoceMas">
-                            <asp:Button ID="Container_BtnBlanco" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMDO_Click" />
+                        <div id="Container_BtnBlanco">
+                            <asp:Button ID="Btn_ConoceMasMDO" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMDO_Click" />
                         </div>
                     </div>
                 </div>

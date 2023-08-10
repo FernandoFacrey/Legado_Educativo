@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="Left" style="background-image: url(Resources/2021_IB_bachillerato.jpg)"></div>
+                <div class="Left" style="background-image: url(Resources/DSC05180-Edit.jpg)"></div>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
     <div id="Container_ConoceMasLE">
         <div id="ConoceMasLE">
             <div id="Container_txt_ConoceMasLE">
-                <div class="Right" style="background-image: url(Resources/2021_multicultural_bachillerato.jpg)"></div>
+                <div class="Right" style="background-image: url(Resources/DSC05235-Edit.jpg)"></div>
                 <div class="Left">
                     <div class="txt_ConoceMas">
                         <h1>Bachillerato Multicultural</h1>

@@ -9,13 +9,13 @@
                 <div class="Right">
                     <div class="txt_ConoceMas">
                         <h1>Arquitectura y Ciencias del Hábitat</h1>
-                        <p></p>
+                        <p>Te ofrecemos una preparación de excelencia para la creación de diseños sustentables.</p>
                         <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasArquiHabi" runat="server" Text="Conoce más aqui"  class="BtnBlanco" OnClick="Btn_ConoceMasArquiHabi_Click"/>
                         </div>
                     </div>
                 </div>
-                <div class="Left" style="background-image: url(Resources/CRGS-COVER-1280x800.png)"></div>
+                <div class="Left" style="background-image: url(Resources/51389728355_91ef306ceb_k.jpg)"></div>
             </div>
         </div>
     </div>

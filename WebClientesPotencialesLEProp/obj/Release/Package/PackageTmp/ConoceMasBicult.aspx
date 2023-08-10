@@ -6,7 +6,7 @@
     <div id="Container_ConoceMasLE">
         <div id="ConoceMasLE">
             <div id="Container_txt_ConoceMasLE">
-                <div class="Right" style="background-image: url(Resources/2018-prepa-bachillerato-bicultural-hero.jpg)"></div>
+                <div class="Right" style="background-image: url(Resources/Sesion_Legado_Educativo_2022-171.jpg)"></div>
                 <div class="Left">
                     <div class="txt_ConoceMas">
                         <h1>Bachillerato Bicultural</h1>

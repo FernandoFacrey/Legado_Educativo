@@ -13,12 +13,12 @@
                             Desarrolla competencias y habilidades para la dirección y administración de empresas con una perspectiva global, competitiva y
 								transformadora.
                         </p>
-                        <div class="Container_BtnBlanco">
+                        <div id="Container_BtnBlanco">
                             <asp:Button ID="Btn_ConoceMasMBA" runat="server" Text="Conoce más aqui" class="BtnBlanco" OnClick="Btn_ConoceMasMBA_Click" />
                         </div>
                     </div>
                 </div>
-                <div class="Left" style="background-image: url(Resources/2019-Negocios-Maestria-en-Administracion-hero_0.jpg)"></div>
+                <div class="Left" style="background-image: url(Resources/51388874611_74a0764b6c_k.jpg)"></div>
             </div>
         </div>
     </div>

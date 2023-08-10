@@ -6,7 +6,7 @@
     <div id="Container_ConoceMasLE">
         <div id="ConoceMasLE">
             <div id="Container_txt_ConoceMasLE">
-                <div class="Right" style="background-image: url(Resources/2018-admisiones-y-becas-posgrados-hero_0.jpg); background-position: right"></div>
+                <div class="Right" style="background-image: url(Resources/51388889251_041cf135fc_k.jpg); background-position: right"></div>
                 <div class="Left">
                     <div class="txt_ConoceMas">
                         <h1>Admisiones y becas de Posgrado</h1>

@@ -117,7 +117,7 @@
                                             <asp:Button ID="Btn_CarrerasProf" runat="server" Text="Carreras profesionales" class="text-sub" OnClick="Btn_CarrerasProf_Click" />
                                         </div>
                                         <div class="div_txt-sub">
-                                            <asp:Button ID="Btn_Medicina" runat="server" Text="Medicina" class="text-sub" OnClick="Btn_Medicina_Click" />
+                                            <asp:Button ID="Btn_Medicina" runat="server" Text="Médico Cirujano y Partero" class="text-sub" OnClick="Btn_Medicina_Click" />
                                         </div>
                                         <div class="div_txt-sub">
                                             <asp:Button ID="Btn_ArteyDiseño" runat="server" Text="Arte y Diseño" class="text-sub" OnClick="Btn_ArteyDiseño_Click" />

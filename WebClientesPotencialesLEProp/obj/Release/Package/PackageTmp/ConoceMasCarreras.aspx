@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="Left" style="background-image: url(Resources/Hero-Admisiones.png)"></div>
+                <div class="Left" style="background-image: url(Resources/51408936851_9cd8fc30a9_k.jpg)"></div>
             </div>
         </div>
     </div>

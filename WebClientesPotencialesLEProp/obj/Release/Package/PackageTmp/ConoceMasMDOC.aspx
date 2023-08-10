@@ -8,7 +8,7 @@
             <div id="Container_txt_ConoceMasLE">
                 <div
                     class="Right"
-                    style="background-image: url(Resources/2018-negocios-programas-maestria-en-desarrollo-organizacional-y-cambio-en-linea-hero_0.jpg)">
+                    style="background-image: url(Resources/51404373587_444d445934_k.jpg)">
                 </div>
                 <div class="Left">
                     <div class="txt_ConoceMas">
