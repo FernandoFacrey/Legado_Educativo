@@ -9,8 +9,8 @@
 
     <div id="slider-container">
         <img decoding="async" src="Resources/Sesion Legado Educativo 2022-239 (3).jpg" />
-        <img decoding="async" src="Resources/QueEsLegado.jpg" />
-        <img decoding="async" src="Resources/BeneficiosLegadoEducativo.jpg" />
+        <img decoding="async" src="Resources/Sesion Legado Educativo 2022-231.jpg" />
+        <img decoding="async" src="Resources/Sesion Legado Educativo 2022-68.jpg" />
         <div
             style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);">
         </div>
