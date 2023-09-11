@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Conscp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConscpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConscpResult" type="tns:ArrayOfCPConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCPConsulta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CPConsulta" nillable="true" type="tns:CPConsulta" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CPConsulta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="recr_alcaldiaomunicipio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_ciudad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_colonia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_pais" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_zona" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_asentamiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensajes" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConscpA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Asesor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConscpAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConscpAResult" type="tns:ArrayOfCPConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConscpSoapIn">
+    <wsdl:part name="parameters" element="tns:Conscp" />
+  </wsdl:message>
+  <wsdl:message name="ConscpSoapOut">
+    <wsdl:part name="parameters" element="tns:ConscpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConscpASoapIn">
+    <wsdl:part name="parameters" element="tns:ConscpA" />
+  </wsdl:message>
+  <wsdl:message name="ConscpASoapOut">
+    <wsdl:part name="parameters" element="tns:ConscpAResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConsCPSoap">
+    <wsdl:operation name="Conscp">
+      <wsdl:input message="tns:ConscpSoapIn" />
+      <wsdl:output message="tns:ConscpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConscpA">
+      <wsdl:input message="tns:ConscpASoapIn" />
+      <wsdl:output message="tns:ConscpASoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConsCPSoap" type="tns:WS_LE_ConsCPSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Conscp">
+      <soap:operation soapAction="http://tempuri.org/Conscp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConscpA">
+      <soap:operation soapAction="http://tempuri.org/ConscpA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConsCPSoap12" type="tns:WS_LE_ConsCPSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Conscp">
+      <soap12:operation soapAction="http://tempuri.org/Conscp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConscpA">
+      <soap12:operation soapAction="http://tempuri.org/ConscpA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConsCP">
+    <wsdl:port name="WS_LE_ConsCPSoap" binding="tns:WS_LE_ConsCPSoap">
+      <soap:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsCP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConsCPSoap12" binding="tns:WS_LE_ConsCPSoap12">
+      <soap12:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsCP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

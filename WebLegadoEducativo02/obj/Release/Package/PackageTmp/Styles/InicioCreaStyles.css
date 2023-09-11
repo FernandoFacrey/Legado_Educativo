@@ -1,0 +1,163 @@
+﻿/*----------Inicio_Pantalla_InicioCrea----------*/
+#Container_IniciaCrea {
+    position: relative;
+    height: 90vh;
+}
+
+#IniciaCrea {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /*__Imagen__*/
+    #IniciaCrea .img {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../Resources/LegadoEducativo-hero-2022.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    /*__Info__*/
+    #IniciaCrea .info {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #IniciaCrea .info > div {
+            width: 95%;
+        }
+
+#hrefIniciaLE {
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(to bottom, #fff500, #fff500);
+    background-position: 0 0.75vw;
+    background-repeat: repeat-x;
+    background-size: 1vw;
+}
+
+    #hrefIniciaLE:hover {
+        background-image: linear-gradient(to bottom, #dedede, #dedede);
+        color: #606060;
+    }
+/*----------Fin_Pantalla_InicioCrea----------*/
+
+
+
+/*----------Inicio_Loader----------*/
+#AnimacionIniciarSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #AnimacionIniciarSesion .General_loaderContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #AnimacionIniciarSesion .loader_container {
+        position: relative;
+        width: 7.5%;
+        padding-bottom: 7.5%;
+        margin: 1%;
+    }
+
+    #AnimacionIniciarSesion .loader {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: solid 0.35vw transparent;
+        border-top-color: #fff555;
+        border-left-color: #fff555;
+        border-radius: 50%;
+        animation: loader 1.4s linear infinite;
+    }
+
+    #AnimacionIniciarSesion .loader_container .loader2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        border: solid 0.35vw transparent;
+        border-top-color: #454545;
+        border-left-color: #454545;
+        border-radius: 50%;
+        animation: loader2 1.2s linear infinite;
+    }
+/*----------Fin_Loader----------*/
+
+
+
+/*----------Inicio_RecuContra----------*/
+.btn_RecuContra {
+    font-weight: 600;
+    font-size: 1vw;
+    background-color: transparent;
+    border: 0.25vw solid white;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #fff500, #fff500);
+    background-position: 0 0.75vw;
+    background-repeat: repeat-x;
+    background-size: 1vw;
+}
+
+    .btn_RecuContra:hover {
+        background-image: linear-gradient(to bottom, #dedede, #dedede);
+        color: #606060;
+    }
+
+
+#formInicio {
+    width: 100%;
+    padding: 15px;
+}
+
+    #formInicio > tr td {
+        width: 100%;
+        padding: 15px;
+    }
+
+#dv_Btn_ConfirmCodiCorr {
+    margin: 0% 35%;
+}
+
+
+#dv_Btn_EnviarRecuContra {
+    margin: 0% 40%;
+}
+
+/*----------Fin_RecuContra----------*/
+
+
+
+/*Moviles*/
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .btn_RecuContra {
+        font-size: 3vw;
+    }
+}
+
+/*Tabletas*/
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+}

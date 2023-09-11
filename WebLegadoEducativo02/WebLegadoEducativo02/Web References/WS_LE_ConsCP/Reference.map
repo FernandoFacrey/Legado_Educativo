@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost/DesarrolloUDEM/Legado Educativo/WS_LegadoEducativo/WS_LE_ConsCP.asmx?wsdl" filename="WS_LE_ConsCP.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://localhost/DesarrolloUDEM/Legado Educativo/WS_LegadoEducativo/WS_LE_ConsCP.asmx?disco" filename="WS_LE_ConsCP.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

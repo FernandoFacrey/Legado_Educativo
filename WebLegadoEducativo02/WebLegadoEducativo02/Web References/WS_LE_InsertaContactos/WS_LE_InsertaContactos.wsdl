@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="middlename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_apellidopaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_apellidomaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gendercode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_fechacompletanacimiento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilephone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telephone2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telephone1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailaddress1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1_line1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1_line2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_codigopostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1_line3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_estadodecontacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_municipiodecontacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_paisdecontacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_fasedeprocesocomercial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_clientedelegadoeducativo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_titular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_titulardesignado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_beneficiario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_ultimotramiterealizado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_fechadeultimotramitele" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsContactResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Respuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoMs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsContactSoapIn">
+    <wsdl:part name="parameters" element="tns:InsContact" />
+  </wsdl:message>
+  <wsdl:message name="InsContactSoapOut">
+    <wsdl:part name="parameters" element="tns:InsContactResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_InsertaContactosSoap">
+    <wsdl:operation name="InsContact">
+      <wsdl:input message="tns:InsContactSoapIn" />
+      <wsdl:output message="tns:InsContactSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_InsertaContactosSoap" type="tns:WS_LE_InsertaContactosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsContact">
+      <soap:operation soapAction="http://tempuri.org/InsContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_InsertaContactosSoap12" type="tns:WS_LE_InsertaContactosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsContact">
+      <soap12:operation soapAction="http://tempuri.org/InsContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_InsertaContactos">
+    <wsdl:port name="WS_LE_InsertaContactosSoap" binding="tns:WS_LE_InsertaContactosSoap">
+      <soap:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_Contactos_LE/WS_LE_InsertaContactos.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_InsertaContactosSoap12" binding="tns:WS_LE_InsertaContactosSoap12">
+      <soap12:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_Contactos_LE/WS_LE_InsertaContactos.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

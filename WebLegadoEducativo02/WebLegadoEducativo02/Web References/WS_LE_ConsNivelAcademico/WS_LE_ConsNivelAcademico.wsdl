@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConNivel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="niv" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConNivelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConNivelResult" type="tns:ArrayOfCsNivelAcademico" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCsNivelAcademico">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CsNivelAcademico" nillable="true" type="tns:CsNivelAcademico" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CsNivelAcademico">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="new_siglas" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_nivelacademicoid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_nivel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_nivelacademico" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_verenweb" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConNivelSoapIn">
+    <wsdl:part name="parameters" element="tns:ConNivel" />
+  </wsdl:message>
+  <wsdl:message name="ConNivelSoapOut">
+    <wsdl:part name="parameters" element="tns:ConNivelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConsNivelAcademicoSoap">
+    <wsdl:operation name="ConNivel">
+      <wsdl:input message="tns:ConNivelSoapIn" />
+      <wsdl:output message="tns:ConNivelSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConsNivelAcademicoSoap" type="tns:WS_LE_ConsNivelAcademicoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConNivel">
+      <soap:operation soapAction="http://tempuri.org/ConNivel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConsNivelAcademicoSoap12" type="tns:WS_LE_ConsNivelAcademicoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConNivel">
+      <soap12:operation soapAction="http://tempuri.org/ConNivel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConsNivelAcademico">
+    <wsdl:port name="WS_LE_ConsNivelAcademicoSoap" binding="tns:WS_LE_ConsNivelAcademicoSoap">
+      <soap:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsNivelAcademico.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConsNivelAcademicoSoap12" binding="tns:WS_LE_ConsNivelAcademicoSoap12">
+      <soap12:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsNivelAcademico.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsDatosFiscales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="new_contacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_razonsocial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_rfc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalpais" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalmunicipio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcolonia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcalleynumero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcodigopostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_recr_codigopostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_observaciones" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsDatosFiscalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsDatosFiscalesResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Respuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoMs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsDatosFiscalesID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="new_contacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_razonsocial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_rfc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalpais" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalmunicipio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcolonia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcalleynumero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcodigopostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_recr_codigopostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_observaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dummy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsDatosFiscalesIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsDatosFiscalesIDResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsDatosFiscalesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsDatosFiscales" />
+  </wsdl:message>
+  <wsdl:message name="InsDatosFiscalesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsDatosFiscalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsDatosFiscalesIDSoapIn">
+    <wsdl:part name="parameters" element="tns:InsDatosFiscalesID" />
+  </wsdl:message>
+  <wsdl:message name="InsDatosFiscalesIDSoapOut">
+    <wsdl:part name="parameters" element="tns:InsDatosFiscalesIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_InsertaDatosFiscalesContactoSoap">
+    <wsdl:operation name="InsDatosFiscales">
+      <wsdl:input message="tns:InsDatosFiscalesSoapIn" />
+      <wsdl:output message="tns:InsDatosFiscalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsDatosFiscalesID">
+      <wsdl:input message="tns:InsDatosFiscalesIDSoapIn" />
+      <wsdl:output message="tns:InsDatosFiscalesIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_InsertaDatosFiscalesContactoSoap" type="tns:WS_LE_InsertaDatosFiscalesContactoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsDatosFiscales">
+      <soap:operation soapAction="http://tempuri.org/InsDatosFiscales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsDatosFiscalesID">
+      <soap:operation soapAction="http://tempuri.org/InsDatosFiscalesID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_InsertaDatosFiscalesContactoSoap12" type="tns:WS_LE_InsertaDatosFiscalesContactoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsDatosFiscales">
+      <soap12:operation soapAction="http://tempuri.org/InsDatosFiscales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsDatosFiscalesID">
+      <soap12:operation soapAction="http://tempuri.org/InsDatosFiscalesID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_InsertaDatosFiscalesContacto">
+    <wsdl:port name="WS_LE_InsertaDatosFiscalesContactoSoap" binding="tns:WS_LE_InsertaDatosFiscalesContactoSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_DatosFiscalesContacto_LE/WS_LE_InsertaDatosFiscalesContacto.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_InsertaDatosFiscalesContactoSoap12" binding="tns:WS_LE_InsertaDatosFiscalesContactoSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_DatosFiscalesContacto_LE/WS_LE_InsertaDatosFiscalesContacto.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

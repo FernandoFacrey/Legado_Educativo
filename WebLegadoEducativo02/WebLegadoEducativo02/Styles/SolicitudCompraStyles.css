@@ -1,0 +1,124 @@
+﻿.div_Pnl_booleano {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.container01_booleano {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container02_booleano {
+    padding: 5%;
+    background-color: white;
+    width: 50%;
+}
+#table_phase > td {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width:75px;
+}
+.check {
+    font-size: 140%;
+    color: white;
+}
+
+.container_dv_phase {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    margin: 0px 25px 0px 25px;
+}
+
+.dv_phase_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 10px solid grey;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.dv_phase_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid grey;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+
+
+.dv_phase_1_Check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 10px solid green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.dv_phase_2_Check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid green;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+
+
+.dv_phase_1_Warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 10px solid #ffd800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.dv_phase_2_Warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #ffd800;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffd800;
+}
+
+.checked {
+    font-size: 150%;
+    color: green;
+}
+
+.text_check {
+    text-align: center;
+    color: black;
+    margin: 0px;
+
+}

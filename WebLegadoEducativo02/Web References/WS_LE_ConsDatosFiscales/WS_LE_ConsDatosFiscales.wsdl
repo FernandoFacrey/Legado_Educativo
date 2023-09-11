@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConsDatosFiscales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="new_contacto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsDatosFiscalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsDatosFiscalesResult" type="tns:ArrayOfCsDatosFiscales" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCsDatosFiscales">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CsDatosFiscales" nillable="true" type="tns:CsDatosFiscales" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CsDatosFiscales">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="new_datosfiscalesdecontactoid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_contacto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_contactoid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_razonsocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_rfc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcalleynumero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_recr_codigopostal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalcolonia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalestado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalmunicipio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_direccionfiscalpais" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_observaciones" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsDatosFiscalesGuid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="new_datosfiscalesdecontactoid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsDatosFiscalesGuidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsDatosFiscalesGuidResult" type="tns:ArrayOfCsDatosFiscales" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsDatosFiscalesSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsDatosFiscales" />
+  </wsdl:message>
+  <wsdl:message name="ConsDatosFiscalesSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsDatosFiscalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsDatosFiscalesGuidSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsDatosFiscalesGuid" />
+  </wsdl:message>
+  <wsdl:message name="ConsDatosFiscalesGuidSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsDatosFiscalesGuidResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConsDatosFiscalesSoap">
+    <wsdl:operation name="ConsDatosFiscales">
+      <wsdl:input message="tns:ConsDatosFiscalesSoapIn" />
+      <wsdl:output message="tns:ConsDatosFiscalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsDatosFiscalesGuid">
+      <wsdl:input message="tns:ConsDatosFiscalesGuidSoapIn" />
+      <wsdl:output message="tns:ConsDatosFiscalesGuidSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConsDatosFiscalesSoap" type="tns:WS_LE_ConsDatosFiscalesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsDatosFiscales">
+      <soap:operation soapAction="http://tempuri.org/ConsDatosFiscales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsDatosFiscalesGuid">
+      <soap:operation soapAction="http://tempuri.org/ConsDatosFiscalesGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConsDatosFiscalesSoap12" type="tns:WS_LE_ConsDatosFiscalesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsDatosFiscales">
+      <soap12:operation soapAction="http://tempuri.org/ConsDatosFiscales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsDatosFiscalesGuid">
+      <soap12:operation soapAction="http://tempuri.org/ConsDatosFiscalesGuid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConsDatosFiscales">
+    <wsdl:port name="WS_LE_ConsDatosFiscalesSoap" binding="tns:WS_LE_ConsDatosFiscalesSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsDatosFiscales.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConsDatosFiscalesSoap12" binding="tns:WS_LE_ConsDatosFiscalesSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsDatosFiscales.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

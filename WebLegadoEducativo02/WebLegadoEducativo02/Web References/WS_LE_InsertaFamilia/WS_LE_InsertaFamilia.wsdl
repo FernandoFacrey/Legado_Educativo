@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsFamiliar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="recr_primernombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_segundonombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_apellidopaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_apellidomaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_estudioenlaudem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_contacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_familiarid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_parentesco" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_sobrenombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_correoelectronico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_seconocelafechadenacimiento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_diadenacimiento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_mesdenacimiento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_anodenacimiento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_edadaproximada" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_enqueuniversidadestudio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsFamiliarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsFamiliarResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Respuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoMs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsFamiliarSoapIn">
+    <wsdl:part name="parameters" element="tns:InsFamiliar" />
+  </wsdl:message>
+  <wsdl:message name="InsFamiliarSoapOut">
+    <wsdl:part name="parameters" element="tns:InsFamiliarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_InsertaFamiliaSoap">
+    <wsdl:operation name="InsFamiliar">
+      <wsdl:input message="tns:InsFamiliarSoapIn" />
+      <wsdl:output message="tns:InsFamiliarSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_InsertaFamiliaSoap" type="tns:WS_LE_InsertaFamiliaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsFamiliar">
+      <soap:operation soapAction="http://tempuri.org/InsFamiliar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_InsertaFamiliaSoap12" type="tns:WS_LE_InsertaFamiliaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsFamiliar">
+      <soap12:operation soapAction="http://tempuri.org/InsFamiliar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_InsertaFamilia">
+    <wsdl:port name="WS_LE_InsertaFamiliaSoap" binding="tns:WS_LE_InsertaFamiliaSoap">
+      <soap:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_InsertaFamilia_LE/WS_LE_InsertaFamilia.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_InsertaFamiliaSoap12" binding="tns:WS_LE_InsertaFamiliaSoap12">
+      <soap12:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_InsertaFamilia_LE/WS_LE_InsertaFamilia.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

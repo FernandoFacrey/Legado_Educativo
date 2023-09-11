@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebLegadoEducativo02.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaClientePotencial_WS_LE_InsertaClientePotencial" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_ClientePotencial_LE/WS_LE_InsertaClientePotencial.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_InsUsuarioExterno.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsUsuext_WS_LE_ConsUsuext" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsUsuext.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsCP_WS_LE_ConsCP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsCP.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaDatosFiscalesContacto_WS_LE_InsertaDatosFiscalesContacto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_DatosFiscalesContacto_LE/WS_LE_InsertaDatosFiscalesContacto.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaFamilia_WS_LE_InsertaFamilia" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_InsertaFamilia_LE/WS_LE_InsertaFamilia.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsNivelAcademico_WS_LE_ConsNivelAcademico" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsNivelAcademico.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaContactos_WS_LE_InsertaContactos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_Contactos_LE/WS_LE_InsertaContactos.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsultaContac_WS_LE_ConsultaContac" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsultaContac.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_Oportunidad_WS_LE_Oportunidad" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_Oportunidad_LE/WS_LE_Oportunidad.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsEscuelaCuenta_WS_LE_ConsEscuelaCuenta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsEscuelaCuenta.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConClientePotencial_WS_LE_ConClientePotencial" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConClientePotencial.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsFuenteLead_WS_LE_ConsFuenteLead" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsFuenteLead.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaSolicitudCom_WS_LE_InsertaSolicitudCom" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_SolicitudCompra_LE/WS_LE_InsertaSolicitudCom.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

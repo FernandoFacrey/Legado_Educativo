@@ -1,0 +1,287 @@
+﻿.Principal_Container_Contactanos {
+    overflow: hidden;
+    height: 99vh;
+    width: 100%;
+    background-image: url(../Resources/CRGS-UDEM-Solar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Container_Contactanos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.25)
+}
+
+.Container_Form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+    .Container_Form .Form {
+        width: 60%;
+    }
+
+        .Container_Form .Form h1 {
+            color: white;
+            font-size: 1.75vw;
+            padding-bottom: 5%;
+        }
+
+.Container_InfoContact {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.InfoContact {
+    top: 15%;
+    left: 20%;
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    border-radius: 0.6vw;
+    background-color: #ffffff;
+    padding: 0% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Container_Img_Txt {
+    display: flex;
+    width: 100%;
+}
+
+    .Container_Img_Txt .Container_Img {
+        width: 10%;
+        padding: 0% 3%;
+    }
+
+        .Container_Img_Txt .Container_Img img {
+            width: 100%;
+        }
+
+    .Container_Img_Txt .Container_Txt {
+        width: 75%;
+    }
+
+        .Container_Img_Txt .Container_Txt h1 {
+            font-size: 0.75vw;
+            padding: 2.5% 0%;
+        }
+
+        .Container_Img_Txt .Container_Txt p {
+            font-size: 0.75vw;
+            padding: 2.5% 0%;
+        }
+
+        .Container_Img_Txt .Container_Txt a {
+            word-break: break-all;
+            font-size: 0.75vw;
+            padding: 2.5% 0%;
+        }
+
+
+
+/*----------Inicio_Formulario----------*/
+
+.BtnEnviarConocenos {
+    cursor: pointer;
+    border: none;
+    border-radius: 2vw;
+    width: 98%;
+    height: 35%;
+    padding: 2%;
+    font-size: .9vw;
+    font-weight: 600;
+    background-color: #fff500;
+    color: #000000;
+    transition: 0.6s;
+}
+
+    .BtnEnviarConocenos:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+.formulario_Contactanos {
+    height: 100%;
+    width: 100%;
+    border-spacing: initial;
+}
+
+    .formulario_Contactanos td {
+        width: 50%;
+        height: 10vh;
+        vertical-align: top;
+    }
+
+.titleCamposContactanos {
+    color: #ffffff;
+    font-size: .85vw;
+    font-weight: 600;
+    margin: 1%;
+}
+
+.form_campo_contactanos {
+    display: block;
+    font-size: .85vw;
+    background-color: #F2F4F4;
+    border-radius: .25vw;
+    height: 3.5vh;
+    width: 95%;
+    border: .1vw solid #d1d3e2;
+}
+
+    .form_campo_contactanos:hover {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+    .form_campo_contactanos:focus {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+.radioBL_Contactanos {
+    padding: 0% 10%;
+    font-size: .85vw;
+    background-color: #F2F4F4;
+    border-radius: 0.25vw;
+    height: 3.5vh;
+    width: 95%;
+    border: 0.1vw solid #d1d3e2;
+}
+
+    .radioBL_Contactanos td {
+        height: 4vh;
+        width: 50%;
+        vertical-align: middle;
+    }
+
+    .radioBL_Contactanos input[type="radio"] {
+        width: .75vw;
+        height: .75vw;
+        margin-right: 15%;
+    }
+
+    .radioBL_Contactanos:hover {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+    .radioBL_Contactanos:focus {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+.a_corre {
+    margin-top: 2%;
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.15vw;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #fff500, #fff500);
+    background-position: 0 0.75vw;
+    background-repeat: repeat-x;
+    background-size: 1vw;
+    width: fit-content;
+}
+
+    .a_corre:hover {
+        background-image: linear-gradient(to bottom, #dedede, #dedede);
+        color: #606060;
+    }
+
+
+.Container_Pag_Asesoras {
+    height: 90vh;
+    width: 100%;
+}
+
+.Pag_Asesoras {
+    position: relative;
+}
+
+    .Pag_Asesoras h1 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+.Container_Asesoras {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 0% 5%;
+}
+
+.Asesoras {
+    position: relative;
+    background-color: #ffffff;
+    width: 20vw;
+    height: 75%;
+    -webkit-box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);
+}
+
+    .Asesoras .Container_img_ase {
+        overflow: hidden;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 2.5%;
+        transition: 0.8s;
+        display: flex;
+    }
+
+        .Asesoras .Container_img_ase img {
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            transition: 0.8s;
+        }
+
+    .Asesoras div h1 {
+        display: block;
+        text-align: left;
+        font-size: 1.15vw;
+    }
+
+    .Asesoras div p {
+        display: block;
+        text-align: left;
+        font-size: 1.15vw;
+    }
+
+    .Asesoras div a {
+        display: block;
+        text-align: left;
+        font-size: 1.15vw;
+        cursor: pointer;
+    }
+
+
+    .Asesoras .Container_btn_Ase {
+        padding: 3% 0%;
+        width: 100%;
+        position: absolute;
+        bottom: 2%;
+        display: flex;
+        justify-content: center;
+    }

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConBeneficiario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicitud" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConBeneficiarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConBeneficiarioResult" type="tns:ArrayOfCsBeneficiario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCsBeneficiario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CsBeneficiario" nillable="true" type="tns:CsBeneficiario" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CsBeneficiario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="udem_solicituddecompra" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_solicituddecompra_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_beneficiariosid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_beneficiario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_beneficiario_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_niveldeestudio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_niveldeestudio_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_escueladeprocedencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_escueladeprocedencia_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_carreranoudem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_grado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_debeca" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConBeneficiarioGuid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicitud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="guidBenefi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConBeneficiarioGuidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConBeneficiarioGuidResult" type="tns:ArrayOfCsBeneficiario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConBeneficiarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ConBeneficiario" />
+  </wsdl:message>
+  <wsdl:message name="ConBeneficiarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ConBeneficiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConBeneficiarioGuidSoapIn">
+    <wsdl:part name="parameters" element="tns:ConBeneficiarioGuid" />
+  </wsdl:message>
+  <wsdl:message name="ConBeneficiarioGuidSoapOut">
+    <wsdl:part name="parameters" element="tns:ConBeneficiarioGuidResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConsBeneficiarioSoap">
+    <wsdl:operation name="ConBeneficiario">
+      <wsdl:input message="tns:ConBeneficiarioSoapIn" />
+      <wsdl:output message="tns:ConBeneficiarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConBeneficiarioGuid">
+      <wsdl:input message="tns:ConBeneficiarioGuidSoapIn" />
+      <wsdl:output message="tns:ConBeneficiarioGuidSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConsBeneficiarioSoap" type="tns:WS_LE_ConsBeneficiarioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConBeneficiario">
+      <soap:operation soapAction="http://tempuri.org/ConBeneficiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConBeneficiarioGuid">
+      <soap:operation soapAction="http://tempuri.org/ConBeneficiarioGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConsBeneficiarioSoap12" type="tns:WS_LE_ConsBeneficiarioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConBeneficiario">
+      <soap12:operation soapAction="http://tempuri.org/ConBeneficiario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConBeneficiarioGuid">
+      <soap12:operation soapAction="http://tempuri.org/ConBeneficiarioGuid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConsBeneficiario">
+    <wsdl:port name="WS_LE_ConsBeneficiarioSoap" binding="tns:WS_LE_ConsBeneficiarioSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsBeneficiario.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConsBeneficiarioSoap12" binding="tns:WS_LE_ConsBeneficiarioSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsBeneficiario.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

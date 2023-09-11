@@ -1,0 +1,461 @@
+﻿.subir {
+    width: -webkit-fill-available;
+    position: relative;
+    padding: 1%;
+    border-radius: 2vw;
+    font-weight: 600;
+    color: black;
+    background-color: transparent;
+}
+
+    .subir::file-selector-button {
+        padding: 2%;
+        border: .1vw solid black;
+        border-radius: 2vw;
+        font-size: .80vw;
+        font-weight: 600;
+        color: black;
+        background-color: transparent;
+        transition: .5s;
+        margin-right: 5%;
+    }
+
+        .subir::file-selector-button:hover {
+            color: white;
+            background-color: black;
+        }
+
+.radioBL_Grids {
+    border: none;
+    width: 100%;
+    font-size: .85vw;
+    cursor: pointer;
+}
+
+    .radioBL_Grids td {
+        height: 4vh;
+        width: 50%;
+        vertical-align: middle;
+        border: 0.1vw solid red;
+    }
+
+    .radioBL_Grids input[type="radio"] {
+        width: .75vw;
+        height: .75vw;
+        margin-right: 5%;
+    }
+
+.tituloMontoTotal01 {
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.dv_montoTotal01 {
+    margin: 1%;
+    padding: 1.5% 1%;
+    background: #fff500;
+    width: max-content;
+}
+
+.montoTotal01 {
+    font-size: 1.25vw;
+    display: block;
+    font-weight: 600;
+}
+
+.p_NotaPrecios {
+    font-style: normal;
+    font-size: 0.79vw;
+    color: #6a6a6a;
+    margin-bottom: 5%;
+}
+
+.dv_containerPrimCol {
+    display: flex;
+}
+
+    .dv_containerPrimCol .dv_titulo {
+        width: 50%;
+    }
+
+        .dv_containerPrimCol .dv_titulo p {
+            width: 50%;
+        }
+
+.detalleDeCostos {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.costos {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    font-size: .85vw;
+}
+
+.table_phase tr td {
+    margin: 0% 2%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicador_phase {
+    display: none;
+    z-index: 1;
+    width: 1vw;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -118%;
+    margin: auto;
+    border: 1vw solid #03AFA3;
+    clip-path: polygon(50% 100%, 0% 50%, 30% 50%, 30% 0%, 70% 0%, 70% 50%, 100% 50%);
+}
+
+.check {
+    cursor: pointer;
+    font-size: 1.75vw;
+    color: white;
+    background-color: transparent;
+}
+
+    .check:hover {
+        color: darkgrey;
+        transform: scale(125%);
+    }
+
+.check_Disable {
+    cursor: no-drop;
+    font-size: 1.75vw;
+    color: white;
+    background-color: transparent;
+}
+
+.container_dv_phase {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 1vw;
+}
+
+.dv_phase_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid grey;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+}
+
+.dv_phase_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid grey;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    background-color: grey;
+}
+
+.dv_phase_1_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid #03AFA3;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+}
+
+.dv_phase_2_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid #03AFA3;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    background-color: #03AFA3;
+}
+
+
+.dv_phase_1_Check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid green;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+}
+
+.dv_phase_2_Check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid green;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    background-color: green;
+}
+
+
+.dv_phase_1_Warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid #ffd800;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+}
+
+.dv_phase_2_Warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid #ffd800;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    background-color: #ffd800;
+}
+
+.checked {
+    font-size: 150%;
+    color: green;
+}
+
+.text_check {
+    text-align: center;
+    color: black;
+    font-size: 1vw;
+    margin: 2%;
+    width: 100%;
+}
+
+
+
+
+/*Moviles*/
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .subir {
+        width: -webkit-fill-available;
+        position: relative;
+        padding: 1%;
+        border-radius: 2vw;
+        font-weight: 600;
+        color: black;
+        background-color: transparent;
+    }
+
+        .subir::file-selector-button {
+            padding: 2%;
+            border: .1vw solid black;
+            border-radius: 2vw;
+            font-size: .80vw;
+            font-weight: 600;
+            color: black;
+            background-color: transparent;
+            transition: .5s;
+            margin-right: 5%;
+        }
+
+            .subir::file-selector-button:hover {
+                color: white;
+                background-color: black;
+            }
+
+    .radioBL_Grids {
+        border: none;
+        width: 100%;
+        font-size: .85vw;
+        cursor: pointer;
+    }
+
+        .radioBL_Grids td {
+            height: 4vh;
+            width: 50%;
+            vertical-align: middle;
+            border: 0.1vw solid red;
+        }
+
+        .radioBL_Grids input[type="radio"] {
+            width: .75vw;
+            height: .75vw;
+            margin-right: 5%;
+        }
+
+    .txtcol1 {
+        font-size: 2vw;
+    }
+    .tituloMontoTotal01 {
+        font-size: 2.5vw;
+    }
+
+    .montoTotal01 {
+        font-size: 2.25vw;
+        display: block;
+        font-weight: 600;
+    }
+
+    .p_NotaPrecios {
+        font-size: 2.25vw;
+    }
+
+    .detalleDeCostos {
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    .costos {
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+        font-size: 2.5vw;
+    }
+
+    .table_phase tr td {
+        margin: 0% 2%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indicador_phase {
+        display: none;
+        z-index: 1;
+        width: 1vw;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -118%;
+        margin: auto;
+        border: 1vw solid #03AFA3;
+        clip-path: polygon(50% 100%, 0% 50%, 30% 50%, 30% 0%, 70% 0%, 70% 50%, 100% 50%);
+    }
+
+    .check {
+        font-size: 3.5vw;
+    }
+
+    .check_Disable {
+        font-size: 3.5vw;
+    }
+
+    .container_dv_phase {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0 1vw;
+    }
+
+    .dv_phase_1 {
+        border: 1vw solid grey;
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .dv_phase_2 {
+        border: .5vw solid grey;
+        width: 5vw;
+        height: 5vw;
+        background-color: grey;
+    }
+
+    .dv_phase_1_active {
+        border: 1vw solid #03AFA3;
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .dv_phase_2_active {
+        border: .5vw solid #03AFA3;
+        width: 5vw;
+        height: 5vw;
+        background-color: #03AFA3;
+    }
+
+
+    .dv_phase_1_Check {
+        border: 1vw solid green;
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .dv_phase_2_Check {
+        border: .5vw solid green;
+        width: 5vw;
+        height: 5vw;
+        background-color: green;
+    }
+
+
+    .dv_phase_1_Warning {
+        border: 1vw solid #ffd800;
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .dv_phase_2_Warning {
+        border: .5vw solid #ffd800;
+        width: 5vw;
+        height: 5vw;
+        background-color: #ffd800;
+    }
+
+    .checked {
+        font-size: 150%;
+        color: green;
+    }
+
+    .text_check {
+        font-size: 2vw;
+        margin: 1%;
+    }
+
+    .dv_containerPrimCol {
+        display: flex;
+    }
+
+        .dv_containerPrimCol .dv_titulo {
+            width: 50%;
+        }
+
+            .dv_containerPrimCol .dv_titulo p {
+                width: 50%;
+            }
+
+    .dv_containerPrimCol {
+        display: block
+    }
+
+        .dv_containerPrimCol .dv_titulo {
+            width: 50%;
+        }
+
+            .dv_containerPrimCol .dv_titulo p {
+                width: 50%;
+            }
+}
+
+/*Tabletas*/
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+}

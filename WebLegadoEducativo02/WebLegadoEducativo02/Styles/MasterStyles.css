@@ -1,0 +1,166 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#Pnl_OptPrepa {
+    position: relative;
+    background-color: #403b33;
+}
+
+#Pnl_OptProfesional {
+    position: relative;
+    background-color: #403b33;
+}
+
+#nivelesPrepa {
+    margin: 0px;
+    border: none;
+}
+
+    #nivelesPrepa > tr, td {
+        margin: 0px;
+        border: none;
+    }
+
+#menuHeader {
+    width: 100%;
+}
+
+#menuHeaderTipoCerti {
+    border-spacing: 0;
+    width: 100%;
+}
+
+    #menuHeaderTipoCerti > tr, th, td {
+        padding: 5px;
+        height: 30px;
+        width: 33.3%;
+    }
+
+    #menuHeaderTipoCerti > tr, th {
+        height: 30px;
+        width: 33.3%;
+    }
+
+.Pnl_Menu {
+    position: relative;
+}
+
+.pnl_Menudiv {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    background-color: #403b33;
+}
+
+#btnsHeader {
+    display: flex;
+    position: relative;
+}
+
+#containerHeadMenu {
+    display: flex;
+}
+
+.btnOpcionesMenu {
+    cursor: pointer;
+    white-space: normal;
+    border: 0;
+    border-color: inherit;
+    border-width: medium;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 13px;
+    padding: 5px;
+}
+
+#Btn_Conoce {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 13px;
+    border: none;
+}
+
+#Btn_TiposCert {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    width: 150px;
+    margin-left: 100px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 13px;
+    border: none;
+}
+
+#Btn_Cotizar {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    width: 150px;
+    margin-left: 225px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 13px;
+    border: none;
+}
+
+#Btn_IniciaLE {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    width: 100px;
+    margin-left: 350px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 13px;
+    border: none;
+}
+
+
+#navbar {
+    display: flex;
+    height: 101px;
+    width: 100%;
+    background-color: #403b33;
+}
+
+    #navbar > div h1 {
+        margin: 0;
+        color: white;
+        font-family: 'Arial Rounded MT';
+        font-size: 20px;
+    }
+
+    #navbar > div img {
+        width: 301px;
+    }
+
+.img-container {
+    height: 101px;
+}
+
+#footer {
+    background-color: #403b33;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+}

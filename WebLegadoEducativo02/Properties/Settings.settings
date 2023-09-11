@@ -1,0 +1,84 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebLegadoEducativo02.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConClientePotencial_WS_LE_ConClientePotencial" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConClientePotencial.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsCP_WS_LE_ConsCP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsCP.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsEscuelaCuenta_WS_LE_ConsEscuelaCuenta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsEscuelaCuenta.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsNivelAcademico_WS_LE_ConsNivelAcademico" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsNivelAcademico.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsUsuext_WS_LE_ConsUsuext" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsUsuext.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsUnidadUDEM_WS_LE_ConsUnidadUDEM" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsUnidadUDEM.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaFamilia_WS_LE_InsertaFamilia" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_InsertaFamilia_LE/WS_LE_InsertaFamilia.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaContactos_WS_LE_InsertaContactos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_Contactos_LE/WS_LE_InsertaContactos.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaDatosFiscalesContacto_WS_LE_InsertaDatosFiscalesContacto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_DatosFiscalesContacto_LE/WS_LE_InsertaDatosFiscalesContacto.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_Oportunidad_WS_LE_Oportunidad" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_Oportunidad_LE/WS_LE_Oportunidad.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsSolicitudCompra_WS_LE_ConsSolicitudCompra" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsSolicitudCompra.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsFamiliaContacto_WS_LE_ConsFamiliaContacto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsFamiliaContacto.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsDatosFiscales_WS_LE_ConsDatosFiscales" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsDatosFiscales.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsBeneficiario_WS_LE_ConsBeneficiario" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsBeneficiario.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_Beneficiarios_WS_LE_Beneficiarios" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_Beneficiarios_LE/WS_LE_Beneficiarios.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsultaContac_WS_LE_ConsultaContac" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsultaContac.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsProducto_WS_LE_ConsProducto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsProducto.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ListaDePrecios_WS_LE_ListaDePrecios" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ListaDePrecios.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsOferta_WS_LE_ConsOferta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsOferta.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ProgramaAcademico_WS_LE_ProgramaAcademico" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ProgramaAcademico.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_Cotizaciones_WS_LE_Cotizaciones" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_Cotizaciones_LE/WS_LE_Cotizaciones.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsProductOferta_WS_LE_ConsProductOferta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsProductOferta.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaSolicitudCom_WS_LE_InsertaSolicitudCom" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_SolicitudCompra_LE/WS_LE_InsertaSolicitudCom.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_InsUsuarioExterno.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_ConsFuenteLead_WS_LE_ConsFuenteLead" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsFuenteLead.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsertaClientePotencial_WS_LE_InsertaClientePotencial" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_ClientePotencial_LE/WS_LE_InsertaClientePotencial.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

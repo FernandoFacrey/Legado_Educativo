@@ -1,0 +1,398 @@
+﻿/*--------------------------------------------------*/
+/*----- Fernando Facio Reyes -- Gya-Contsulting ----*/
+/*--------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    transition: 0.5s;
+    /*border:.1vw solid red;*/
+}
+
+.Btn_OptsMenuDesple {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-bottom: 0.2vw solid darkgrey;
+    font-size: 1vw;
+    width: 100%;
+    padding: 3%;
+}
+
+    .Btn_OptsMenuDesple:hover {
+        background-color: lightgray;
+        border-bottom: 0.2vw solid transparent
+    }
+
+.dv_OptsSesion {
+    z-index: 3;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 18.451%;
+    height: 100%;
+    background-color: #f5f5f5;
+    animation: .5s bajarMenu forwards;
+}
+
+.dv_OptsSesion2 {
+    z-index: 3;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 18.451%;
+    height: 100%;
+    background-color: #ffffff;
+    animation: .5s subirMenu forwards;
+}
+
+@keyframes bajarMenu {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes subirMenu {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0%;
+        display: none;
+    }
+}
+
+.Btn_Carrito {
+    background-image: url(../Resources/icono-carrito-amarillo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.25vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.container_Btn_Perfil {
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    position: relative;
+}
+
+    .container_Btn_Perfil .Btn_Perfil {
+        display: block;
+        background-image: url(../Resources/perfil.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff500;
+        border-radius: 50%;
+        transition: .2s;
+    }
+
+        .container_Btn_Perfil .Btn_Perfil:hover {
+            display: block;
+            background-image: url(../Resources/LineasPerfil.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            animation: .5s rotarPerfil forwards;
+        }
+
+
+    .container_Btn_Perfil .bloque_Btn_Perfil {
+        border-radius: 50%;
+        background-image: url(../Resources/LineasPerfil.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #fff500;
+        top: 0;
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+        .container_Btn_Perfil .bloque_Btn_Perfil:hover {
+            background-image: url(../Resources/perfil.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            animation: .5s rotarPerfil forwards;
+        }
+
+@keyframes rotarPerfil {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Principal_Container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Header_Container {
+    width: 100%;
+}
+
+.Body_Container {
+    position: relative;
+    width: 100%;
+}
+
+.Footer_Container {
+    width: 100%;
+}
+
+/*----------Inicio_Btn_Solicita_Informacion----------*/
+#Container_BtnSolicitaInformacion {
+    width: 25%;
+    height: auto;
+}
+
+    #Container_BtnSolicitaInformacion div .BtnSolicitaInformacion {
+        cursor: pointer;
+        border: none;
+        border-radius: 2vw;
+        width: 53%;
+        height: 35%;
+        padding: 2%;
+        font-size: .9vw;
+        font-weight: 600;
+        background-color: #fff500;
+        color: #000000;
+        transition: 0.6s;
+    }
+
+        #Container_BtnSolicitaInformacion div .BtnSolicitaInformacion:hover {
+            color: #ffffff;
+            background-color: #000000;
+        }
+/*----------Fin_Btn_Solicita_Informacion----------*/
+
+/*----------Inicio_Btn_ChatBot----------*/
+.buttonChatBot {
+    border: none;
+    background-color: #fff500;
+    border-radius: 3vw;
+    padding: .5%;
+    width: 5vw;
+    font-weight: 600;
+    font-size: 1vw;
+    color: #6F6910;
+    transition: .5s;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 10;
+}
+
+    .buttonChatBot:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+/*----------Fin_Btn_ChatBot----------*/
+
+
+
+/*----------Header----------*/
+
+.General_Container {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container_Header {
+    height: auto;
+}
+
+.container_Opt_Img {
+    border: none;
+    background-color: #302c26;
+    display: flex;
+}
+
+.dv_Panel_Header {
+    width: -webkit-fill-available;
+    z-index: 10;
+    position: absolute;
+    background-color: #5c5953;
+    display: flex;
+    justify-content: center;
+    padding: 1.25%;
+}
+
+.dv_Container_Certificados {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dv_Container_Conoce {
+    display: flex;
+    justify-content: flex-start;
+    width: 66%;
+}
+
+.container_txt {
+    margin: 0;
+    padding-left: 2%;
+    width: 25%;
+}
+
+#dv-container_Conoce {
+    border-right: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#Container_SobreLE {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#Container_MasSobreLE {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Profesional {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Prepa {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+#container_Posgrado {
+    border-left: 0.1vw solid rgba(255, 255, 255, 0.2);
+}
+
+
+.dv_img_Logo {
+    width: 25.5%;
+    min-width: 15%;
+    max-width: 30%;
+}
+
+.img_Logo {
+    width: 100%;
+    display: block;
+}
+
+.container_Menu_Options {
+    width: 85%;
+    position: relative;
+}
+
+.dv_MenuOpts_Header {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#dv_MenuOpts_Header > h1 {
+    font-size: 1.75vw;
+    color: #ffffff;
+    font-family: "Helvetica";
+}
+
+.dv_btn_Menu {
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    width: initial;
+    padding-bottom: 0.6%;
+    border-bottom: .2vw solid transparent;
+}
+
+.dv_btn_Menu_selected {
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    width: initial;
+    padding-bottom: 0.6%;
+    border-bottom: .2vw solid #FFF500;
+}
+
+.Btn_Menu {
+    padding: 0 1.10vw;
+    cursor: pointer;
+    border: none;
+    font-size: calc(.75vw + 0.1rem);
+    font-style: normal;
+    font-weight: 600;
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+    .Btn_Menu:hover {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+.div_txt {
+    display: flex;
+    padding-bottom: 6%;
+    white-space: nowrap;
+}
+
+.div_txt-sub {
+    margin-bottom: 7%;
+}
+
+.text {
+    color: white;
+    font-size: calc(.75vw + 0.25rem);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.text-sub {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-style: normal;
+    transition: 0.5s;
+    white-space: initial;
+    text-align: initial;
+    font-size: calc(.70vw + 0.1rem);
+    display: block;
+}
+
+    .text-sub:hover {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+/*Moviles*/
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .Principal_Container {
+        overflow: hidden;
+    }
+}
+
+/*Tabletas*/
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33026.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLegadoEducativo02", "WebLegadoEducativo02\WebLegadoEducativo02.csproj", "{1F6DE3A5-FD96-40BB-811F-8E587C2C8C8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F6DE3A5-FD96-40BB-811F-8E587C2C8C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6DE3A5-FD96-40BB-811F-8E587C2C8C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6DE3A5-FD96-40BB-811F-8E587C2C8C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6DE3A5-FD96-40BB-811F-8E587C2C8C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11D2EAD3-89B5-4C1B-B670-D6D8EBB8943B}
+	EndGlobalSection
+EndGlobal

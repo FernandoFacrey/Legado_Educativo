@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_SolicitudCompra_LE/WS_LE_InsertaSolicitudCom.asmx?wsdl" filename="WS_LE_InsertaSolicitudCom.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

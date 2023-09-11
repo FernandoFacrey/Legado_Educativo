@@ -1,0 +1,57 @@
+﻿
+.container {
+    height: 99vh;
+    position: relative;
+}
+
+.Container_Error {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.Container_Exception {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.txt_Exception {
+    position: absolute;
+    bottom: 0;
+}
+
+.txt_Error {
+    text-align: center;
+}
+
+    .txt_Error h1 {
+        font-size: 1.5vw;
+        font-weight: 600;
+        margin: 2.5%;
+    }
+
+    .txt_Error .UDEM {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+        border-bottom: .5vw solid grey;
+    }
+
+        .txt_Error .UDEM span {
+            font-size: 3.5vw;
+            font-weight: 600;
+            transform: translateY(1vh);
+        }
+
+        .txt_Error .UDEM .adim01 {
+            transform: translateY(-.5vh);
+        }

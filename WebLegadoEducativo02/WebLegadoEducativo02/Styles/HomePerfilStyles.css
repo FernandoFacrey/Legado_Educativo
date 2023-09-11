@@ -1,0 +1,133 @@
+﻿.container_encabezadoPerfil {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+#encabezadoPerfil {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-image: url(../Resources/SoliLE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(2px) brightness(75%);
+}
+
+.table_encabezadoPerfil {
+    border-spacing: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#imgEncabezadoPerfil {
+    text-align: center;
+    vertical-align: middle;
+}
+
+    #imgEncabezadoPerfil > img {
+        height: 200px;
+    }
+
+.container_txtEncabezadoPerfil {
+    padding-left: 15%;
+    position: relative;
+}
+
+.txtEncabezadoPerfil {
+    font-size: 1.5em;
+    position: absolute;
+    vertical-align: middle;
+}
+
+#containerMenuPerfil {
+    width: 100%;
+    display: flex;
+}
+
+#containerOptions {
+    width: 33.33%;
+}
+
+#tableOptions {
+    padding: 10px;
+    width: 100%;
+}
+
+#containerContent {
+    width: 66.66%;
+}
+
+#containterContentOptions {
+    width: 100%;
+    height: 100%;
+    background-color: #403b33;
+}
+
+.Pnl_OptSesion {
+    z-index: 100;
+    width: 150px;
+    height: 100px;
+    background-color: #403b33;
+    border: 3px solid #403b33;
+    position: fixed;
+    right: 0px;
+}
+
+.Lbl_mensaje {
+    font-family: 'Arial Rounded MT';
+    color: white;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn_MenuPerfil {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.btn_CerrarSesion {
+    cursor: pointer;
+    border: 0;
+    border-color: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    font-size: 13px;
+}
+
+.BtnsOptionsPerfil {
+    cursor: pointer;
+    background-color: transparent;
+    color: #403b33;
+    font-family: 'Arial Rounded MT';
+    font-size: 25px;
+    border: none;
+}
+
+    .BtnsOptionsPerfil:hover {
+        color: #fff700;
+        border-bottom: 2px solid #fff700;
+    }
+
+.BtnsOptions {
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff700;
+    font-family: 'Arial Rounded MT';
+    font-size: 25px;
+    border: none;
+}
+
+    .BtnsOptions:hover {
+        color: white;
+        border-bottom: 2px solid white;
+    }

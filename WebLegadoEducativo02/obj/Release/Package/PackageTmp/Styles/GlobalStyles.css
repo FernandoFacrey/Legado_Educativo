@@ -1,0 +1,880 @@
+﻿
+
+/*----------Inicio_Pantalla_Emergente----------*/
+.AlertaCorrecto {
+    z-index: 101;
+    border-radius: 0.5vw;
+    display: none;
+    position: fixed;
+    padding: .5%;
+    width: auto;
+    height: auto;
+    top: 5%;
+    right: 1%;
+    border: 0.2vw solid limegreen;
+    background-color: lightgreen;
+    animation: .5s MostrarAlerta forwards;
+}
+
+.AlertaIncorrecto {
+    z-index: 101;
+    border-radius: 0.5vw;
+    display: none;
+    position: fixed;
+    padding: .5%;
+    width: auto;
+    height: auto;
+    top: 5%;
+    right: 1%;
+    background-color: #FFCDD2;
+    border: 0.2vw solid red;
+}
+
+
+.fade_out {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fade_in {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+@keyframes MostrarAlerta {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/*----------Inicio_Pantalla_Emergente----------*/
+
+/*----------Inicio_Pantalla_Emergente----------*/
+.div_PantallaEmergente {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container02_PantallaEmergente {
+    height: 100%;
+    width: 100%;
+}
+
+.container01_PantallaEmergente {
+    position: relative;
+    width: 40%;
+    max-height: 60%;
+    height: auto;
+    background-color: white;
+    padding: 2%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+    .container01_PantallaEmergente::-webkit-scrollbar {
+        width: 0.5vw;
+    }
+
+    .container01_PantallaEmergente::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .container01_PantallaEmergente::-webkit-scrollbar-thumb {
+        background-color: blue;
+        border-radius: 2vw;
+        border: 2.5vw solid #302c26;
+    }
+
+.Container_Btn_close {
+    position: absolute;
+    top: .5%;
+    right: .25%;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Btn_close {
+    display: block;
+    cursor: pointer;
+    width: 20%;
+    padding: 1.75%;
+    font-size: .75vw;
+    font-weight: 100;
+    background-color: transparent;
+    border: .1vw solid lightgrey;
+    color: lightgrey;
+    transition: .5s;
+}
+
+    .Btn_close:hover {
+        border: .1vw solid red;
+        background-color: red;
+        color: white;
+    }
+/*----------Fin_Pantalla_Emergente----------*/
+
+
+
+/*----------Inicio_Textos----------*/
+.titleCampos {
+    display: block;
+    font-size: .85vw;
+    font-weight: 600;
+    margin: .5% 0%;
+}
+
+.secciones {
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.txtInicio {
+    font-size: 1vw;
+    text-align: center;
+    margin: 1%;
+}
+
+.requeridos {
+    font-weight: 600;
+    font-size: .75vw;
+    color: red;
+    display: flex;
+}
+
+.subtitle {
+    font-size: 1vw;
+    font-weight: 100;
+    padding: 2% 0%;
+}
+/*----------Fin_Textos----------*/
+
+
+
+/*----------Inicio_Formularios----------*/
+.form {
+    padding: 2%;
+    box-shadow: 0vw 0vw 1.4vw 0vw rgba(0,0,0,0.37);
+}
+
+.formulario_table {
+    height: 100%;
+    width: 100%;
+    border-spacing: 0.75vw;
+}
+
+    .formulario_table td {
+        width: 50%;
+        height: 8vh;
+        vertical-align: top;
+    }
+
+.radioBL {
+    text-align: center;
+    border-radius: 1.5vw;
+    padding: 1.5%;
+    width: 50%;
+    font-size: .85vw;
+    cursor: pointer;
+    background-color: #F2F4F4;
+    border: 0.1vw solid #d1d3e2;
+}
+
+    .radioBL td {
+        height: 4vh;
+        width: 50%;
+        vertical-align: middle;
+    }
+
+    .radioBL input[type="radio"] {
+        width: .75vw;
+        height: .75vw;
+        margin-right: 5%;
+    }
+
+.form_campo {
+    width: 97%;
+    padding: 1.5%;
+    font-size: .85vw;
+    background-color: #F2F4F4;
+    border-radius: 1.5vw;
+    height: 4vh;
+    border: 0.1vw solid #d1d3e2;
+}
+
+    .form_campo:hover {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+    .form_campo:focus {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+.form_DropDownList {
+    width: 100%;
+    height: 59.75%;
+    padding: 1.5%;
+    font-size: .85vw;
+    background-color: #F2F4F4;
+    border-radius: 1.50vw;
+    border: .1vw solid #d1d3e2;
+}
+
+    .form_DropDownList:hover {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+    .form_DropDownList:focus {
+        outline: none;
+        border-color: dodgerblue;
+        box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+    }
+
+.pager_btn {
+    border: .1vw solid black;
+    border-radius: 2vw;
+    width: 100%;
+    font-size: 1vw;
+    font-weight: 600;
+    height: 2.5vw;
+    color: black;
+    background-color: transparent;
+    transition: .5s;
+}
+
+    .pager_btn:hover {
+        color: white;
+        background-color: black;
+    }
+
+
+.Container_GridView {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    overflow: auto;
+}
+
+    .Container_GridView .GridView_Table {
+        border: 0.1vw solid #403b33;
+        width: 100%;
+        font-size: 1vw;
+        padding: 1.5%;
+        padding-bottom: 1.5vw;
+    }
+
+        .Container_GridView .GridView_Table tbody {
+            border: none;
+        }
+
+        .Container_GridView .GridView_Table th {
+            padding: .5vw;
+            border-bottom: .2vw solid #403b33;
+        }
+
+
+        .Container_GridView .GridView_Table td {
+            padding: .5vw;
+            width: auto;
+            border: .1vw solid #d1d3e2;
+            height: auto;
+        }
+
+.BtnGridView {
+    border: .1vw solid black;
+    border-radius: 2vw;
+    width: 4.5vw;
+    font-size: .80vw;
+    font-weight: 600;
+    height: 2vw;
+    color: black;
+    background-color: transparent;
+    transition: .5s;
+}
+
+    .BtnGridView:hover {
+        color: white;
+        background-color: black;
+    }
+
+.CenteredButton {
+    text-align: center;
+}
+/*----------Fin_Formularios----------*/
+
+
+
+/*----------Inicio_Encabezados----------*/
+
+.container_encabezado {
+    width: 100%;
+    height: 35vh;
+}
+
+.encabezado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+    .encabezado .filterImg {
+        filter: blur(.2vw);
+        -webkit-filter: blur(.2vw);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .encabezado .filter2 {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .encabezado .container_img {
+        z-index: 2;
+        height: 85%;
+        width: 20%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .encabezado .container_img img {
+            height: 125%;
+        }
+
+    .encabezado .container_txt {
+        font-weight: 600;
+        z-index: 2;
+        color: white;
+        font-size: 1.75vw;
+    }
+
+        .encabezado .container_txt p {
+            font-weight: 600;
+            z-index: 2;
+            color: white;
+            font-size: 1vw;
+        }
+/*----------Fin_Encabezados----------*/
+
+
+
+/*----------Inicio_Loader_Pantalla_Completa----------*/
+.div_Pnl_PantallaCargando {
+    background-color: rgba(178, 176, 176, 0.416);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 111;
+}
+
+.container01_PantallaCargando {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container02_PantallaCargando {
+    border-radius: 3vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2%;
+    width: 25%;
+    height: 15%;
+}
+
+/*_____Loader_____*/
+.General_loaderContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.loader_container {
+    position: relative;
+    width: 15%;
+    padding-bottom: 15%;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 0.4vw transparent;
+    border-top-color: #fff555;
+    border-left-color: #fff555;
+    border-radius: 50%;
+    animation: loader 1.4s linear infinite;
+}
+
+.loader_container .loader2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    border: solid 0.4vw transparent;
+    border-top-color: #454545;
+    border-left-color: #454545;
+    border-radius: 50%;
+    animation: loader2 1.2s linear infinite;
+}
+
+.loadertxt_container {
+    display: flex;
+}
+
+.txt_Cargando {
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loader_text {
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .loader_text span {
+        animation: 1s waves infinite;
+    }
+
+        .loader_text span:nth-child(2) {
+            animation-delay: -0.9s;
+        }
+
+        .loader_text span:nth-child(3) {
+            animation-delay: -0.8s;
+        }
+
+@keyframes waves {
+    0%, 40%, 100% {
+        transform: translateY(0%);
+    }
+
+    20% {
+        transform: translateY(-45%);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+/*----------Fin_Loader_Pantalla_Completa----------*/
+
+/*----------Inicio_UsoDeDatos----------*/
+.fecha_UsoDeDatos {
+    font-weight: 200;
+    font-size: 1vw;
+    margin: 2%;
+    text-align: right;
+}
+
+.title_UsoDeDatos {
+    font-weight: 200;
+    font-size: 1vw;
+    margin: 2% 0%;
+    text-align: left;
+}
+
+/*----------Fin_UsoDeDatos----------*/
+
+/*----------Inicio_AvisoDePrivacidad----------*/
+.btn_AvisoDePrivacidad {
+    color: black;
+    background: transparent;
+    font-size: .75vw;
+    font-weight: 600;
+    border: none;
+    border-bottom: .2vw solid #fff500;
+}
+
+    .btn_AvisoDePrivacidad:hover {
+        color: #606060;
+        border-bottom: .2vw solid transparent;
+    }
+
+.div-AvisoPrivacidad {
+    font-size: 2vw;
+    margin: 2%;
+    text-align: center;
+}
+
+.div-AvisoPrivacidadtxt {
+    font-size: 1vw;
+    text-align: justify;
+}
+
+.div_AceptoAvisoPrivacidad_txt {
+    padding: 2% 0%;
+    font-size: .75vw;
+    display: flex;
+    align-items: baseline;
+}
+
+.dv_Btn_ContiAvisoPriva {
+    display: flex;
+    align-items: center;
+    padding: 0% 15%;
+}
+
+.div_Pnl_AvisoPrivacidad {
+    background-color: rgba(178, 176, 176, 0.416);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 110;
+}
+
+.container01_AvisoPrivacidad {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container02_AvisoPrivacidad {
+    position: relative;
+    vertical-align: middle;
+    padding: 3%;
+    background-color: white;
+    width: 75%;
+}
+/*----------Inicio_AvisoDePrivacidad----------*/
+
+
+
+
+/*Moviles*/
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    /*----------Inicio_Formularios----------*/
+    .form {
+        padding: 7% 2%;
+        box-shadow: 0vw 0vw 1.4vw 0vw rgba(0,0,0,0.37);
+    }
+
+    .formulario_table {
+        height: 100%;
+        width: 100%;
+        border-spacing: .5vw;
+    }
+
+        .formulario_table td {
+            display: block;
+            height: 15vh;
+            width: 80%;
+            vertical-align: top;
+        }
+
+    .radioBL {
+        text-align: center;
+        border-radius: 10vw;
+        padding: 1.5%;
+        width: 50%;
+        font-size: 4vw;
+        cursor: pointer;
+        background-color: #F2F4F4;
+        border: 0.1vw solid #d1d3e2;
+    }
+
+        .radioBL td {
+            height: 4vh;
+            width: 50%;
+            vertical-align: middle;
+        }
+
+        .radioBL input[type="radio"] {
+            width: .75vw;
+            height: .75vw;
+            margin-right: 5%;
+        }
+
+    .form_campo {
+        display: block;
+        width: 100%;
+        padding: 1.5%;
+        font-size: 3vw;
+        background-color: #F2F4F4;
+        border-radius: 10vw;
+        height: 5vh;
+        border: 0.1vw solid #d1d3e2;
+    }
+
+    .form_DropDownList {
+        width: 100%;
+        height: 59.75%;
+        padding: 1.5%;
+        font-size: 3vw;
+        background-color: #F2F4F4;
+        border-radius: 10vw;
+        border: .1vw solid #d1d3e2;
+    }
+
+        .form_DropDownList:hover {
+            outline: none;
+            border-color: dodgerblue;
+            box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+        }
+
+        .form_DropDownList:focus {
+            outline: none;
+            border-color: dodgerblue;
+            box-shadow: 0 0 .5vw 0 rgba(87, 187, 246, 0.76);
+        }
+
+    .pager_btn {
+        border: .1vw solid black;
+        border-radius: 2vw;
+        width: 100%;
+        font-size: 3vw;
+        font-weight: 600;
+        height: 4.5vw;
+        color: black;
+        background-color: transparent;
+        transition: .5s;
+    }
+
+    .Container_GridView {
+        overflow: hidden;
+        display: block;
+        padding: 0;
+        width: 100%;
+        border: .1vw solid black;
+    }
+
+        .Container_GridView .GridView_Table {
+            border: 0.1vw solid #403b33;
+            width: 100%;
+            font-size: 2.5vw;
+            padding: 1.5%;
+            padding-bottom: 1.5vw;
+        }
+
+            .Container_GridView .GridView_Table tbody {
+                border: none;
+            }
+
+            .Container_GridView .GridView_Table th {
+                padding: .5vw;
+                border-bottom: .2vw solid #403b33;
+            }
+
+
+            .Container_GridView .GridView_Table td {
+                padding: .5vw;
+                width: auto;
+                border: .1vw solid #d1d3e2;
+                height: auto;
+            }
+
+    .BtnGridView {
+        border: .1vw solid black;
+        border-radius: 2vw;
+        width: 4.5vw;
+        font-size: .80vw;
+        font-weight: 600;
+        height: 2vw;
+        color: black;
+        background-color: transparent;
+        transition: .5s;
+    }
+
+        .BtnGridView:hover {
+            color: white;
+            background-color: black;
+        }
+
+    .CenteredButton {
+        text-align: center;
+    }
+    /*----------Fin_Formularios----------*/
+
+    /*----------Inicio_Textos----------*/
+    .titleCampos {
+        display: block;
+        font-size: 3vw;
+        font-weight: 600;
+        margin: 0%;
+    }
+
+    .secciones {
+        font-size: 6vw;
+        font-weight: 600;
+    }
+
+    .txtInicio {
+        font-size: 3vw;
+        text-align: center;
+        margin: 1%;
+    }
+
+    .requeridos {
+        font-weight: 600;
+        font-size: 3vw;
+        color: red;
+        display: flex;
+    }
+
+    .subtitle {
+        font-size: 2.5vw;
+        font-weight: 100;
+        padding: 2% 0%;
+    }
+    /*----------Fin_Textos----------*/
+
+    /*----------Inicio_Pantalla_Emergente----------*/
+    .div_PantallaEmergente {
+        background-color: rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container02_PantallaEmergente {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container01_PantallaEmergente {
+        position: relative;
+        width: 75%;
+        max-height: 80%;
+        height: auto;
+        background-color: white;
+        padding: 2%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+        .container01_PantallaEmergente::-webkit-scrollbar {
+            width: 0.5vw;
+        }
+
+        .container01_PantallaEmergente::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .container01_PantallaEmergente::-webkit-scrollbar-thumb {
+            background-color: blue;
+            border-radius: 2vw;
+            border: 2.5vw solid #302c26;
+        }
+
+    .Container_Btn_close {
+        position: absolute;
+        top: .5%;
+        right: .25%;
+        width: 25%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .Btn_close {
+        display: block;
+        cursor: pointer;
+        width: 20%;
+        padding: 1.75%;
+        font-size: .75vw;
+        font-weight: 100;
+        background-color: transparent;
+        border: .1vw solid lightgrey;
+        color: lightgrey;
+        transition: .5s;
+    }
+
+        .Btn_close:hover {
+            border: .1vw solid red;
+            background-color: red;
+            color: white;
+        }
+    /*----------Fin_Pantalla_Emergente----------*/
+
+    /*----------Inicio_AvisoDePrivacidad----------*/
+    .btn_AvisoDePrivacidad {
+        color: black;
+        background: transparent;
+        font-size: 2vw;
+        font-weight: 600;
+        border: none;
+        border-bottom: .2vw solid #fff500;
+    }
+
+        .btn_AvisoDePrivacidad:hover {
+            color: #606060;
+            border-bottom: .2vw solid transparent;
+        }
+
+    .ChBox_AvisoDePrivacidad {
+        font-size: 2vw;
+    }
+}
+
+/*Tabletas*/
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+}

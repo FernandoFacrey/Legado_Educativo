@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConsultaContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="folio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaContactResult" type="tns:ArrayOfRecuperacontact" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRecuperacontact">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Recuperacontact" nillable="true" type="tns:Recuperacontact" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Recuperacontact">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="udem_folioudem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ownerid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fullname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="middlename" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_apellidopaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_apellidomaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_fechacompletanacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_diadenacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_mesdenacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_udem_anodenacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address1_line1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address1_line2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recr_codigopostal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address1_line3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_estadodecontacto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_municipiodecontacto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_paisdecontacto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobilephone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telephone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_telefonodecasa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telephone1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emailaddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_facebook" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_twitter" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_instagram" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_linkedin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_otraredsocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_exalumno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_padredefamiliaalumno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_padredefamiliaegresado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="new_colaborador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultaContactMatricula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="folio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaContactMatriculaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaContactMatriculaResult" type="tns:ArrayOfRecuperacontact" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaContactCorreo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dummy1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dummy2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaContactCorreoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaContactCorreoResult" type="tns:ArrayOfRecuperacontact" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultaContactSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaContact" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaContactSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaContactMatriculaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaContactMatricula" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaContactMatriculaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaContactMatriculaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaContactCorreoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaContactCorreo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaContactCorreoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaContactCorreoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConsultaContacSoap">
+    <wsdl:operation name="ConsultaContact">
+      <wsdl:input message="tns:ConsultaContactSoapIn" />
+      <wsdl:output message="tns:ConsultaContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaContactMatricula">
+      <wsdl:input message="tns:ConsultaContactMatriculaSoapIn" />
+      <wsdl:output message="tns:ConsultaContactMatriculaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaContactCorreo">
+      <wsdl:input message="tns:ConsultaContactCorreoSoapIn" />
+      <wsdl:output message="tns:ConsultaContactCorreoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConsultaContacSoap" type="tns:WS_LE_ConsultaContacSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaContact">
+      <soap:operation soapAction="http://tempuri.org/ConsultaContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaContactMatricula">
+      <soap:operation soapAction="http://tempuri.org/ConsultaContactMatricula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaContactCorreo">
+      <soap:operation soapAction="http://tempuri.org/ConsultaContactCorreo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConsultaContacSoap12" type="tns:WS_LE_ConsultaContacSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaContact">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaContactMatricula">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaContactMatricula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaContactCorreo">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaContactCorreo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConsultaContac">
+    <wsdl:port name="WS_LE_ConsultaContacSoap" binding="tns:WS_LE_ConsultaContacSoap">
+      <soap:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsultaContac.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConsultaContacSoap12" binding="tns:WS_LE_ConsultaContacSoap12">
+      <soap12:address location="http://localhost/DesarrolloUDEM/Legado%20Educativo/WS_LegadoEducativo/WS_LE_ConsultaContac.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

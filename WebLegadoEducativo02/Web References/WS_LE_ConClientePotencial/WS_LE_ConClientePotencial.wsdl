@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConsClientePotencial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CtePotencial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsClientePotencialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsClientePotencialResult" type="tns:ArrayOfCsClientePotencial" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCsClientePotencial">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CsClientePotencial" nillable="true" type="tns:CsClientePotencial" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CsClientePotencial">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="udem_asunto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="middlename" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_apellidopaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_apellidomaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_fechadenacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_contactoprincipal_diceserexalumno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_informacionadicional" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobilephone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telephone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emailaddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="preferredcontactmethodcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_niveldelegado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="leadqualitycode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_informacion_pareja" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_pareja_diceserexalumno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_informacion_hijos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_fuentedelead" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_fuentedelead_subcategoria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_empresaocolegiodelafuente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_referido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_eventocatalogo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_otroevento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_fechaevento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_touch_le" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_fechadeultimocontacto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_le_fechaderpoximocontacto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_ultimocomentario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="leadid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsClientePotencialcor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dummy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsClientePotencialcorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsClientePotencialcorResult" type="tns:ArrayOfCsClientePotencial" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsClientePotencialcorStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dummy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsClientePotencialcorStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsClientePotencialcorStatusResult" type="tns:ArrayOfCsClientePotencial" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsClientePotencialSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsClientePotencial" />
+  </wsdl:message>
+  <wsdl:message name="ConsClientePotencialSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsClientePotencialResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsClientePotencialcorSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsClientePotencialcor" />
+  </wsdl:message>
+  <wsdl:message name="ConsClientePotencialcorSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsClientePotencialcorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsClientePotencialcorStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsClientePotencialcorStatus" />
+  </wsdl:message>
+  <wsdl:message name="ConsClientePotencialcorStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsClientePotencialcorStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConClientePotencialSoap">
+    <wsdl:operation name="ConsClientePotencial">
+      <wsdl:input message="tns:ConsClientePotencialSoapIn" />
+      <wsdl:output message="tns:ConsClientePotencialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsClientePotencialcor">
+      <wsdl:input message="tns:ConsClientePotencialcorSoapIn" />
+      <wsdl:output message="tns:ConsClientePotencialcorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsClientePotencialcorStatus">
+      <wsdl:input message="tns:ConsClientePotencialcorStatusSoapIn" />
+      <wsdl:output message="tns:ConsClientePotencialcorStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConClientePotencialSoap" type="tns:WS_LE_ConClientePotencialSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsClientePotencial">
+      <soap:operation soapAction="http://tempuri.org/ConsClientePotencial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsClientePotencialcor">
+      <soap:operation soapAction="http://tempuri.org/ConsClientePotencialcor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsClientePotencialcorStatus">
+      <soap:operation soapAction="http://tempuri.org/ConsClientePotencialcorStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConClientePotencialSoap12" type="tns:WS_LE_ConClientePotencialSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsClientePotencial">
+      <soap12:operation soapAction="http://tempuri.org/ConsClientePotencial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsClientePotencialcor">
+      <soap12:operation soapAction="http://tempuri.org/ConsClientePotencialcor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsClientePotencialcorStatus">
+      <soap12:operation soapAction="http://tempuri.org/ConsClientePotencialcorStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConClientePotencial">
+    <wsdl:port name="WS_LE_ConClientePotencialSoap" binding="tns:WS_LE_ConClientePotencialSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConClientePotencial.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConClientePotencialSoap12" binding="tns:WS_LE_ConClientePotencialSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConClientePotencial.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

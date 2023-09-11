@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="WebLegadoEducativo02.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Legado Educativo - Clientes Potenciales</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/MasterStyles.css" rel="stylesheet" />
+    <link href="Styles/InicioCreaStyles.css" rel="stylesheet"/>
+    <link href="Styles/GeneralStyles.css" rel="stylesheet" />
+    <link href="Styles/HomePerfilStyles.css" rel="stylesheet" />
+    <link href="Styles/PreCotizaStyles.css" rel="stylesheet" />
+    <link href="Styles/SolicitudCompraStyles.css" rel="stylesheet" />
+    <link href="Styles/CrearCuentaStyles.css" rel="stylesheet" />
+
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="navbar">
+                <div id="containerHeadMenu">
+                    <a href="WebLE02InicioCreaCuenta.aspx">
+                        <img src="Resources/logo.png">
+                    </a>
+                </div>
+                <div id="btnsHeader">
+                    <asp:Button ID="Btn_Conoce" runat="server" Text="Conoce" OnClick="Btn_Conoce_Click" />
+                    <asp:Button ID="Btn_TiposCert" runat="server" Text="Tipos de Certificados" OnClick="Btn_TiposCert_Click" />
+                    <asp:Button ID="Btn_Cotizar" runat="server" Text="Cotizar" OnClick="Btn_Cotizar_Click" />
+                    <asp:Button ID="Btn_IniciaLE" runat="server" Text="Iniciar Legado" OnClick="Btn_IniciaLE_Click" />
+                </div>
+            </div>
+        </div>
+        <asp:Panel ID="Pnl_MenuConoce" CssClass="Pnl_Menu" runat="server">
+            <div id="pnl_MenudivConoce" class="pnl_Menudiv">
+                <table id="menuHeader">
+                    <tr>
+                        <td>
+                            <asp:Button ID="btn_QueEs" CssClass="btnOpcionesMenu" runat="server" Text="Que es" OnClick="btn_QueEs_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btn_Beneficios" CssClass="btnOpcionesMenu" runat="server" Text="Beneficios" OnClick="btn_Beneficios_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btn_Testimonios" CssClass="btnOpcionesMenu" runat="server" Text="Testimonios" OnClick="btn_Testimonios_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btn_VisionUDEM" CssClass="btnOpcionesMenu" runat="server" Text="Vision UDEM" OnClick="btn_VisionUDEM_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="Pnl_MenuTipoCerti" CssClass="Pnl_Menu" runat="server">
+            <div id="pnl_MenudivTipoCerti" class="pnl_Menudiv">
+                <!--<table id="menuHeaderTipoCerti">
+                    <tr class="txtinfopanel" style="text-align:left;">
+                        <th>Prepa Udem</th>
+                        <th>Profesional</th>
+                        <th>Posgrado</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <asp:Button ID="btn_Bicultural" runat="server" Text="Bicultural"/>
+                        </td>
+                        <asp:Panel ID="Pnl_Bicultural" runat="server" CssClass="panelBachillerato"></asp:Panel>
+                        <td>Carreras Profesionales</td>
+                        <td>Maestria en Desarrollo Organizacional</td>
+                    </tr>
+                    <tr>
+                        <td>Internacional</td>
+                        <td>Medicina</td>
+                        <td>Maestria en Desarrollo Organizacional y Cambio</td>
+                    </tr>
+                    <tr>
+                        <td>Multicultural</td>
+                        <td>Arte y diseño</td>
+                        <td>Maestria en Administracion</td>
+                    </tr>
+                   <tr>
+                       <td></td>
+                       <td>Arquitectura y ciencias del Hábitat</td>
+                       <td>Otros Posgrados</td>
+                   </tr>
+                </table>-->
+                <table id="menuHeaderTipoCerti">
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnMenuPrepa" CssClass="btnOpcionesMenu" runat="server" Text="Prepa Udem" OnClick="btnMenuPrepa_Click" />
+                        </td>
+                        <td rowspan="3">
+                            <asp:Panel ID="Pnl_OptPrepa" runat="server">
+                                <table id="nivelesPrepa">
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_Bicultu" CssClass="btnOpcionesMenu" runat="server" Text="Bicultural" OnClick="btn_Bicultu_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_Inter" CssClass="btnOpcionesMenu" runat="server" Text="Internacional" OnClick="btn_Inter_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_Multicult" CssClass="btnOpcionesMenu" runat="server" Text="Multicultural" OnClick="btn_Multicult_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptProfesional" runat="server">
+                                <table id="OpcionesProfesional">
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_Carreras" CssClass="btnOpcionesMenu" runat="server" Text="Carreras Profesionales" OnClick="btn_Carreras_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_Medicina" CssClass="btnOpcionesMenu" runat="server" Text="Medicina" OnClick="btn_Medicina_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_ArteDiseño" CssClass="btnOpcionesMenu" runat="server" Text="Arte y Diseño" OnClick="btn_ArteDiseño_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_ArquiHabi" CssClass="btnOpcionesMenu" runat="server" Text="Arquitectura y ciencias del habitat" OnClick="btn_ArquiHabi_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPosgrado" runat="server">
+                                <table id="OpcionesPosgrado">
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MDO" CssClass="btnOpcionesMenu" runat="server" Text="Maestría en Desarrollo Organizacional" OnClick="btn_MDO_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MDOC" CssClass="btnOpcionesMenu" runat="server" Text="Maestría en Desarrollo Organizacional y cambio" OnClick="btn_MDOC_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MBA" CssClass="btnOpcionesMenu" runat="server" Text="Maestria en Administracion" OnClick="btn_MBA_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_OtrosPosgrados" CssClass="btnOpcionesMenu" runat="server" Text="Otros Posgrados" OnClick="btn_OtrosPosgrados_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                        </td>
+                        <td rowspan="3">
+                            <asp:Panel ID="Pnl_OptPrepBicult" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_infoBicult" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas Bicultural" OnClick="btn_infoBicult_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="Btn_CotiPrepaBicult" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="Btn_CotiPrepaBicult_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPrepInter" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_InfoInter" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas Internacional" OnClick="btn_InfoInter_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiInter" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiInter_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPrepMulti" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_InfoMulti" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas Multicultural" OnClick="btn_InfoMulti_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiMulti" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiMulti_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptProfCarreras" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoCarreras" CssClass="btnOpcionesMenu" runat="server" Text="Conoce todas las Carreras" OnClick="btn_MasInfoCarreras_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiCarreras" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiProf_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptProfMedi" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoMedi" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas de Medicina" OnClick="btn_MasInfoMedi_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiMedi" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiProf_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptProfArtDis" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoArtDis" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas de Arte y Diseño" OnClick="btn_MasInfoArtDis_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiArtDis" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiProf_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptProfArquiHabi" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoArquiHabi" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas de Arquitectura y Ciencias del Habitat" OnClick="btn_MasInfoArquiHabi_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiArquiHabi" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiProf_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPosMDO" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoMDO" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas de Maestria en Desarrollo Organizacional" OnClick="btn_MasInfoMDO_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiMDO" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiPos_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPosMDOC" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoMDOC" Height="45px" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas de Maestria en Desarrollo Organizacional y Cambio" OnClick="btn_MasInfoMDOC_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiMDOC" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiPos_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPosMBA" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoMBA" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Mas de Maestria en Administracion" OnClick="btn_MasInfoMBA_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiMBA" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiPos_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="Pnl_OptPosOtrosPos" runat="server">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_MasInfoOtrosPos" CssClass="btnOpcionesMenu" runat="server" Text="Conoce Otros Posgrados" OnClick="btn_MasInfoOtrosPos_Click" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btn_CotiOtrosPos" CssClass="btnOpcionesMenu" runat="server" Text="Conoce los precios" OnClick="btn_CotiPos_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnProfesional" CssClass="btnOpcionesMenu" runat="server" Text="Profesional" OnClick="btnProfesional_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnPosgrado" CssClass="btnOpcionesMenu" runat="server" Text="Posgrado" OnClick="btnPosgrado_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </asp:Panel>
+        <div class="body-content">
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <p><%: DateTime.Now.Year %> Universidad de Monterrey - © UDEM</p>
+        </div>
+    </form>
+</body>
+</html>

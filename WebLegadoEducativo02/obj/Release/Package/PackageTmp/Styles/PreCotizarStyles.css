@@ -1,0 +1,132 @@
+﻿
+.Container_PreCotizar {
+    background-image: url(../Resources/Legado-Educativo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.PreCotizar {
+    position: relative;
+}
+
+    .PreCotizar h1 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+.Container_TiposCertificados {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 0% 12.5%;
+}
+
+.TiposCertificados {
+    position: relative;
+    background-color: #ffffff;
+    width: 22.5vw;
+    height: 75%;
+    -webkit-box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);
+}
+
+    .TiposCertificados .Container_img_Certi {
+        overflow: hidden;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 2.5%;
+        transition: 0.8s;
+    }
+
+        .TiposCertificados .Container_img_Certi img {
+            display: block;
+            width: 100%;
+            transition: 0.8s;
+        }
+
+    .TiposCertificados div img:hover {
+        transform: scale(110%);
+    }
+
+    .TiposCertificados div h1 {
+        padding: 1.5% 3%;
+        text-align: left;
+        font-size: 1.15vw;
+    }
+
+    .TiposCertificados div p {
+        padding: 1.5% 3%;
+        text-align: left;
+        font-size: 1.15vw;
+    }
+
+    .TiposCertificados .Container_btn_Certi {
+        width: 100%;
+        position: absolute;
+        bottom: 6%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+#container-lbls-masInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container_nivelLE {
+    padding: 5%;
+}
+
+    #container_nivelLE .options {
+        display: flex;
+        justify-content: center;
+    }
+
+        #container_nivelLE .options .pager_btn {
+            width: 15%;
+            margin: 0% 5%;
+        }
+
+    #container_nivelLE .confirmacion {
+        display: flex;
+        justify-content: center;
+    }
+
+        #container_nivelLE .confirmacion .pager_btn {
+            width: 25%;
+            margin: 5%;
+        }
+
+            #container_nivelLE .confirmacion .pager_btn:hover {
+                width: 30%;
+                border: 0.1vw solid green;
+                background-color: green;
+            }
+
+    #container_nivelLE > ul li {
+        display: flex;
+        text-align: center;
+    }
+
+
+.encabezado #container_img_bach {
+    background-image: url(../Resources/Bachillerato01.jpg);
+}
+
+.encabezado #container_img_prof {
+    background-image: url(../Resources/Profesional01.jpg);
+}
+
+.encabezado #container_img_posg {
+    background-image: url(../Resources/Posgrado01.jpg);
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConsSoli">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="titular" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsSoliResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsSoliResult" type="tns:ArrayOfRecuperaSolicitud" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRecuperaSolicitud">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RecuperaSolicitud" nillable="true" type="tns:RecuperaSolicitud" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RecuperaSolicitud">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="opportunityid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_solicituddecompraid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_titular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid_udem_titular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_titulardesignado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid_udem_titulardesignado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_requiererecibofiscal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_datosfiscales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid_udem_datosfiscales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitulardesignado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadosbeneficiarios" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beneficiarios" type="tns:ArrayOfRecuperaBenefi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRecuperaBenefi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RecuperaBenefi" nillable="true" type="tns:RecuperaBenefi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RecuperaBenefi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="udem_beneficiario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="udem_beneficiariosid" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsSoliSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsSoli" />
+  </wsdl:message>
+  <wsdl:message name="ConsSoliSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsSoliResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_ConsSolicitudCompraSoap">
+    <wsdl:operation name="ConsSoli">
+      <wsdl:input message="tns:ConsSoliSoapIn" />
+      <wsdl:output message="tns:ConsSoliSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_ConsSolicitudCompraSoap" type="tns:WS_LE_ConsSolicitudCompraSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsSoli">
+      <soap:operation soapAction="http://tempuri.org/ConsSoli" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_ConsSolicitudCompraSoap12" type="tns:WS_LE_ConsSolicitudCompraSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsSoli">
+      <soap12:operation soapAction="http://tempuri.org/ConsSoli" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_ConsSolicitudCompra">
+    <wsdl:port name="WS_LE_ConsSolicitudCompraSoap" binding="tns:WS_LE_ConsSolicitudCompraSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsSolicitudCompra.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_ConsSolicitudCompraSoap12" binding="tns:WS_LE_ConsSolicitudCompraSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsSolicitudCompra.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

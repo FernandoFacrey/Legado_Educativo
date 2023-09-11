@@ -1,0 +1,232 @@
+﻿#dv_nivelInteres {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 5%;
+    padding-right: 450px;
+}
+
+.container_Cerrar {
+    top:10%;
+    left:15%;
+    position: absolute;
+    z-index: 10;
+}
+
+.Btn_Cerrar {
+    border: 2px solid red;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Arial Rounded MT';
+}
+
+    .Btn_Cerrar:hover {
+        border: 2px solid white;
+        background-color: red;
+        color: white;
+    }
+
+
+#container-lbls-masInfo {
+    width: 100%;
+    display: flex;
+}
+
+#info {
+    position: static;
+    margin-left: 80px;
+    left: 5%;
+    width: 40%;
+    height: 200px;
+}
+
+.PnlInfo {
+    position: relative;
+    height: 50%;
+    text-align: center;
+    padding-left: 50px;
+}
+
+#container-lbls-masInfo {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.Btn-consulCost {
+    text-align: center;
+}
+
+#slider {
+    background-color: white;
+    width: 100%;
+    -webkit-box-shadow: 0px 5px 25px 0px #454545;
+    -moz-box-shadow: 0px 5px 25px 0px #454545;
+    box-shadow: 0px 5px 25px 0px #454545;
+    transition: opacity .5s;
+}
+
+    #slider > ul li div.backImg {
+        position: static;
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    #slider > ul li div .img {
+        width: 100%;
+        filter: brightness(0.6) blur(5px);
+    }
+
+    #slider > ul li div.froImg {
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        vertical-align: middle;
+    }
+
+    #slider > ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+        #slider > ul.slider {
+            position: relative;
+            width: 100%;
+            height: 320px;
+        }
+
+            #slider > ul.slider li {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: inherit;
+                height: inherit;
+                transition: opacity .5s;
+            }
+
+#container_nivelLE > ul {
+    left: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+    #container_nivelLE > ul li {
+        display: flex;
+        text-align: center;
+    }
+
+.menu_Button {
+    border: none;
+    font-family: 'Arial Rounded MT';
+    color: white;
+    background-color: #454545;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 25px;
+}
+
+.panelBachillerato {
+    position: absolute;
+    background-color: red;
+}
+
+.form {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 0px 5px 24px 0px #454545;
+    -moz-box-shadow: 0px 5px 24px 0px #454545;
+    box-shadow: 0px 5px 24px 0px #454545;
+}
+
+#main-container > div, p {
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+#main-container > .container_btn {
+    position: fixed;
+    top: 90%;
+    right: 3%;
+    animation: escala 1.5s ease-in-out infinite alternate;
+}
+
+.content {
+    cursor: pointer;
+    line-height: 50px;
+    font-family: 'Arial Rounded MT';
+    color: #403b33;
+    font-size: 20px;
+    background-color: #fff700;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    border: #403b33 1px solid;
+}
+
+.txtinfopanel {
+    color: white;
+    text-align: center;
+    font-family: 'Arial Rounded MT';
+    font-size: medium;
+}
+
+.txtinfopanel2 {
+    color: black;
+    text-align: center;
+    font-family: 'Arial Rounded MT';
+    font-size: medium;
+}
+
+#div_Pnl_MasInfo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#container01_MasInfo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container02_MasInfo {
+    padding: 3%;
+    background-color: white;
+    width: 50%;
+}
+
+@keyframes escala {
+    0% {
+        transform: scale(.99);
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(.99);
+    }
+}

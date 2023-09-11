@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsSolicitudCompra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="udem_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="opportunityid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_titular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_titulardesignado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_matriculadondeseguardaeldinero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_plazoadevengar" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_requiererecibofiscal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_datosfiscales" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_formadepago" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitulardesignado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadosbeneficiarios" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsSolicitudCompraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsSolicitudCompraResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Respuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoMs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdtSolicitudCompra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="udem_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_solicituddecompraid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="opportunityid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_titular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_titulardesignado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_matriculadondeseguardaeldinero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_plazoadevengar" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_requiererecibofiscal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_datosfiscales" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_formadepago" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitulardesignado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadosbeneficiarios" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_acuerdodeadquisiciondecompra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_fechaacuerdoadquisicion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdtSolicitudCompraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdtSolicitudCompraResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsSolicitudCompraSoapIn">
+    <wsdl:part name="parameters" element="tns:InsSolicitudCompra" />
+  </wsdl:message>
+  <wsdl:message name="InsSolicitudCompraSoapOut">
+    <wsdl:part name="parameters" element="tns:InsSolicitudCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdtSolicitudCompraSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdtSolicitudCompra" />
+  </wsdl:message>
+  <wsdl:message name="UpdtSolicitudCompraSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdtSolicitudCompraResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_InsertaSolicitudComSoap">
+    <wsdl:operation name="InsSolicitudCompra">
+      <wsdl:input message="tns:InsSolicitudCompraSoapIn" />
+      <wsdl:output message="tns:InsSolicitudCompraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdtSolicitudCompra">
+      <wsdl:input message="tns:UpdtSolicitudCompraSoapIn" />
+      <wsdl:output message="tns:UpdtSolicitudCompraSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_InsertaSolicitudComSoap" type="tns:WS_LE_InsertaSolicitudComSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsSolicitudCompra">
+      <soap:operation soapAction="http://tempuri.org/InsSolicitudCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdtSolicitudCompra">
+      <soap:operation soapAction="http://tempuri.org/UpdtSolicitudCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_InsertaSolicitudComSoap12" type="tns:WS_LE_InsertaSolicitudComSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsSolicitudCompra">
+      <soap12:operation soapAction="http://tempuri.org/InsSolicitudCompra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdtSolicitudCompra">
+      <soap12:operation soapAction="http://tempuri.org/UpdtSolicitudCompra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_InsertaSolicitudCom">
+    <wsdl:port name="WS_LE_InsertaSolicitudComSoap" binding="tns:WS_LE_InsertaSolicitudComSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_SolicitudCompra_LE/WS_LE_InsertaSolicitudCom.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_InsertaSolicitudComSoap12" binding="tns:WS_LE_InsertaSolicitudComSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_SolicitudCompra_LE/WS_LE_InsertaSolicitudCom.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
