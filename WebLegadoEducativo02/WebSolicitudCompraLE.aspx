@@ -1158,7 +1158,7 @@
                                         <asp:BoundField DataField="Nivel" HeaderText="Nivel" HtmlEncode="false" />
                                         <asp:BoundField DataField="DiviUnidad" HeaderText="Division/Unidad" HtmlEncode="false" />
                                         <asp:BoundField DataField="ProgTipBach" HeaderText="Programa/Tipo de bachillerato" HtmlEncode="false" />
-                                        <asp:BoundField DataField="Créditos" HeaderText="Créditos" HtmlEncode="false" />
+                                        <asp:BoundField DataField="Créditos" HeaderText="Créditos/Semestres" HtmlEncode="false" />
                                         <asp:BoundField DataField="Monto" HeaderText="Monto" HtmlEncode="false" />
                                         <asp:ButtonField ButtonType="Button" Text="Editar 📝" CommandName="Edit_Cotizacion" ControlStyle-CssClass="BtnGridView" ItemStyle-CssClass="CenteredButton" />
                                     </Columns>

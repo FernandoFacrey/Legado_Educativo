@@ -280,17 +280,6 @@ namespace WebLegadoEducativo02.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativ" +
-            "o/WS_LE_InsUsuarioExterno.asmx")]
-        public string WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno {
-            get {
-                return ((string)(this["WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS" +
             "_LE_ConsFuenteLead.asmx")]
         public string WebLegadoEducativo02_WS_LE_ConsFuenteLead_WS_LE_ConsFuenteLead {
@@ -307,6 +296,28 @@ namespace WebLegadoEducativo02.Properties {
         public string WebLegadoEducativo02_WS_LE_InsertaClientePotencial_WS_LE_InsertaClientePotencial {
             get {
                 return ((string)(this["WebLegadoEducativo02_WS_LE_InsertaClientePotencial_WS_LE_InsertaClientePotencial"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS" +
+            "_LE_InsUsuarioExterno.asmx")]
+        public string WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno {
+            get {
+                return ((string)(this["WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativ" +
+            "o/WS_LE_Documentos.asmx")]
+        public string WebLegadoEducativo02_WS_LE_Documentos_WS_LE_Documentos {
+            get {
+                return ((string)(this["WebLegadoEducativo02_WS_LE_Documentos_WS_LE_Documentos"]));
             }
         }
     }

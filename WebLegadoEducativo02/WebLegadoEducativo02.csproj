@@ -468,6 +468,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\WS_LE_Documentos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\WS_LE_InsertaClientePotencial\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -667,6 +672,14 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Content>
     <None Include="Web References\WS_LE_Cotizaciones\WS_LE_Cotizaciones.wsdl" />
+    <Content Include="Web References\WS_LE_Documentos\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\WS_LE_Documentos\Respuesta.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\WS_LE_Documentos\WS_LE_Documentos.wsdl" />
     <None Include="Web References\WS_LE_InsertaContactos\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -989,6 +1002,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>WebLegadoEducativo02_WS_LE_ConsUsuext_WS_LE_ConsUsuext</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_Documentos.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_LE_Documentos\</RelPath>
+      <UpdateFromURL>https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_Documentos.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebLegadoEducativo02_WS_LE_Documentos_WS_LE_Documentos</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_InsUsuarioExterno.asmx%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>

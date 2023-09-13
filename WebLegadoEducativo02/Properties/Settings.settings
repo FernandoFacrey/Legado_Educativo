@@ -71,14 +71,17 @@
     <Setting Name="WebLegadoEducativo02_WS_LE_InsertaSolicitudCom_WS_LE_InsertaSolicitudCom" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_SolicitudCompra_LE/WS_LE_InsertaSolicitudCom.asmx</Value>
     </Setting>
-    <Setting Name="WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_InsUsuarioExterno.asmx</Value>
-    </Setting>
     <Setting Name="WebLegadoEducativo02_WS_LE_ConsFuenteLead_WS_LE_ConsFuenteLead" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_ConsFuenteLead.asmx</Value>
     </Setting>
     <Setting Name="WebLegadoEducativo02_WS_LE_InsertaClientePotencial_WS_LE_InsertaClientePotencial" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_ClientePotencial_LE/WS_LE_InsertaClientePotencial.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_InsUsuarioExterno_WS_LE_InsUsuarioExterno" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://eventosudemtst.udem.edu.mx/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_InsUsuarioExterno.asmx</Value>
+    </Setting>
+    <Setting Name="WebLegadoEducativo02_WS_LE_Documentos_WS_LE_Documentos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_Documentos.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

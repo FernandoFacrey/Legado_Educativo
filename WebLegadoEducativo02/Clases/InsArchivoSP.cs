@@ -72,26 +72,31 @@ namespace WebLegadoEducativo02.Clases
                                 Conditions =
                     {
                        new ConditionExpression("new_contactoid", ConditionOperator.Equal, _guidcontactid),
-                      new ConditionExpression("new_registrovigente", ConditionOperator.Equal, true)
+                      new ConditionExpression("new_registrovigente", ConditionOperator.Equal, true),
+                                    new ConditionExpression("statecode", ConditionOperator.Equal, 0),
                     }
-                            }
+                            },
+                            Orders = {
+                                       new OrderExpression("createdon", OrderType.Descending)
+                                     }
+
+
+
                         };
                         var carpetaResult1 = service.RetrieveMultiple(carpetaQuery1);
                         if (carpetaResult1.Entities.Count > 0)
                         {
-                            foreach (Entity itemEntidad in carpetaResult1.Entities)
+                            var itemEntidad = carpetaResult1.Entities[0]; // Obtener el primer (y único) registro
+
+                            GuidSuplemental = itemEntidad.Id;
+                        
+                            // Obtener el valor de "recr_name"
+                            if (itemEntidad.Attributes.ContainsKey("new_name"))
                             {
-                                GuidSuplemental = itemEntidad.Id;
-                                foreach (var dato in itemEntidad.Attributes)
-                                {
-                                    if (dato.Key == "new_name")
-                                    {
-                                        _name = ((string)dato.Value);
-                                    }
-                                }
+                                _name = (string)itemEntidad["new_name"];
                             }
                         }
-
+                        _name = _name.Replace('/', '-');
                         QueryExpression _query = new QueryExpression
 
                         {

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InSuplementalSub">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="new_supplementalinfosubmissionid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_contactoid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_solicitudid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_supplementalinfoitemid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recr_revisadodaes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_revisadole" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_submissiondate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="statuscode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_admisionestatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_externallocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_webexternaldescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Comentarios" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InSuplementalSubResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InSuplementalSubResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Respuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identificador" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InSuplementalSubSoapIn">
+    <wsdl:part name="parameters" element="tns:InSuplementalSub" />
+  </wsdl:message>
+  <wsdl:message name="InSuplementalSubSoapOut">
+    <wsdl:part name="parameters" element="tns:InSuplementalSubResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_LE_DocumentosSoap">
+    <wsdl:operation name="InSuplementalSub">
+      <wsdl:input message="tns:InSuplementalSubSoapIn" />
+      <wsdl:output message="tns:InSuplementalSubSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_LE_DocumentosSoap" type="tns:WS_LE_DocumentosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InSuplementalSub">
+      <soap:operation soapAction="http://tempuri.org/InSuplementalSub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_LE_DocumentosSoap12" type="tns:WS_LE_DocumentosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InSuplementalSub">
+      <soap12:operation soapAction="http://tempuri.org/InSuplementalSub" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_LE_Documentos">
+    <wsdl:port name="WS_LE_DocumentosSoap" binding="tns:WS_LE_DocumentosSoap">
+      <soap:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_Documentos.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_LE_DocumentosSoap12" binding="tns:WS_LE_DocumentosSoap12">
+      <soap12:address location="http://eventosudemtst.udem.edu.mx:8087/UDEMDESA/LegadoEducativo/WS_LegadoEducativo/WS_LE_Documentos.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

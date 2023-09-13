@@ -2789,7 +2789,7 @@ namespace WebLegadoEducativo02
             string NombreInsti = subSNombreInsti[0];
             var resultSol = wsInsBenefi.InsBeneficiario(Global.GuidSolicitud, subSFamiliar[0], ddl_NivelProcede.SelectedItem.Text, NombreInsti, "", "", txtB_PorcentBecaBenefi.Text);
 
-            if (result.CodigoMs.Contains("correctamente") && fcdats.CodigoMs.Contains("correctamente") && resultSol.Mensaje.Contains("correctamente"))
+            if (result.CodigoMs.Contains("correctamente") && resultSol.Mensaje.Contains("correctamente"))
             {
                 Fill_Beneficiario(Global.NumBeneficiarios.ToString(), subSFamiliar[0].ToString(), txtB_PrimNomBenefi.Text, txtB_SegunNomBenefi.Text, txtB_AperPaterBenefi.Text,
                     txtB_AperMaterBenefi.Text, fechaNacBenefi, txtB_MovilBenefi.Text, ddl_ParentescoBenefi.SelectedItem.Text, txtB_CorreoElecBenefi.Text, rbl_BecaBenefi.Text,

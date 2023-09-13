@@ -46,6 +46,7 @@ namespace WebLegadoEducativo02
         WS_LE_Cotizaciones.WS_LE_Cotizaciones wsInsCoti = new WS_LE_Cotizaciones.WS_LE_Cotizaciones();
         WS_LE_ProgramaAcademico.WS_LE_ProgramaAcademico wsConsProgAca = new WS_LE_ProgramaAcademico.WS_LE_ProgramaAcademico();
         WS_LE_Beneficiarios.WS_LE_Beneficiarios wsInsBenefi = new WS_LE_Beneficiarios.WS_LE_Beneficiarios();
+        WS_LE_Documentos.WS_LE_Documentos wsInsDocumentos = new WS_LE_Documentos.WS_LE_Documentos();
 
 
         protected void Init_Cotizacion()
@@ -463,7 +464,9 @@ namespace WebLegadoEducativo02
                         Lbl_Perfil.Text = "Sus solicitudes de compra";
                         var titu = wsconsContac.ConsultaContactCorreo(Session["Usuario"].ToString(), "", "");
                         Global.guidContactoTitular = titu[0].contactid;
-                        Global.NombreContactoTitular = titu[0].firstname + " " + titu[0].middlename + " " + titu[0].new_apellidopaterno + " " + titu[0].new_apellidomaterno;
+
+                        Global.NombreContactoTitular = titu[0].fullname;
+
 
                         LoadGridV_Solicitudes();
                     }
@@ -659,8 +662,7 @@ namespace WebLegadoEducativo02
 
         protected void Btn_CrearSoliCompra_Click(object sender, EventArgs e)
         {
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+
 
             DateTime fechaActualSF = DateTime.Now;
             string fechaActual = fechaActualSF.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
@@ -670,12 +672,11 @@ namespace WebLegadoEducativo02
 
             var resultOpp = wsOppor.InsOportunidadContacto(name, area, asunto, Global.guidContactoTitular, "", "", guid_ListaPrecio_LE);
             var resultSoli = wsInsSoliCom.InsSolicitudCompra("LE-SOL-" + Global.NombreContactoTitular, resultOpp.Guid, Global.guidContactoTitular, "", "", "", "", "", "", "", "", "");
-
+            var resultDocs = wsInsDocumentos.InSuplementalSub("", Global.guidContactoTitular, resultSoli.Guid, "", "", "", "", "", "", "", "", "");
 
             Fill_Solicitudes();
             SolicitudesCs.CurrentSolicitud = Global.List_Solicitudes[0];
 
-            stopwatch.Stop();
 
             Response.Redirect("~/WebSolicitudCompraLE.aspx");
         }
