@@ -175,7 +175,7 @@
                 <div runat="server" id="dv_OptsSesion" class="dv_OptsSesion" style="display: none;">
                     <div>
                         <asp:Button ID="Btn_CerrarSesion" runat="server" Text="Cerrar Sesión" CssClass="Btn_OptsMenuDesple" OnClick="Btn_CerrarSesion_Click" />
-                        <asp:Button ID="Btn_CerrarSolicitud" runat="server" Text="Guardar solicitud" CssClass="Btn_OptsMenuDesple" OnClick="Btn_CerrarSolicitud_Click" />
+                        <asp:Button ID="Btn_CerrarSolicitud" runat="server" Text="Guardar solicitud" CssClass="Btn_OptsMenuDesple" OnClick="Btn_CerrarSolicitud_Click"/>
                     </div>
                 </div>
                 <asp:ContentPlaceHolder ID="main" runat="server">

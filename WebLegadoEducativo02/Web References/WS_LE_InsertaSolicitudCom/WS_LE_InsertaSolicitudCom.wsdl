@@ -17,6 +17,7 @@
             <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitular" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadostitulardesignado" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="udem_documentosentregadosbeneficiarios" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_area" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>

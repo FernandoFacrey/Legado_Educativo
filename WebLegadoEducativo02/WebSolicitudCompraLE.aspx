@@ -1419,6 +1419,7 @@
                                             <div class="Container_GridView">
                                                 <asp:GridView ID="GridV_Documentos" CssClass="GridView_Table" runat="server" AutoGenerateColumns="False" OnRowCommand="GridV_Documentos_RowCommand">
                                                     <Columns>
+                                                        <asp:BoundField DataField="Estatus" HeaderText="Estatus" HtmlEncode="false" />
                                                         <asp:BoundField DataField="Quien" HeaderText="General" HtmlEncode="false" />
                                                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" HtmlEncode="false" />
                                                         <asp:TemplateField HeaderText="">
@@ -1438,6 +1439,7 @@
                                                         <asp:TemplateField>
                                                             <ItemTemplate>
                                                                 <asp:Button runat="server" ID="BtnEnviarArchivo" Text="Enviar" CommandName="Enviar" OnClientClick="showLoadingSoliPantallaEnviaTituDesi();" CssClass="pager_btn" />
+                                                                <asp:Button runat="server" ID="BtnEditarArchivo" Text="Editar" CommandName="Editar" OnClientClick="showLoadingSoliPantallaEnviaTituDesi();" CssClass="pager_btn" Visible="false"/>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
                                                     </Columns>
@@ -1504,10 +1506,6 @@
                                 </table>
                             </div>
                         </asp:Panel>
-
-
-
-
 
                         <!--Mensaje Solicitud de compra-->
                         <asp:Panel ID="Pnl_CreacionSolicitud" runat="server" Visible="false">

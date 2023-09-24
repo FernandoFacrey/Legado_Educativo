@@ -662,8 +662,6 @@ namespace WebLegadoEducativo02
 
         protected void Btn_CrearSoliCompra_Click(object sender, EventArgs e)
         {
-
-
             DateTime fechaActualSF = DateTime.Now;
             string fechaActual = fechaActualSF.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             string area = "Legado Educativo";
@@ -671,7 +669,7 @@ namespace WebLegadoEducativo02
             string asunto = "Compra - Legado Educativo";
 
             var resultOpp = wsOppor.InsOportunidadContacto(name, area, asunto, Global.guidContactoTitular, "", "", guid_ListaPrecio_LE);
-            var resultSoli = wsInsSoliCom.InsSolicitudCompra("LE-SOL-" + Global.NombreContactoTitular, resultOpp.Guid, Global.guidContactoTitular, "", "", "", "", "", "", "", "", "");
+            var resultSoli = wsInsSoliCom.InsSolicitudCompra("LE-SOL-" + Global.NombreContactoTitular, resultOpp.Guid, Global.guidContactoTitular, "", "", "", "", "", "", "", "", "", "Legado Educativo");
             var resultDocs = wsInsDocumentos.InSuplementalSub("", Global.guidContactoTitular, resultSoli.Guid, "", "", "", "", "", "", "", "", "");
 
             Fill_Solicitudes();
@@ -962,10 +960,11 @@ namespace WebLegadoEducativo02
             }
 
             var resultOpp = wsOppor.InsOportunidadContacto(name, area, asunto, Global.guidContactoTitular, "", "", guid_ListaPrecio_LE);
+
             var resultSoli = wsInsSoliCom.InsSolicitudCompra("LE-SOL-" + Global.NombreContactoTitular, resultOpp.Guid, Global.guidContactoTitular, guidtituDesi, "", "", (string)SolicitudesCs.CurrentSolicitud["udem_requiererecibofiscal"],
-                guidDatosFisc, "", (string)SolicitudesCs.CurrentSolicitud["udem_documentosentregadostitular"], (string)SolicitudesCs.CurrentSolicitud["udem_documentosentregadostitulardesignado"], (string)SolicitudesCs.CurrentSolicitud["udem_documentosentregadosbeneficiarios"]);
+                guidDatosFisc, "", (string)SolicitudesCs.CurrentSolicitud["udem_documentosentregadostitular"], (string)SolicitudesCs.CurrentSolicitud["udem_documentosentregadostitulardesignado"], (string)SolicitudesCs.CurrentSolicitud["udem_documentosentregadosbeneficiarios"], "Legado Educativo");
             var resultSol = wsInsBenefi.InsBeneficiario(resultSoli.Guid, guidsbeneficiarios, "", "", "", "", "");
-            var resultHeadCoti = wsInsCoti.InsCotizacionHead(guid_ListaPrecio_LE, resultOpp.Guid, "", resultSoli.Guid);
+            var resultHeadCoti = wsInsCoti.InsCotizacionHead(guid_ListaPrecio_LE, resultOpp.Guid, "", resultSoli.Guid, name);
 
             if (resultHeadCoti.Mensaje.Contains("correctamente"))
             {

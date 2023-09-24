@@ -126,20 +126,20 @@ namespace WebLegadoEducativo02
 
                         if (Ddl_fuenteLeadOri.SelectedItem.Text.Contains("Otro"))
                         {
-                            var result = WsInsCliPo.InsClientPotencial("Compra - Legado Educativo", txtB_NombrePila.Text, txtB_SeguNom.Text, txtB_ApePater.Text, txtB_ApeMater.Text, fechaCreaCompleta, RBL_ContactExUdem.SelectedItem.Text, "", "", "", "", txtB_TelMovil.Text, txtB_TelParti.Text, "", txtB_CorreoElec.Text, "", "", "", Ddl_fuenteLeadOri.SelectedItem.Text, "", "", txtB_fuenteLeadOtro.Text, "", "", "", "", "", "");
+                            var result = WsInsCliPo.InsClientPotencial("Compra - Legado Educativo", txtB_NombrePila.Text, txtB_SeguNom.Text, txtB_ApePater.Text, txtB_ApeMater.Text, fechaCreaCompleta, RBL_ContactExUdem.SelectedItem.Text, "", "", "", "", txtB_TelMovil.Text, txtB_TelParti.Text, "", txtB_CorreoElec.Text, "", "", "", Ddl_fuenteLeadOri.SelectedItem.Text, "", "", txtB_fuenteLeadOtro.Text, "", "", "", "", "", "", "Legado Educativo");
                             _result = result.CodigoMs.ToString();
 
                             Global.GuidLead = result.Guid;
                         }
                         if (Ddl_fuenteLeadOri.SelectedItem.Text.Contains("Empresa") || Ddl_fuenteLeadOri.SelectedItem.Text.Contains("Colegio"))
                         {
-                            var result = WsInsCliPo.InsClientPotencial("Compra - Legado Educativo", txtB_NombrePila.Text, txtB_SeguNom.Text, txtB_ApePater.Text, txtB_ApeMater.Text, fechaCreaCompleta, RBL_ContactExUdem.SelectedItem.Text, "", "", "", "", txtB_TelMovil.Text, txtB_TelParti.Text, "", txtB_CorreoElec.Text, "", "", "", Ddl_fuenteLeadOri.SelectedItem.Text, Ddl_fuenteLeadSubcat.SelectedItem.Text, "No se encuentra en la lista", txtB_fuenteLeadOtro.Text, "", "", "", "", "", "");
+                            var result = WsInsCliPo.InsClientPotencial("Compra - Legado Educativo", txtB_NombrePila.Text, txtB_SeguNom.Text, txtB_ApePater.Text, txtB_ApeMater.Text, fechaCreaCompleta, RBL_ContactExUdem.SelectedItem.Text, "", "", "", "", txtB_TelMovil.Text, txtB_TelParti.Text, "", txtB_CorreoElec.Text, "", "", "", Ddl_fuenteLeadOri.SelectedItem.Text, Ddl_fuenteLeadSubcat.SelectedItem.Text, "No se encuentra en la lista", txtB_fuenteLeadOtro.Text, "", "", "", "", "", "", "Legado Educativo");
                             _result = result.CodigoMs.ToString();
                             Global.GuidLead = result.Guid;
                         }
                         else
                         {
-                            var result = WsInsCliPo.InsClientPotencial("Compra - Legado Educativo", txtB_NombrePila.Text, txtB_SeguNom.Text, txtB_ApePater.Text, txtB_ApeMater.Text, fechaCreaCompleta, RBL_ContactExUdem.SelectedItem.Text, "", "", "", "", txtB_TelMovil.Text, txtB_TelParti.Text, "", txtB_CorreoElec.Text, "", "", "", Ddl_fuenteLeadOri.SelectedItem.Text, Ddl_fuenteLeadSubcat.SelectedItem.Text, "", txtB_fuenteLeadOtro.Text, "", "", "", "", "", "");
+                            var result = WsInsCliPo.InsClientPotencial("Compra - Legado Educativo", txtB_NombrePila.Text, txtB_SeguNom.Text, txtB_ApePater.Text, txtB_ApeMater.Text, fechaCreaCompleta, RBL_ContactExUdem.SelectedItem.Text, "", "", "", "", txtB_TelMovil.Text, txtB_TelParti.Text, "", txtB_CorreoElec.Text, "", "", "", Ddl_fuenteLeadOri.SelectedItem.Text, Ddl_fuenteLeadSubcat.SelectedItem.Text, "", txtB_fuenteLeadOtro.Text, "", "", "", "", "", "", "Legado Educativo");
                             _result = result.CodigoMs.ToString();
                             Global.GuidLead = result.Guid;
                         }

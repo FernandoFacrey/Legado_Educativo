@@ -57,7 +57,7 @@ namespace WebLegadoEducativo02
 
                     if (RBL_ContactExUdemConocenos.SelectedValue.Equals("True"))
                     {
-                        var result = wsInsCliPot.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomConocenos.Text, txtB_SegunNomMasConocenos.Text, txtB_AperPaterConocenos.Text, txtB_AperMaterConocenos.Text, fechaNacCompleta, RBL_ContactExUdemConocenos.Text, "", "", "", "", "", "", "", txtB_CorreoElecConocenos.Text, "", "", "", "", "", "", "", "", "", "", "", "", TxtB_MatriculaContactanos.Text);
+                        var result = wsInsCliPot.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomConocenos.Text, txtB_SegunNomMasConocenos.Text, txtB_AperPaterConocenos.Text, txtB_AperMaterConocenos.Text, fechaNacCompleta, RBL_ContactExUdemConocenos.Text, "", "", "", "", "", "", "", txtB_CorreoElecConocenos.Text, "", "", "", "", "", "", "", "", "", "", "", "", TxtB_MatriculaContactanos.Text, "Legado Educativo");
                         if (result.CodigoMs.Contains("correctamente"))
                         {
                             string mensaje = result.CodigoMs;
@@ -68,7 +68,7 @@ namespace WebLegadoEducativo02
                     }
                     else
                     {
-                        var result = wsInsCliPot.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomConocenos.Text, txtB_SegunNomMasConocenos.Text, txtB_AperPaterConocenos.Text, txtB_AperMaterConocenos.Text, fechaNacCompleta, RBL_ContactExUdemConocenos.Text, "", "", "", "", "", "", "", txtB_CorreoElecConocenos.Text, "", "", "", "", "", "", "", "", "", "", "", "", "");
+                        var result = wsInsCliPot.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomConocenos.Text, txtB_SegunNomMasConocenos.Text, txtB_AperPaterConocenos.Text, txtB_AperMaterConocenos.Text, fechaNacCompleta, RBL_ContactExUdemConocenos.Text, "", "", "", "", "", "", "", txtB_CorreoElecConocenos.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "Legado Educativo");
                         if (result.CodigoMs.Contains("correctamente"))
                         {
                             string mensaje = result.CodigoMs;

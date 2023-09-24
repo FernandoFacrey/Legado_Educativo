@@ -84,22 +84,23 @@ namespace WebLegadoEducativo02.WS_LE_Cotizaciones {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsCotizacionHead", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public Respuesta InsCotizacionHead(string pricelevelid, string opportunityid, string description, string udem_solicituddecompra) {
+        public Respuesta InsCotizacionHead(string pricelevelid, string opportunityid, string description, string udem_solicituddecompra, string name) {
             object[] results = this.Invoke("InsCotizacionHead", new object[] {
                         pricelevelid,
                         opportunityid,
                         description,
-                        udem_solicituddecompra});
+                        udem_solicituddecompra,
+                        name});
             return ((Respuesta)(results[0]));
         }
         
         /// <remarks/>
-        public void InsCotizacionHeadAsync(string pricelevelid, string opportunityid, string description, string udem_solicituddecompra) {
-            this.InsCotizacionHeadAsync(pricelevelid, opportunityid, description, udem_solicituddecompra, null);
+        public void InsCotizacionHeadAsync(string pricelevelid, string opportunityid, string description, string udem_solicituddecompra, string name) {
+            this.InsCotizacionHeadAsync(pricelevelid, opportunityid, description, udem_solicituddecompra, name, null);
         }
         
         /// <remarks/>
-        public void InsCotizacionHeadAsync(string pricelevelid, string opportunityid, string description, string udem_solicituddecompra, object userState) {
+        public void InsCotizacionHeadAsync(string pricelevelid, string opportunityid, string description, string udem_solicituddecompra, string name, object userState) {
             if ((this.InsCotizacionHeadOperationCompleted == null)) {
                 this.InsCotizacionHeadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsCotizacionHeadOperationCompleted);
             }
@@ -107,7 +108,8 @@ namespace WebLegadoEducativo02.WS_LE_Cotizaciones {
                         pricelevelid,
                         opportunityid,
                         description,
-                        udem_solicituddecompra}, this.InsCotizacionHeadOperationCompleted, userState);
+                        udem_solicituddecompra,
+                        name}, this.InsCotizacionHeadOperationCompleted, userState);
         }
         
         private void OnInsCotizacionHeadOperationCompleted(object arg) {
@@ -192,7 +194,23 @@ namespace WebLegadoEducativo02.WS_LE_Cotizaciones {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdtCotizacionProdu", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public Respuesta UpdtCotizacionProdu(string quotedetailid, string quoteid, string udem_programaacademico, string udem_le_creditosporproducto, string udem_le_semestresporproducto, string productid, string uomid, string udem_tipodeperiodo, string udem_unidadacotizar, string udem_cantidadacotizar, string udem_le_porcentajebeca, string udem_le_semestrestotales, string quantity, string priceperunit, string baseamount) {
+        public Respuesta UpdtCotizacionProdu(
+                    string quotedetailid, 
+                    string quoteid, 
+                    string udem_programaacademico, 
+                    string udem_le_creditosporproducto, 
+                    string udem_le_semestresporproducto, 
+                    string productid, 
+                    string uomid, 
+                    string udem_tipodeperiodo, 
+                    string udem_unidadacotizar, 
+                    string udem_cantidadacotizar, 
+                    string udem_le_porcentajebeca, 
+                    string udem_le_semestrestotales, 
+                    string quantity, 
+                    string priceperunit, 
+                    string baseamount, 
+                    string new_unidadudem) {
             object[] results = this.Invoke("UpdtCotizacionProdu", new object[] {
                         quotedetailid,
                         quoteid,
@@ -208,13 +226,9 @@ namespace WebLegadoEducativo02.WS_LE_Cotizaciones {
                         udem_le_semestrestotales,
                         quantity,
                         priceperunit,
-                        baseamount});
+                        baseamount,
+                        new_unidadudem});
             return ((Respuesta)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void UpdtCotizacionProduAsync(string quotedetailid, string quoteid, string udem_programaacademico, string udem_le_creditosporproducto, string udem_le_semestresporproducto, string productid, string uomid, string udem_tipodeperiodo, string udem_unidadacotizar, string udem_cantidadacotizar, string udem_le_porcentajebeca, string udem_le_semestrestotales, string quantity, string priceperunit, string baseamount) {
-            this.UpdtCotizacionProduAsync(quotedetailid, quoteid, udem_programaacademico, udem_le_creditosporproducto, udem_le_semestresporproducto, productid, uomid, udem_tipodeperiodo, udem_unidadacotizar, udem_cantidadacotizar, udem_le_porcentajebeca, udem_le_semestrestotales, quantity, priceperunit, baseamount, null);
         }
         
         /// <remarks/>
@@ -234,6 +248,28 @@ namespace WebLegadoEducativo02.WS_LE_Cotizaciones {
                     string quantity, 
                     string priceperunit, 
                     string baseamount, 
+                    string new_unidadudem) {
+            this.UpdtCotizacionProduAsync(quotedetailid, quoteid, udem_programaacademico, udem_le_creditosporproducto, udem_le_semestresporproducto, productid, uomid, udem_tipodeperiodo, udem_unidadacotizar, udem_cantidadacotizar, udem_le_porcentajebeca, udem_le_semestrestotales, quantity, priceperunit, baseamount, new_unidadudem, null);
+        }
+        
+        /// <remarks/>
+        public void UpdtCotizacionProduAsync(
+                    string quotedetailid, 
+                    string quoteid, 
+                    string udem_programaacademico, 
+                    string udem_le_creditosporproducto, 
+                    string udem_le_semestresporproducto, 
+                    string productid, 
+                    string uomid, 
+                    string udem_tipodeperiodo, 
+                    string udem_unidadacotizar, 
+                    string udem_cantidadacotizar, 
+                    string udem_le_porcentajebeca, 
+                    string udem_le_semestrestotales, 
+                    string quantity, 
+                    string priceperunit, 
+                    string baseamount, 
+                    string new_unidadudem, 
                     object userState) {
             if ((this.UpdtCotizacionProduOperationCompleted == null)) {
                 this.UpdtCotizacionProduOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdtCotizacionProduOperationCompleted);
@@ -253,7 +289,8 @@ namespace WebLegadoEducativo02.WS_LE_Cotizaciones {
                         udem_le_semestrestotales,
                         quantity,
                         priceperunit,
-                        baseamount}, this.UpdtCotizacionProduOperationCompleted, userState);
+                        baseamount,
+                        new_unidadudem}, this.UpdtCotizacionProduOperationCompleted, userState);
         }
         
         private void OnUpdtCotizacionProduOperationCompleted(object arg) {

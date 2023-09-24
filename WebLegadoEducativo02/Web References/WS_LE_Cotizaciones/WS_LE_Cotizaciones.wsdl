@@ -9,6 +9,7 @@
             <s:element minOccurs="0" maxOccurs="1" name="opportunityid" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="udem_solicituddecompra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -72,6 +73,7 @@
             <s:element minOccurs="0" maxOccurs="1" name="quantity" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="priceperunit" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="baseamount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="new_unidadudem" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>

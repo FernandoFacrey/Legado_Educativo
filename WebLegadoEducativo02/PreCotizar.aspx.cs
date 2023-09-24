@@ -48,7 +48,7 @@ namespace WebLegadoEducativo02
                 Response.Redirect("~/UnexpectedError.aspx");
             }
         }
-        
+
         protected void Btn_Bachillerato_Click(object sender, EventArgs e)
         {
             Lbl_Nivel.Text = "Bachillerato";
@@ -79,8 +79,8 @@ namespace WebLegadoEducativo02
                     if (dats[0].mensaje.Contains("Sin Registros"))
                     {
                         WS_LE_InsertaClientePotencial.WS_LE_InsertaClientePotencial btnws = new WS_LE_InsertaClientePotencial.WS_LE_InsertaClientePotencial();
-                        var result = btnws.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomMasInfo.Text, txtB_SegunNomMasInfo.Text, txtB_AperPaterMasInfo.Text, txtB_AperMaterMasInfo.Text, "", "", "", "", "", "", "", "", "", txtB_CorreoMasInfo.Text, "", "", "", "Otro", "", "", "Landing", "", "", "", "", "","");
-                        if(result.Mensaje.Contains("Correctamente"))
+                        var result = btnws.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomMasInfo.Text, txtB_SegunNomMasInfo.Text, txtB_AperPaterMasInfo.Text, txtB_AperMaterMasInfo.Text, "", "", "", "", "", "", "", "", "", txtB_CorreoMasInfo.Text, "", "", "", "Otro", "", "", "Landing", "", "", "", "", "", "", "Legado Educativo");
+                        if (result.Mensaje.Contains("Correctamente"))
                         {
                             BtnEnviarCorreo.Enabled = false;
                             Pnl_Correo.Visible = false;
@@ -119,7 +119,7 @@ namespace WebLegadoEducativo02
                                 else
                                 {
                                     WS_LE_InsertaClientePotencial.WS_LE_InsertaClientePotencial btnws = new WS_LE_InsertaClientePotencial.WS_LE_InsertaClientePotencial();
-                                    var result = btnws.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomMasInfo.Text, txtB_SegunNomMasInfo.Text, txtB_AperPaterMasInfo.Text, txtB_AperMaterMasInfo.Text, "", "", "", "", "", "", "", "", "", txtB_CorreoMasInfo.Text, "", "", "", "Otro", "", "", "Landing", "", "", "", "", "","");
+                                    var result = btnws.InsClientPotencial("Compra - Legado Educativo", txtB_PrimNomMasInfo.Text, txtB_SegunNomMasInfo.Text, txtB_AperPaterMasInfo.Text, txtB_AperMaterMasInfo.Text, "", "", "", "", "", "", "", "", "", txtB_CorreoMasInfo.Text, "", "", "", "Otro", "", "", "Landing", "", "", "", "", "", "", "Legado Educativo");
                                     BtnEnviarCorreo.Enabled = false;
                                     Pnl_Correo.Visible = false;
                                     RedireccionaCotizador();

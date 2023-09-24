@@ -23,7 +23,7 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="WS_LE_InsertaSolicitudComSoap", Namespace="http://tempuri.org/")]
@@ -79,7 +79,7 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsSolicitudCompra", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public Respuesta InsSolicitudCompra(string udem_name, string opportunityid, string udem_titular, string udem_titulardesignado, string udem_matriculadondeseguardaeldinero, string udem_plazoadevengar, string udem_requiererecibofiscal, string udem_datosfiscales, string udem_formadepago, string udem_documentosentregadostitular, string udem_documentosentregadostitulardesignado, string udem_documentosentregadosbeneficiarios) {
+        public Respuesta InsSolicitudCompra(string udem_name, string opportunityid, string udem_titular, string udem_titulardesignado, string udem_matriculadondeseguardaeldinero, string udem_plazoadevengar, string udem_requiererecibofiscal, string udem_datosfiscales, string udem_formadepago, string udem_documentosentregadostitular, string udem_documentosentregadostitulardesignado, string udem_documentosentregadosbeneficiarios, string udem_area) {
             object[] results = this.Invoke("InsSolicitudCompra", new object[] {
                         udem_name,
                         opportunityid,
@@ -92,17 +92,18 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
                         udem_formadepago,
                         udem_documentosentregadostitular,
                         udem_documentosentregadostitulardesignado,
-                        udem_documentosentregadosbeneficiarios});
+                        udem_documentosentregadosbeneficiarios,
+                        udem_area});
             return ((Respuesta)(results[0]));
         }
         
         /// <remarks/>
-        public void InsSolicitudCompraAsync(string udem_name, string opportunityid, string udem_titular, string udem_titulardesignado, string udem_matriculadondeseguardaeldinero, string udem_plazoadevengar, string udem_requiererecibofiscal, string udem_datosfiscales, string udem_formadepago, string udem_documentosentregadostitular, string udem_documentosentregadostitulardesignado, string udem_documentosentregadosbeneficiarios) {
-            this.InsSolicitudCompraAsync(udem_name, opportunityid, udem_titular, udem_titulardesignado, udem_matriculadondeseguardaeldinero, udem_plazoadevengar, udem_requiererecibofiscal, udem_datosfiscales, udem_formadepago, udem_documentosentregadostitular, udem_documentosentregadostitulardesignado, udem_documentosentregadosbeneficiarios, null);
+        public void InsSolicitudCompraAsync(string udem_name, string opportunityid, string udem_titular, string udem_titulardesignado, string udem_matriculadondeseguardaeldinero, string udem_plazoadevengar, string udem_requiererecibofiscal, string udem_datosfiscales, string udem_formadepago, string udem_documentosentregadostitular, string udem_documentosentregadostitulardesignado, string udem_documentosentregadosbeneficiarios, string udem_area) {
+            this.InsSolicitudCompraAsync(udem_name, opportunityid, udem_titular, udem_titulardesignado, udem_matriculadondeseguardaeldinero, udem_plazoadevengar, udem_requiererecibofiscal, udem_datosfiscales, udem_formadepago, udem_documentosentregadostitular, udem_documentosentregadostitulardesignado, udem_documentosentregadosbeneficiarios, udem_area, null);
         }
         
         /// <remarks/>
-        public void InsSolicitudCompraAsync(string udem_name, string opportunityid, string udem_titular, string udem_titulardesignado, string udem_matriculadondeseguardaeldinero, string udem_plazoadevengar, string udem_requiererecibofiscal, string udem_datosfiscales, string udem_formadepago, string udem_documentosentregadostitular, string udem_documentosentregadostitulardesignado, string udem_documentosentregadosbeneficiarios, object userState) {
+        public void InsSolicitudCompraAsync(string udem_name, string opportunityid, string udem_titular, string udem_titulardesignado, string udem_matriculadondeseguardaeldinero, string udem_plazoadevengar, string udem_requiererecibofiscal, string udem_datosfiscales, string udem_formadepago, string udem_documentosentregadostitular, string udem_documentosentregadostitulardesignado, string udem_documentosentregadosbeneficiarios, string udem_area, object userState) {
             if ((this.InsSolicitudCompraOperationCompleted == null)) {
                 this.InsSolicitudCompraOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsSolicitudCompraOperationCompleted);
             }
@@ -118,7 +119,8 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
                         udem_formadepago,
                         udem_documentosentregadostitular,
                         udem_documentosentregadostitulardesignado,
-                        udem_documentosentregadosbeneficiarios}, this.InsSolicitudCompraOperationCompleted, userState);
+                        udem_documentosentregadosbeneficiarios,
+                        udem_area}, this.InsSolicitudCompraOperationCompleted, userState);
         }
         
         private void OnInsSolicitudCompraOperationCompleted(object arg) {
@@ -221,7 +223,7 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -266,11 +268,11 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     public delegate void InsSolicitudCompraCompletedEventHandler(object sender, InsSolicitudCompraCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InsSolicitudCompraCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -292,11 +294,11 @@ namespace WebLegadoEducativo02.WS_LE_InsertaSolicitudCom {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     public delegate void UpdtSolicitudCompraCompletedEventHandler(object sender, UpdtSolicitudCompraCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UpdtSolicitudCompraCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

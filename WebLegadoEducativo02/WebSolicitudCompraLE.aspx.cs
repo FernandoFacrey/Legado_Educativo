@@ -276,7 +276,7 @@ namespace WebLegadoEducativo02
                                                     switch (programa[0].new_nivelacademico_name)
                                                     {
                                                         case "Bachillerato":
-                                                            Fill_Cotizacion("", guidProducto, programa[0].new_nivelacademico_name, programa[0].recr_campus_name, programa[0].new_nivelacademico_name, (string)item["cuanto_QuiereCotizar"], (string)item["importe"], "", "");
+                                                            Fill_Cotizacion("", guidProducto, programa[0].new_nivelacademico_name, "", programa[0].new_nivelacademico_name, (string)item["cuanto_QuiereCotizar"], (string)item["importe"], "", "");
                                                             break;
 
                                                         case "Profesional":
@@ -2050,7 +2050,7 @@ namespace WebLegadoEducativo02
                                         Verifica_CreditosAplicarLE.Text = Ddl_CreditosAplicarLE.Text;
                                         Llb_Verifica_CreditosSemestres.Text = "Semestres";
 
-                                        DeterminaCotizacionCrm((string)programa["new_programa"], "", (string)programa["udem_semestresporprograma"], (string)programa["udem_productorelacionado_name"], (string)lista["uom_name"], "",
+                                        DeterminaCotizacionCrm((string)programa["new_programa"], "", (string)programa["udem_semestresporprograma"], (string)programa["udem_productorelacionado_name"], (string)lista["uom_name"], (string)programa["udem_tipodeperiodo"],
                                         "Periodos", Ddl_CreditosAplicarLE.Text, "", "", Ddl_CreditosAplicarLE.Text, (string)lista["amount"], monto_total.ToString(), Ddl_UniDiviProgAplicarLE.SelectedItem.Value);
                                     }
                                 }
@@ -2197,16 +2197,12 @@ namespace WebLegadoEducativo02
         {
             Init_Dict_Cotizacion(Ddl_NivelAplicarLE.SelectedItem.Text);
             string strTemp = string.Empty;
-            if (Ddl_NivelAplicarLE.SelectedItem.Text.Equals("Bachillerato"))
-            {
-                strTemp = Ddl_UniDiviProgAplicarLE.SelectedItem.Text;
-            }
-            else
-            {
-                strTemp = "Cotización obtenida desde landing page";
-            }
+            strTemp = "Cotización obtenida desde landing page";
 
-            var resultHeadCoti = wsInsCoti.InsCotizacionHead(guid_ListaPrecio_LE, Global.GuidOportunidad, strTemp, Global.GuidSolicitud);
+            DateTime fechaActualSF = DateTime.Now;
+            string fechaActual = fechaActualSF.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            string NombreContactoTitular = Global.Titular["primer_nombre"] + " " + Global.Titular["segundo_nombre"] + " " + Global.Titular["apellido_paterno"] + " " + Global.Titular["apellido_materno"]; ;
+            var resultHeadCoti = wsInsCoti.InsCotizacionHead(guid_ListaPrecio_LE, Global.GuidOportunidad, strTemp, Global.GuidSolicitud, "LE - " + NombreContactoTitular + " - " + fechaActual);
 
             if (resultHeadCoti.Mensaje.Contains("correctamente"))
             {
@@ -3467,8 +3463,6 @@ namespace WebLegadoEducativo02
             }
             return matricula;
         }
-
-
         public string ObtenerValoresJson(string jsonString)
         {
             List<Person> userList = JsonConvert.DeserializeObject<List<Person>>(jsonString);
@@ -3563,15 +3557,18 @@ namespace WebLegadoEducativo02
         {
 
             DataTable dtDocumentos = new DataTable();
+            dtDocumentos.Columns.Add("Estatus", typeof(string));
             dtDocumentos.Columns.Add("Quien", typeof(string));
             dtDocumentos.Columns.Add("Nombre", typeof(string));
 
             DataRow fila = dtDocumentos.NewRow();
+            fila["Estatus"] = "Pendiente";
             fila["Quien"] = "Titular";
             fila["Nombre"] = Global.Titular["primer_nombre"] + " " + Global.Titular["segundo_nombre"] + " " + Global.Titular["apellido_paterno"] + " " + Global.Titular["apellido_materno"];
             dtDocumentos.Rows.Add(fila);
 
             fila = dtDocumentos.NewRow();
+            fila["Estatus"] = "Pendiente";
             fila["Quien"] = "Titular designado";
             fila["Nombre"] = Global.Titular_Designado["primer_nombre"] + " " + Global.Titular_Designado["segundo_nombre"] + " " + Global.Titular_Designado["apellido_paterno"] + Global.Titular_Designado["apellido_materno"];
             dtDocumentos.Rows.Add(fila);
@@ -3580,6 +3577,7 @@ namespace WebLegadoEducativo02
             {
                 int i = 1;
                 fila = dtDocumentos.NewRow();
+                fila["Estatus"] = "Pendiente";
                 fila["Quien"] = "Beneficiario " + i;
                 fila["Nombre"] = beneficiarios["primer_nombre"] + " " + beneficiarios["segundo_nombre"] + " " + beneficiarios["apellido_paterno"] + beneficiarios["apellido_materno"];
                 dtDocumentos.Rows.Add(fila);
@@ -3989,7 +3987,6 @@ namespace WebLegadoEducativo02
             {
 
                 InsArchivoSP.ObtenerServer(Server);
-
                 InsArchivoSP.ObtenerGrid(GridV_Documentos);
                 Button btnEnviar = e.CommandSource as Button;
                 int rowIndex = 0;
@@ -4000,8 +3997,39 @@ namespace WebLegadoEducativo02
 
                     if (_row != null)
                     {
-                        rowIndex = _row.RowIndex;  // Obtener el índice de la fila
-                                                   // Realiza las acciones que necesites con el índice de la fila
+                        rowIndex = _row.RowIndex;
+
+                        Button _btnEnviar = (Button)_row.FindControl("BtnEnviarArchivo");
+                        _btnEnviar.Visible = false;
+
+                        Button _btnEditar = (Button)_row.FindControl("BtnEditarArchivo");
+                        _btnEditar.Visible = true;
+
+                        _row.Enabled = false;
+
+                        foreach (TableCell cell in _row.Cells)
+                        {
+                            if(cell.Text.Contains("Pendiente"))
+                            {
+                                cell.Text = "Enviado";
+                            }
+                            if (cell.Controls.Contains(_btnEnviar) && cell.Controls.Contains(_btnEditar))
+                            {
+                                cell.Enabled = true;
+
+                                foreach (Control control in cell.Controls)
+                                {
+                                    if (control is WebControl)
+                                    {
+                                        ((WebControl)control).Enabled = true;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                cell.Enabled = false;
+                            }
+                        }
                     }
                 }
                 GridViewRow row = GridV_Documentos.Rows[rowIndex];
@@ -4030,11 +4058,71 @@ namespace WebLegadoEducativo02
                     Lbl_AlertaPersonalizada.Text = "El archivo se cargo correctamente.";
                     string script = "<script type='text/javascript'>showAlert();</script>";
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "showAlert", script);
+
+                    row.BackColor = Color.LimeGreen;
+
+                    // Bloquea la fila deshabilitando todos los controles en ella
+                    foreach (TableCell cell in row.Cells)
+                    {
+                        if (cell.FindControl("BtnEnviarArchivo") == null && cell.FindControl("BtnEditar") == null)
+                        {
+                            foreach (Control control in cell.Controls)
+                            {
+                                if (control is WebControl)
+                                {
+                                    ((WebControl)control).Enabled = false;
+                                }
+                            }
+                        }
+
+                    }
                 }
                 else
                 {
                     fileUpload.Focus();
                     fileUpload.BorderColor = Color.Red;
+                }
+            }
+            else if (e.CommandName == "Editar")
+            {
+                Button btnEditar = e.CommandSource as Button;
+                int rowIndex = 0;
+                if (btnEditar != null)
+                {
+                    // Obtener la fila del GridView que contiene el botón
+                    GridViewRow _row = btnEditar.NamingContainer as GridViewRow;
+
+                    if (_row != null)
+                    {
+                        rowIndex = _row.RowIndex;
+
+                        Button _btnEnviar = (Button)_row.FindControl("BtnEnviarArchivo");
+                        _btnEnviar.Visible = true;
+
+                        Button _btnEditar = (Button)_row.FindControl("BtnEditarArchivo");
+                        _btnEditar.Visible = false;
+
+                        foreach (TableCell cell in _row.Cells)
+                        {
+                            if (cell.FindControl("BtnEnviarArchivo") == null && cell.FindControl("BtnEditarArchivo") == null)
+                            {
+                                cell.Enabled = true;
+
+                                foreach (Control control in cell.Controls)
+                                {
+                                    if (control is WebControl)
+                                    {
+                                        ((WebControl)control).Enabled = true;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                cell.Enabled = false;
+                            }
+
+                        }
+                    }
                 }
             }
         }

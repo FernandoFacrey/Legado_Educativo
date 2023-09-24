@@ -23,7 +23,7 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="WS_LE_InsertaClientePotencialSoap", Namespace="http://tempuri.org/")]
@@ -107,7 +107,8 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
                     string udem_le_eventocatalogo, 
                     string udem_le_otroevento, 
                     string udem_le_fechaevento, 
-                    string udem_matricula) {
+                    string udem_matricula, 
+                    string udem_area) {
             object[] results = this.Invoke("InsClientPotencial", new object[] {
                         udem_asunto,
                         firstname,
@@ -136,7 +137,8 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
                         udem_le_eventocatalogo,
                         udem_le_otroevento,
                         udem_le_fechaevento,
-                        udem_matricula});
+                        udem_matricula,
+                        udem_area});
             return ((Respuesta)(results[0]));
         }
         
@@ -169,8 +171,9 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
                     string udem_le_eventocatalogo, 
                     string udem_le_otroevento, 
                     string udem_le_fechaevento, 
-                    string udem_matricula) {
-            this.InsClientPotencialAsync(udem_asunto, firstname, middlename, udem_apellidopaterno, udem_apellidomaterno, udem_fechadenacimiento, udem_contactoprincipal_diceserexalumno, udem_informacionadicional, udem_informacion_pareja, udem_pareja_diceserexalumno, udem_informacion_hijos, mobilephone, telephone2, telephone1, emailaddress1, preferredcontactmethodcode, udem_niveldelegado, leadqualitycode, udem_le_fuentedelead, udem_le_fuentedelead_subcategoria, udem_le_empresaocolegiodelafuente, udem_le_otrafuentedelead, udem_le_referido, udem_le_evento, udem_le_eventocatalogo, udem_le_otroevento, udem_le_fechaevento, udem_matricula, null);
+                    string udem_matricula, 
+                    string udem_area) {
+            this.InsClientPotencialAsync(udem_asunto, firstname, middlename, udem_apellidopaterno, udem_apellidomaterno, udem_fechadenacimiento, udem_contactoprincipal_diceserexalumno, udem_informacionadicional, udem_informacion_pareja, udem_pareja_diceserexalumno, udem_informacion_hijos, mobilephone, telephone2, telephone1, emailaddress1, preferredcontactmethodcode, udem_niveldelegado, leadqualitycode, udem_le_fuentedelead, udem_le_fuentedelead_subcategoria, udem_le_empresaocolegiodelafuente, udem_le_otrafuentedelead, udem_le_referido, udem_le_evento, udem_le_eventocatalogo, udem_le_otroevento, udem_le_fechaevento, udem_matricula, udem_area, null);
         }
         
         /// <remarks/>
@@ -203,6 +206,7 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
                     string udem_le_otroevento, 
                     string udem_le_fechaevento, 
                     string udem_matricula, 
+                    string udem_area, 
                     object userState) {
             if ((this.InsClientPotencialOperationCompleted == null)) {
                 this.InsClientPotencialOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsClientPotencialOperationCompleted);
@@ -235,7 +239,8 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
                         udem_le_eventocatalogo,
                         udem_le_otroevento,
                         udem_le_fechaevento,
-                        udem_matricula}, this.InsClientPotencialOperationCompleted, userState);
+                        udem_matricula,
+                        udem_area}, this.InsClientPotencialOperationCompleted, userState);
         }
         
         private void OnInsClientPotencialOperationCompleted(object arg) {
@@ -294,7 +299,7 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -339,11 +344,11 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     public delegate void InsClientPotencialCompletedEventHandler(object sender, InsClientPotencialCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InsClientPotencialCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -365,11 +370,11 @@ namespace WebLegadoEducativo02.WS_LE_InsertaClientePotencial {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     public delegate void CalificaLeadCompletedEventHandler(object sender, CalificaLeadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CalificaLeadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

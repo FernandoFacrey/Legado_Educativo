@@ -33,6 +33,7 @@
             <s:element minOccurs="0" maxOccurs="1" name="udem_le_otroevento" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="udem_le_fechaevento" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="udem_matricula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="udem_area" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
